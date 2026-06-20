@@ -1,0 +1,6 @@
+.bin/
+node_modules/
+assets/ai/*.png
+*-preview.png
+/tmp/
+*.log
