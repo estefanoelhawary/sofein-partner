@@ -33,8 +33,11 @@ http.createServer((req, res) => {
     };
     const read = (fp, allowHtmlFallback) => fs.readFile(fp, (err, data) => {
       if (err) {
-        // saubere URLs ohne .html (z.B. /azado -> azado.html)
-        if (allowHtmlFallback && !path.extname(fp)) return read(fp + '.html', false);
+        // saubere URLs ohne .html, mit/ohne Schrägstrich (z.B. /azado oder /azado/ -> azado.html)
+        if (allowHtmlFallback) {
+          const base = fp.replace(/[/\\]+$/, '');
+          if (base && base !== ROOT && !path.extname(base)) return read(base + '.html', false);
+        }
         res.writeHead(404, { 'Content-Type': 'text/plain' }); return res.end('404');
       }
       send(fp, data);
