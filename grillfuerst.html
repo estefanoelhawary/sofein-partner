@@ -24,7 +24,8 @@
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden}
-h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.08;letter-spacing:-.01em;margin:0}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.13;letter-spacing:-.01em;margin:0}
+h2,h3{line-height:1.2}
 p{margin:0 0 .9em}
 a{color:inherit}
 img{max-width:100%;display:block}
@@ -59,8 +60,9 @@ section{padding:74px 0}
 .hero .eyebrow{margin-bottom:16px}
 .hero h1{font-size:clamp(34px,6.6vw,60px);font-weight:700}
 .hero h1 .accent{color:var(--magenta)}
-.hero .lead{font-size:clamp(17px,2.2vw,20px);max-width:40ch;margin:18px 0 26px;color:#4a3a3d}
-.hero-cta{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.hero .lead{font-size:clamp(16px,2.1vw,18.5px);max-width:46ch;margin:14px 0 0;color:#5a484b;line-height:1.62}
+.hero .lead.lead-first{font-size:clamp(18px,2.4vw,21px);font-weight:500;color:#2d1e22;margin-top:22px}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:22px}
 .heroimg{position:relative;margin-top:30px;border-radius:24px;overflow:hidden;box-shadow:var(--shadow-lg);aspect-ratio:16/10}
 .heroimg img{width:100%;height:100%;object-fit:cover}
 .heroimg .imgtag{position:absolute;left:16px;bottom:16px;background:rgba(255,253,251,.92);backdrop-filter:blur(6px);border-radius:999px;padding:8px 14px;font-size:12.5px;font-weight:600;display:flex;gap:8px;align-items:center}
@@ -231,13 +233,13 @@ body.demo .ln{filter:blur(6px);user-select:none}
     <div class="eyebrow">Stedy Partner-Programm · persönlich für Grillfürst</div>
     <h1>Ihr Grill, getragen vom Vertrauen der <span class="accent">Schweizer Nr. 1</span> — vor 752'322 Haushalten.</h1>
     <div class="hero-sub">Den Grill-Platz vergeben wir pro Kategorie nur einmal.</div>
-    <p class="lead">Wenn die Schweizer Nr. 1 beim Essen Ihren Grill zeigt, glaubt der Käufer dem Produkt — nicht einem Werbeclaim.</p>
-    <p class="lead">Wir drehen ein echtes Anwendungs-Video mit Ihrem Sortiment, geben ihm einen festen Platz auf sofein.ch und bewerben ihn Monat für Monat.</p>
-    <p class="lead">Reichweite kann man kaufen. Das Vertrauen der Schweizer Nr. 1 leihen Sie sich nur hier — und in Ihrer Kategorie nur ein einziges Mal.</p>
     <div class="hero-cta">
       <a class="btn btn-primary" href="tel:+41795051744">📞 Kurzer Call — <span class="ln">079 505 17 44</span></a>
-      <a class="hero-sec" href="#rechner">Lieber zuerst die Zahlen sehen? →</a>
+      <a class="btn btn-ghost" href="#rechner">📊 Zahlen ansehen</a>
     </div>
+    <p class="lead lead-first">Wenn die Schweizer Nr. 1 beim Essen Ihren Grill zeigt, glaubt der Käufer dem Produkt — nicht einem Werbeclaim.</p>
+    <p class="lead">Wir drehen ein echtes Anwendungs-Video mit Ihrem Sortiment, geben ihm einen festen Platz auf sofein.ch und bewerben ihn Monat für Monat.</p>
+    <p class="lead">Reichweite kann man kaufen. Das Vertrauen der Schweizer Nr. 1 leihen Sie sich nur hier — und in Ihrer Kategorie nur ein einziges Mal.</p>
     <div class="trustrow">
       <b>Schweizer Nr. 1</b>&nbsp;Gewürzmarke <span class="sep"></span>
       <span class="stars">★★★★★</span> <b>4.91</b>&nbsp;/ 100'000+ Bewertungen <span class="sep"></span>
@@ -252,7 +254,7 @@ body.demo .ln{filter:blur(6px);user-select:none}
 
 <!-- PROOF-BAND (13 Videos) -->
 <section class="proofband"><div class="wrap inner">
-  <p><b>Wir drehen diese Videos nicht zum ersten Mal.</b> 13 echte Videos sind bereits produziert — gefilmt von Valentin Stettler, im Stil, dem unsere Community vertraut. Ihr Grill steht in derselben Reihe.</p>
+  <p><b>13 echte Partner-Videos hat Valentin Stettler bereits gedreht</b> — kein Agentur-Stil, kein Stock-Material, im Format, dem die Community vertraut und das sie kauft. Ihr Grill steht als Nächstes in dieser Reihe.</p>
   <div class="vidstrip" id="proofstrip" style="padding-bottom:0"></div>
 </div></section>
 
@@ -281,7 +283,7 @@ body.demo .ln{filter:blur(6px);user-select:none}
       <p>Der Käufer glaubt nicht einem Werbeclaim von null an. Er glaubt dem Urteil einer Marke, der er schon vertraut. Genau das springt an, wenn die Nr. 1 Ihr Produkt zeigt.</p>
     </div>
     <div class="cards">
-      <div class="card fadein"><div class="ic">🤝</div><h3>Geliehenes Vertrauen</h3><p>Menschen vertrauen einer Empfehlung weit mehr als bezahlter Werbung — <b>92 %</b> mehr als Werbung generell (Nielsen). Dasselbe Vertrauensprinzip nutzt Ihr Produkt, wenn die Nr. 1-Marke es zeigt.</p></div>
+      <div class="card fadein"><div class="ic">🤝</div><h3>Wie der Vertrauenstransfer wirkt</h3><p>Das HärdöpfelGwürz® kennen und schätzen Hunderttausende Schweizer Haushalte. Steht Ihr Produkt im Video daneben, überträgt sich dieses Vertrauen — nicht, weil Sie behaupten, gut zu sein, sondern weil der bekannte Anker es glaubwürdig macht. <b>92 %</b> der Menschen vertrauen Empfehlungen mehr als jeder Werbung (Nielsen, Global Trust in Advertising).</p></div>
       <div class="card fadein"><div class="ic">👥</div><h3>Fertige, treue Community</h3><p><b>752'322 Haushalte</b>, 5'215 Läden, 4.91★ aus über 100'000 echten Bewertungen, 2 Mio.+ Social-Reaktionen. Diese Reichweite müssen Sie nicht über Jahre aufbauen — Sie mieten sie sich ab dem ersten Video.</p></div>
       <div class="card fadein"><div class="ic">🔥</div><h3>Video weckt Appetit</h3><p>Ein echtes Anwendungs-Video weckt Begehren — und das zahlt auf die Conversion ein. In fremden Shop-Benchmarks kaufen mit Produktvideo spürbar mehr als ohne (4,8 % statt 2,9 %, fremde Benchmark, nicht unsere Zusage). Ihre echte Zahl rechnen wir im Rechner bewusst tiefer.</p></div>
       <div class="card fadein"><div class="ic">🛡️</div><h3>Empfehlung schlägt Eigenwerbung</h3><p>Ein Dritter, der Sie zeigt, überzeugt stärker als Sie selbst. Genau dieses Vertrauen trägt Ihr Grill, sobald die Nr. 1 es zeigt — nicht ein Werbeclaim aus eigenem Mund.</p></div>
@@ -355,9 +357,10 @@ body.demo .ln{filter:blur(6px);user-select:none}
     </div>
     <div class="anchor" style="margin-top:0;margin-bottom:22px">Zum Vergleich, bevor Sie die Preise sehen: <b>Schweiz Tourismus zahlt CHF 27'500 für ein einziges 30-Sekunden-Sponsorvideo.</b> Allein eine Schweizer Videoproduktion kostet CHF 2'900–7'500 — ohne jede Reichweite. Hier ist Video, Listing <b>und</b> Dauer-Präsenz unter der Nr. 1 schon ab dem Folgenden dabei.</div>
     <div class="prices" id="prices"></div>
+    <div style="text-align:center;font-size:12.5px;color:var(--muted);margin-top:14px">Alle Preise in CHF, zzgl. gesetzlicher MwSt. Geschäftskunden in der EU: Reverse-Charge. Monatlich kündbar, Monatsgebühr erst ab Live-Schaltung. EUR-Äquivalent auf Anfrage.</div>
     <div class="guarantee">
       <div class="shield">🛡️</div>
-      <div><b>Was wir kontrollieren, garantieren wir — und nur das.</b><p>Wir garantieren die Video-Qualität (gedreht von Valentin, glaubwürdig mit dem HärdöpfelGwürz®) und die zugesagte Reichweite: Video live, Listing live, die vereinbarten Promo-Wellen pro Monat, jeden Monat ein ehrlicher Report. Gefällt Ihnen das fertige Video vor Veröffentlichung nicht, drehen wir eine Korrekturrunde — oder Sie zahlen den Setup nicht. Die monatliche Gebühr läuft erst ab dem Tag, an dem Video und Listing live sind — danach jederzeit zum Monatsende kündbar, kein Knebel. Was wir bewusst NICHT versprechen: eine fixe Verkaufszahl. Das wäre unseriös.</p></div>
+      <div><b>Was wir kontrollieren, garantieren wir — und nur das.</b><p>Wir garantieren die Video-Qualität (gedreht von Valentin, glaubwürdig mit dem HärdöpfelGwürz®) und die zugesagte Reichweite: Video live, Listing live, die vereinbarten Promo-Wellen pro Monat, jeden Monat ein ehrlicher Report. Gefällt Ihnen das fertige Video vor Veröffentlichung nicht, drehen wir eine Korrekturrunde — oder Sie zahlen den Setup nicht. Die monatliche Gebühr läuft erst ab dem Tag, an dem Video und Listing live sind — danach jederzeit zum Monatsende kündbar, kein Knebel. Was wir bewusst NICHT versprechen: eine fixe Verkaufszahl. Das wäre unseriös.<span style="display:block;margin-top:10px;font-size:12.5px;color:#6a565b">Garantiegeber: Stedy Gwürz AG, Gaswerkstrasse 13, CH-8570 Weinfelden. Geltendmachung schriftlich vor Freigabe des Videos; Ihre gesetzlichen Rechte bleiben unberührt.</span></p></div>
     </div>
   </div>
 </section>
@@ -397,8 +400,9 @@ body.demo .ln{filter:blur(6px);user-select:none}
     <p class="lead">Unverbindlich. 15 Minuten genügen, um zu prüfen, ob Ihr Grill passt und ob die Grill-Kategorie noch frei ist — vorbereiten müssen Sie nichts.</p>
     <div class="ctabtns">
       <a class="btn btn-primary" href="tel:+41795051744" style="font-size:17px;padding:15px 26px">📞 Kurzer Call: <span class="ln">079 505 17 44</span></a>
+      <a class="btn btn-ghost" href="https://wa.me/41795051744?text=Hallo%20Estefano%2C%20ich%20bin%20von%20Grillf%C3%BCrst%20und%20m%C3%B6chte%20die%20Stedy-Partnerschaft%20kurz%20besprechen." target="_blank" rel="noopener" style="font-size:17px;padding:15px 26px">💬 Direkt auf WhatsApp</a>
     </div>
-    <div style="margin-top:14px;font-size:14px;color:#6a565b">Lieber schreiben? <a href="https://wa.me/41795051744?text=Hallo%20Estefano%2C%20ich%20bin%20von%20Grillf%C3%BCrst%20und%20m%C3%B6chte%20die%20Stedy-Partnerschaft%20kurz%20besprechen." target="_blank" rel="noopener" style="font-weight:700;color:var(--teal-deep)">WhatsApp</a> &nbsp;oder&nbsp; <a href="mailto:estefano@estefano-elhawary.ch?subject=Grillf%C3%BCrst%20%C3%97%20Stedy%20%E2%80%94%20Partner-B%C3%BChne" style="font-weight:700;color:var(--teal-deep)"><span class="ln">E-Mail</span></a></div>
+    <div style="margin-top:14px;font-size:14px;color:#6a565b">Oder per <a href="mailto:estefano@estefano-elhawary.ch?subject=Grillf%C3%BCrst%20%C3%97%20Stedy%20%E2%80%94%20Partner-B%C3%BChne" style="font-weight:700;color:var(--teal-deep)"><span class="ln">E-Mail</span></a></div>
     <div class="ps"><b>PS:</b> Das Teuerste an einer Marke ist nicht die Produktion — es ist das Vertrauen. Das haben wir in fast 50 Jahren aufgebaut: 752'322 Haushalte, 4.91★ aus über 100'000 Bewertungen. Ihr Grill darf sich das ab dem ersten Video ausleihen. Den Grill-Platz vergeben wir pro Kategorie nur einmal — solange er frei ist, gehört er Ihnen. Sprechen Sie mit uns, bevor es ein Wettbewerber tut.</div>
   </div>
 </section>
@@ -516,7 +520,7 @@ setTimeout(function(){document.querySelectorAll('.fadein:not(.in)').forEach(func
 </script>
 <div class="mobilebar">
   <a class="call" href="tel:+41795051744">📞 Anrufen <span class="ln">079 505 17 44</span></a>
-  <a class="wa" href="https://wa.me/41795051744" target="_blank" rel="noopener">WhatsApp</a>
+  <a class="wa" href="https://wa.me/41795051744?text=Hallo%20Estefano%2C%20ich%20bin%20von%20Grillf%C3%BCrst%20und%20m%C3%B6chte%20die%20Stedy-Partnerschaft%20kurz%20besprechen." target="_blank" rel="noopener">WhatsApp</a>
 </div>
 </body>
 </html>
