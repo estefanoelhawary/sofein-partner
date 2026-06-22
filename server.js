@@ -22,15 +22,23 @@ http.createServer((req, res) => {
     if (urlPath === '/') urlPath = '/index.html';
     const filePath = path.join(ROOT, path.normalize(urlPath).replace(/^(\.\.[/\\])+/, ''));
     if (!filePath.startsWith(ROOT)) { res.writeHead(403); return res.end('forbidden'); }
-    fs.readFile(filePath, (err, data) => {
-      if (err) { res.writeHead(404, { 'Content-Type': 'text/plain' }); return res.end('404'); }
-      const ext = path.extname(filePath).toLowerCase();
+    const send = (fp, data) => {
+      const ext = path.extname(fp).toLowerCase();
       const type = TYPES[ext] || 'application/octet-stream';
       const headers = { 'Content-Type': type };
       if (ext === '.html') headers['Cache-Control'] = 'no-cache'; // AR-1
       else if (/\.(png|jpe?g|webp|svg|avif|woff2|css|js)$/.test(ext)) headers['Cache-Control'] = 'public, max-age=3600';
       res.writeHead(200, headers);
       res.end(data);
+    };
+    const read = (fp, allowHtmlFallback) => fs.readFile(fp, (err, data) => {
+      if (err) {
+        // saubere URLs ohne .html (z.B. /azado -> azado.html)
+        if (allowHtmlFallback && !path.extname(fp)) return read(fp + '.html', false);
+        res.writeHead(404, { 'Content-Type': 'text/plain' }); return res.end('404');
+      }
+      send(fp, data);
     });
+    read(filePath, true);
   } catch (e) { res.writeHead(500); res.end('err'); }
 }).listen(PORT, () => console.log('Sofein-Leadportal on http://localhost:' + PORT));

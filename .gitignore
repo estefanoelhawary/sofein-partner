@@ -5,3 +5,8 @@ assets/ai/*.png
 /tmp/
 *.log
 _beirat/
+_partner-discovery/
+HANDOVER_*.md
+.DS_Store
+assets/partner/
+index-legacy.html

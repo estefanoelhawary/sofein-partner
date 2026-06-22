@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="de-CH">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>azado × Stedy — Ihr Grill vor der Community der Schweizer Nr. 1</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Persönlicher Vorschlag für azado: Ihr Grill-Sortiment im Video mit dem HärdöpfelGwürz®, gelistet und beworben über die Schweizer Nr. 1.">
+<link rel="icon" href="/favicon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --magenta:#c8145e; --magenta-deep:#a50f4e; --teal:#0f8473; --teal-deep:#0b6357;
+  --ink:#27191c; --muted:#7c6a6e; --paper:#fffdfb; --cream:#fbf2ec; --cream2:#f6e9e1;
+  --line:#efe0d8; --gold:#e6a02e; --white:#ffffff;
+  --shadow:0 1px 2px rgba(39,25,28,.04),0 12px 34px -12px rgba(165,15,78,.18);
+  --shadow-lg:0 30px 70px -28px rgba(165,15,78,.35);
+  --r:18px; --rs:12px; --maxw:1080px;
+  --sans:'Inter',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+  --serif:'Fraunces',Georgia,'Times New Roman',serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.08;letter-spacing:-.01em;margin:0}
+p{margin:0 0 .9em}
+a{color:inherit}
+img{max-width:100%;display:block}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+.eyebrow{font-family:var(--sans);font-weight:700;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--magenta)}
+.muted{color:var(--muted)}
+section{padding:74px 0}
+@media(max-width:640px){section{padding:52px 0}body{font-size:16px}}
+
+.topbar{position:sticky;top:0;z-index:50;background:rgba(255,253,251,.86);backdrop-filter:saturate(160%) blur(12px);border-bottom:1px solid var(--line)}
+.topbar .row{display:flex;align-items:center;gap:14px;height:58px}
+.brandmark{display:flex;align-items:center;gap:9px;font-weight:700;font-family:var(--serif);font-size:19px;letter-spacing:-.01em;white-space:nowrap}
+.brandmark .wm{letter-spacing:-.02em}
+@media(max-width:560px){.brandmark .bm-sub{display:none}}
+.dot{width:11px;height:11px;border-radius:50%;background:var(--magenta);box-shadow:0 0 0 4px rgba(200,20,94,.14);flex:none}
+.topbar .spacer{flex:1}
+.confchip{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:5px 11px;white-space:nowrap}
+@media(max-width:760px){.confchip{display:none}}
+.demo-toggle{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--muted);cursor:pointer;user-select:none}
+.demo-toggle input{accent-color:var(--magenta)}
+.btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--sans);font-weight:700;font-size:15px;border-radius:999px;padding:12px 20px;text-decoration:none;border:0;cursor:pointer;white-space:nowrap;transition:transform .15s ease,box-shadow .15s ease,background .15s}
+.btn-primary{background:var(--magenta);color:#fff;box-shadow:0 10px 24px -8px rgba(200,20,94,.6)}
+.btn-primary:hover{background:var(--magenta-deep);transform:translateY(-1px)}
+.btn-ghost{background:transparent;color:var(--ink);border:1.5px solid var(--line)}
+.btn-ghost:hover{border-color:var(--magenta);color:var(--magenta)}
+.btn-sm{padding:9px 16px;font-size:14px}
+@media(max-width:520px){.topbar .btn .full{display:none}}
+
+.hero{position:relative;padding:48px 0 64px;background:
+   radial-gradient(120% 90% at 85% -10%,rgba(200,20,94,.10),transparent 55%),
+   radial-gradient(90% 80% at -10% 10%,rgba(15,132,115,.08),transparent 50%);}
+.hero .eyebrow{margin-bottom:16px}
+.hero h1{font-size:clamp(34px,6.6vw,60px);font-weight:700}
+.hero h1 .accent{color:var(--magenta)}
+.hero .lead{font-size:clamp(17px,2.2vw,20px);max-width:40ch;margin:18px 0 26px;color:#4a3a3d}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.heroimg{position:relative;margin-top:30px;border-radius:24px;overflow:hidden;box-shadow:var(--shadow-lg);aspect-ratio:16/10}
+.heroimg img{width:100%;height:100%;object-fit:cover}
+.heroimg .imgtag{position:absolute;left:16px;bottom:16px;background:rgba(255,253,251,.92);backdrop-filter:blur(6px);border-radius:999px;padding:8px 14px;font-size:12.5px;font-weight:600;display:flex;gap:8px;align-items:center}
+.heroimg .imgtag .ai{color:var(--magenta);font-weight:700}
+.trustrow{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:26px;align-items:center;font-size:14px;font-weight:600;color:#5a484b}
+.trustrow b{color:var(--ink)}
+.stars{color:var(--gold);letter-spacing:1px}
+.sep{width:5px;height:5px;border-radius:50%;background:var(--line)}
+@media(max-width:880px){.heroimg{aspect-ratio:4/3}}
+
+.shead{max-width:680px;margin-bottom:34px}
+.shead h2{font-size:clamp(27px,4.2vw,40px);margin:12px 0 12px}
+.shead p{font-size:18px;color:#52424a}
+.center{margin-left:auto;margin-right:auto;text-align:center}
+.band-cream{background:linear-gradient(180deg,var(--cream),#fff)}
+
+.statgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:26px}
+.stat{background:#fff;border:1px solid var(--line);border-radius:var(--rs);padding:18px 16px;text-align:center;box-shadow:var(--shadow)}
+.stat .n{font-family:var(--serif);font-weight:700;font-size:clamp(22px,3.6vw,32px);color:var(--magenta);line-height:1}
+.stat .l{font-size:12.5px;color:var(--muted);margin-top:7px;font-weight:600;letter-spacing:.02em}
+@media(max-width:680px){.statgrid{grid-template-columns:repeat(2,1fr)}}
+
+.vidstrip{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(140px,1fr);gap:14px;overflow-x:auto;padding:6px 2px 18px;-webkit-overflow-scrolling:touch}
+.vidstrip::-webkit-scrollbar{height:8px}.vidstrip::-webkit-scrollbar-thumb{background:var(--cream2);border-radius:8px}
+.vidcard{position:relative;border-radius:14px;overflow:hidden;aspect-ratio:9/14;box-shadow:var(--shadow);background:var(--cream2)}
+.vidcard img{width:100%;height:100%;object-fit:cover}
+.vidcard .play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
+.vidcard .play span{width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.9);display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(0,0,0,.25)}
+.vidcard .play span::after{content:"";border-left:13px solid var(--magenta);border-top:8px solid transparent;border-bottom:8px solid transparent;margin-left:3px}
+
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:8px}
+.duo figure{margin:0;border-radius:var(--r);overflow:hidden;position:relative;box-shadow:var(--shadow);aspect-ratio:4/3}
+.duo img{width:100%;height:100%;object-fit:cover}
+.duo .cap{position:absolute;left:12px;bottom:12px;background:rgba(255,253,251,.92);border-radius:999px;padding:6px 12px;font-size:12px;font-weight:600}
+@media(max-width:680px){.duo{grid-template-columns:1fr}}
+
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media(max-width:880px){.cards{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.cards{grid-template-columns:1fr}}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:22px;box-shadow:var(--shadow)}
+.card .ic{width:40px;height:40px;border-radius:11px;background:linear-gradient(135deg,rgba(200,20,94,.14),rgba(15,132,115,.14));display:flex;align-items:center;justify-content:center;font-size:20px;margin-bottom:14px}
+.card h3{font-size:19px;margin-bottom:7px}
+.card p{font-size:14.5px;color:#56454a;margin:0}
+
+.deliver{display:grid;grid-template-columns:repeat(2,1fr);gap:12px 26px;margin-top:8px}
+.deliver .d{display:flex;gap:13px;padding:14px 0;border-bottom:1px solid var(--line);align-items:flex-start}
+.deliver .d .ck{flex:none;width:24px;height:24px;border-radius:50%;background:rgba(15,132,115,.12);color:var(--teal);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:13px;margin-top:2px}
+.deliver .d span{font-size:14.5px;color:#52424a}
+@media(max-width:700px){.deliver{grid-template-columns:1fr}}
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:30px}
+.step{background:#fff;border:1px solid var(--line);border-radius:var(--rs);padding:16px;box-shadow:var(--shadow)}
+.step .num{font-family:var(--serif);font-weight:700;color:var(--magenta);font-size:15px;background:rgba(200,20,94,.1);width:30px;height:30px;border-radius:8px;display:flex;align-items:center;justify-content:center;margin-bottom:11px}
+.step b{display:block;margin-bottom:4px;font-size:14.5px}
+.step p{font-size:13px;color:#56454a;margin:0}
+@media(max-width:860px){.steps{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:480px){.steps{grid-template-columns:1fr}}
+
+.band-dark{background:radial-gradient(120% 120% at 80% 0%,#3a1722,#27141a 60%,#1f1015);color:#fff}
+.band-dark .shead p{color:#cdb6bd}
+.calc{display:grid;grid-template-columns:1.05fr 1fr;gap:26px;align-items:stretch;margin-top:8px}
+.calc .panel{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:var(--r);padding:24px}
+.field{margin-bottom:18px}
+.field .lab{display:flex;justify-content:space-between;align-items:baseline;font-size:13.5px;font-weight:600;color:#e9d8de;margin-bottom:8px}
+.field .val{font-family:var(--serif);font-weight:700;color:#fff;font-size:16px}
+.field .val small{font-weight:500;color:#c8b0b7;font-size:12px}
+input[type=range]{-webkit-appearance:none;width:100%;height:6px;border-radius:6px;background:rgba(255,255,255,.18);outline:none}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:22px;height:22px;border-radius:50%;background:var(--magenta);border:3px solid #fff;cursor:pointer;box-shadow:0 3px 10px rgba(0,0,0,.4)}
+input[type=range]::-moz-range-thumb{width:18px;height:18px;border-radius:50%;background:var(--magenta);border:3px solid #fff;cursor:pointer}
+.result{display:flex;flex-direction:column;justify-content:center;background:linear-gradient(165deg,var(--magenta),var(--magenta-deep));border-radius:var(--r);padding:30px 26px;box-shadow:var(--shadow-lg)}
+.result .rl{font-size:13px;text-transform:uppercase;letter-spacing:.12em;font-weight:700;color:rgba(255,255,255,.85)}
+.result .big{font-family:var(--serif);font-weight:700;font-size:clamp(34px,7vw,52px);line-height:1;margin:8px 0 2px}
+.result .yr{font-size:17px;font-weight:600;color:#ffe3ee}
+.result .brk{display:flex;gap:10px;margin-top:20px;flex-wrap:wrap}
+.result .pill{background:rgba(255,255,255,.16);border-radius:11px;padding:10px 13px;font-size:12.5px;font-weight:600;flex:1;min-width:130px}
+.result .pill b{display:block;font-family:var(--serif);font-size:18px;margin-top:3px}
+.result .wk{margin-top:16px;font-size:13px;color:#ffd9e7;border-top:1px solid rgba(255,255,255,.2);padding-top:14px}
+.reach-note{margin-top:18px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:12px;padding:14px 16px;font-size:13px;color:#e3cdd4}
+.reach-note b{color:#fff}
+.assump{margin-top:16px}
+.assump summary{cursor:pointer;font-size:13.5px;font-weight:600;color:#e9d8de;list-style:none}
+.assump summary::-webkit-details-marker{display:none}
+.assump summary::before{content:"＋ ";color:#ff9ec3}
+.assump[open] summary::before{content:"− "}
+.assump ul{margin:12px 0 0;padding-left:18px}
+.assump li{font-size:12.5px;color:#c3aab1;margin-bottom:8px;line-height:1.5}
+@media(max-width:820px){.calc{grid-template-columns:1fr}}
+
+.prices{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:10px;align-items:stretch}
+.price{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:24px;display:flex;flex-direction:column;box-shadow:var(--shadow);position:relative}
+.price.best{border:2px solid var(--magenta);box-shadow:var(--shadow-lg);transform:translateY(-6px)}
+.price .tag{position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--magenta);color:#fff;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:5px 13px;border-radius:999px;white-space:nowrap}
+.price .nm{font-family:var(--serif);font-weight:700;font-size:21px;margin-bottom:8px}
+.price .amt{font-family:var(--serif);font-weight:700;font-size:32px;color:var(--magenta);line-height:1}
+.price .amt small{font-family:var(--sans);font-size:14px;color:var(--muted);font-weight:600}
+.price .setup{font-size:13px;color:#52424a;margin:6px 0 14px;font-weight:600}
+.price .setup b{color:var(--ink)}
+.price .best-for{font-size:13.5px;color:#52424a;border-top:1px solid var(--line);padding-top:13px;margin-top:6px}
+.price .desc{font-size:13.5px;color:#56454a;flex:1}
+@media(max-width:820px){.prices{grid-template-columns:1fr}.price.best{transform:none}}
+.anchor{margin-top:22px;text-align:center;font-size:15px;color:#52424a}
+.anchor b{color:var(--ink)}
+.guarantee{margin-top:22px;background:linear-gradient(160deg,#fff,#f0f8f5);border:1px solid rgba(15,132,115,.25);border-radius:var(--r);padding:24px;display:flex;gap:16px;align-items:flex-start}
+.guarantee .shield{flex:none;font-size:26px}
+.guarantee b{color:var(--teal-deep)}
+.guarantee p{font-size:14.5px;color:#3f3034;margin:0}
+
+.faq{max-width:780px;margin:0 auto}
+.qa{background:#fff;border:1px solid var(--line);border-radius:var(--rs);margin-bottom:11px;overflow:hidden}
+.qa summary{cursor:pointer;list-style:none;padding:18px 20px;font-weight:700;font-size:16px;display:flex;justify-content:space-between;gap:14px;align-items:center}
+.qa summary::-webkit-details-marker{display:none}
+.qa summary::after{content:"+";color:var(--magenta);font-size:22px;font-weight:400;flex:none}
+.qa[open] summary::after{content:"–"}
+.qa .a{padding:0 20px 18px;font-size:15px;color:#52424a}
+
+.finalcta{background:radial-gradient(120% 120% at 20% 0%,#fdeef4,#fff);text-align:center}
+.finalcta h2{font-size:clamp(28px,4.6vw,44px);max-width:20ch;margin:0 auto 14px}
+.finalcta .lead{font-size:18px;color:#52424a;max-width:48ch;margin:0 auto 26px}
+.ctabtns{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.ps{max-width:620px;margin:30px auto 0;font-size:15px;color:#52424a;background:#fff;border:1px solid var(--line);border-radius:var(--rs);padding:18px 22px;text-align:left}
+footer{background:var(--ink);color:#c8b4ba;padding:34px 0;font-size:13px}
+footer .row{display:flex;flex-wrap:wrap;gap:8px 18px;justify-content:space-between;align-items:center}
+footer b{color:#fff;font-family:var(--serif)}
+
+body.demo .ln{filter:blur(6px);user-select:none}
+.fadein{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
+.fadein.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.fadein{opacity:1;transform:none;transition:none}}
+
+.hero-sub{font-family:var(--serif);font-size:clamp(16px,2vw,20px);color:var(--magenta);font-weight:600;margin:10px 0 0}
+.hero-sec{font-weight:700;font-size:15px;color:var(--ink);text-decoration:underline;text-underline-offset:3px}
+.hero-sec:hover{color:var(--magenta)}
+.proofband{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.proofband .inner{display:grid;grid-template-columns:1.1fr 1fr;gap:24px;align-items:center;padding:24px 0}
+.proofband p{margin:0;font-size:15.5px;color:#43343a}
+.proofband b{color:var(--ink)}
+.proofband .vidstrip{grid-auto-columns:minmax(96px,1fr)}
+.proofband .vidcard{aspect-ratio:9/13}
+@media(max-width:760px){.proofband .inner{grid-template-columns:1fr;gap:14px}}
+.pricecta{display:block;margin-top:16px;text-align:center;font-weight:700;font-size:13.5px;color:var(--magenta);border:1.5px solid var(--line);border-radius:999px;padding:10px 14px;text-decoration:none;transition:.15s}
+.pricecta:hover{border-color:var(--magenta);background:rgba(200,20,94,.05)}
+.price.best .pricecta{background:var(--magenta);color:#fff;border-color:var(--magenta)}
+.price.best .pricecta:hover{background:var(--magenta-deep)}
+.mobilebar{display:none}
+@media(max-width:640px){
+  body{padding-bottom:78px}
+  .mobilebar{display:flex;gap:10px;position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(255,253,251,.96);backdrop-filter:blur(10px);border-top:1px solid var(--line)}
+  .mobilebar a{display:flex;align-items:center;justify-content:center;height:52px;border-radius:14px;font-weight:800;font-size:15px;text-decoration:none}
+  .mobilebar .call{flex:1;background:var(--magenta);color:#fff;gap:8px}
+  .mobilebar .wa{width:64px;background:rgba(15,132,115,.12);color:var(--teal-deep);font-size:13px}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap row">
+    <div class="brandmark"><span class="dot"></span><span class="wm">Stedy<span class="bm-sub"> Partner-Bühne</span></span></div>
+    <span class="confchip">Persönlich für azado · vertraulich</span>
+    <div class="spacer"></div>
+    <label class="demo-toggle" title="Kontaktdaten für Aufnahmen unkenntlich machen"><input type="checkbox" id="demo"> Demo</label>
+    <a class="btn btn-primary btn-sm" href="tel:+41795051744">📞 <span class="ln">079 505 17 44</span></a>
+  </div>
+</div>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Stedy Partner-Programm · persönlich für azado</div>
+    <h1>Ihr Grill, getragen vom Vertrauen der <span class="accent">Schweizer Nr. 1</span> — vor 752'322 Haushalten.</h1>
+    <div class="hero-sub">Den Grill-Platz vergeben wir pro Kategorie nur einmal.</div>
+    <p class="lead">Wenn die Schweizer Nr. 1 beim Essen Ihren Grill zeigt, glaubt der Käufer dem Produkt — nicht einem Werbeclaim.</p>
+    <p class="lead">Wir drehen ein echtes Anwendungs-Video mit Ihrem Sortiment, geben ihm einen festen Platz auf sofein.ch und bewerben ihn Monat für Monat.</p>
+    <p class="lead">Reichweite kann man kaufen. Das Vertrauen der Schweizer Nr. 1 leihen Sie sich nur hier — und in Ihrer Kategorie nur ein einziges Mal.</p>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="tel:+41795051744">📞 Kurzer Call — <span class="ln">079 505 17 44</span></a>
+      <a class="hero-sec" href="#rechner">Lieber zuerst die Zahlen sehen? →</a>
+    </div>
+    <div class="trustrow">
+      <b>Schweizer Nr. 1</b>&nbsp;Gewürzmarke <span class="sep"></span>
+      <span class="stars">★★★★★</span> <b>4.91</b>&nbsp;/ 100'000+ Bewertungen <span class="sep"></span>
+      <b>5'215</b>&nbsp;Läden
+    </div>
+    <figure class="heroimg">
+      <img src="/assets/ai/feuerplatte-b-web.jpg" alt="azado mit dem Stedy HärdöpfelGwürz®" fetchpriority="high">
+      <figcaption class="imgtag"><span class="ai">●</span> So käme azado rüber — an der Feuerplatte mit dem HärdöpfelGwürz®, realistisch visualisiert</figcaption>
+    </figure>
+  </div>
+</header>
+
+<!-- PROOF-BAND (13 Videos) -->
+<section class="proofband"><div class="wrap inner">
+  <p><b>Wir drehen diese Videos nicht zum ersten Mal.</b> 13 echte Videos sind bereits produziert — gefilmt von Valentin Stettler, im Stil, dem unsere Community vertraut. Ihr Grill steht in derselben Reihe.</p>
+  <div class="vidstrip" id="proofstrip" style="padding-bottom:0"></div>
+</div></section>
+
+<!-- WAS IHR BEKOMMT -->
+<section class="band-cream" id="bekommen">
+  <div class="wrap">
+    <div class="shead">
+      <div class="eyebrow">Was Sie bekommen</div>
+      <h2>Video, Listing und laufender Traffic — drei Dinge, die zusammen wirken.</h2>
+      <p>Kein einmaliger Werbeflash, sondern dauerhafte Präsenz vor einem Publikum, das uns vertraut. Sie liefern das Produkt, wir machen den Rest.</p>
+    </div>
+    <div class="duo fadein">
+      <figure><img loading="lazy" src="/assets/ai/grill-b-web.jpg" alt="azado — Produkt"><figcaption class="cap">Ihr Grill, Ihr Grillgut</figcaption></figure>
+      <figure><img loading="lazy" src="/assets/ai/grill-a-web.jpg" alt="mit dem HärdöpfelGwürz®"><figcaption class="cap">Auf jedem Grill: das HärdöpfelGwürz®</figcaption></figure>
+    </div>
+    <div class="deliver" id="deliver" style="margin-top:26px"></div>
+  </div>
+</section>
+
+<!-- WARUM STEDY VERKAUFT -->
+<section id="warum">
+  <div class="wrap">
+    <div class="shead">
+      <div class="eyebrow">Warum Stedys Empfehlung verkauft</div>
+      <h2>Das Teuerste an einer Marke ist Vertrauen. Wir haben es — Sie leihen es sich.</h2>
+      <p>Der Käufer glaubt nicht einem Werbeclaim von null an. Er glaubt dem Urteil einer Marke, der er schon vertraut. Genau das springt an, wenn die Nr. 1 Ihr Produkt zeigt.</p>
+    </div>
+    <div class="cards">
+      <div class="card fadein"><div class="ic">🤝</div><h3>Geliehenes Vertrauen</h3><p>Menschen vertrauen einer Empfehlung weit mehr als bezahlter Werbung — <b>92 %</b> mehr als Werbung generell (Nielsen). Dasselbe Vertrauensprinzip nutzt Ihr Produkt, wenn die Nr. 1-Marke es zeigt.</p></div>
+      <div class="card fadein"><div class="ic">👥</div><h3>Fertige, treue Community</h3><p><b>752'322 Haushalte</b>, 5'215 Läden, 4.91★ aus über 100'000 echten Bewertungen, 2 Mio.+ Social-Reaktionen. Diese Reichweite müssen Sie nicht über Jahre aufbauen — Sie mieten sie sich ab dem ersten Video.</p></div>
+      <div class="card fadein"><div class="ic">🔥</div><h3>Video weckt Appetit</h3><p>Ein echtes Anwendungs-Video weckt Begehren — und das zahlt auf die Conversion ein. In fremden Shop-Benchmarks kaufen mit Produktvideo spürbar mehr als ohne (4,8 % statt 2,9 %, fremde Benchmark, nicht unsere Zusage). Ihre echte Zahl rechnen wir im Rechner bewusst tiefer.</p></div>
+      <div class="card fadein"><div class="ic">🛡️</div><h3>Empfehlung schlägt Eigenwerbung</h3><p>Ein Dritter, der Sie zeigt, überzeugt stärker als Sie selbst. Genau dieses Vertrauen trägt Ihr Grill, sobald die Nr. 1 es zeigt — nicht ein Werbeclaim aus eigenem Mund.</p></div>
+      <div class="card fadein"><div class="ic">⚙️</div><h3>Done-for-you</h3><p>Produktion, Listing, Promotion — alles aus einer Hand. Sie müssen kein Team stellen und keinen Drehtag organisieren. Sie sagen Ja, wir setzen um.</p></div>
+      <div class="card fadein"><div class="ic">🎟️</div><h3>Nur einer pro Kategorie</h3><p>Den Grill-Platz gibt es bei Stedy nur einmal. Solange Sie Partner sind, steht kein Wettbewerber neben Ihnen — aber auch Sie stehen nirgends, wenn jemand anderes zuerst da ist. <b>Die Grill-Kategorie ist aktuell frei.</b></p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ROI -->
+<section class="band-dark" id="rechner">
+  <div class="wrap">
+    <div class="shead">
+      <div class="eyebrow" style="color:#ff7eb0">Was das bringen kann</div>
+      <h2>Schieben Sie an Ihren eigenen Zahlen.</h2>
+      <p>Konservativ gerechnet auf Branchen-Benchmarks. Die Voreinstellungen sind <b style="color:#fff">Beispiel-Werte</b> — mit Ihren echten Zahlen (Preis, Marge) wird es exakt.</p>
+    </div>
+    <div class="calc">
+      <div class="panel">
+        <div style="display:inline-flex;align-items:center;gap:7px;font-size:11.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#ff9ec3;border:1px solid rgba(255,158,195,.4);border-radius:999px;padding:5px 11px;margin-bottom:16px">● Beispiel-Werte · frei einstellbar</div>
+        <div id="inputs"></div>
+      </div>
+      <div class="result">
+        <div class="rl">Möglicher Zusatz-Umsatz über Stedy</div>
+        <div class="big" id="r-month">–</div>
+        <div class="yr" id="r-year">–</div>
+        <div class="brk">
+          <div class="pill">Ihr Ertrag (Marge)<b id="r-profit">–</b></div>
+          <div class="pill">Käufe / Monat<b id="r-buys">–</b></div>
+        </div>
+        <div class="wk" id="r-wk">–</div>
+        <div style="margin-top:12px;font-size:12px;color:#ffd9e7;line-height:1.45">Bewusst vorsichtig gerechnet — eine Grössenordnung über alle Stedy-Kanäle zusammen, kein garantierter Wert für einen einzelnen Kanal.</div>
+        <a href="tel:+41795051744" style="display:inline-block;margin-top:12px;font-size:13px;font-weight:800;color:#fff;text-decoration:underline;text-underline-offset:3px">Mit Ihren echten Zahlen durchrechnen → kurzer Call: <span class="ln">079 505 17 44</span></a>
+      </div>
+    </div>
+    <div class="reach-note">
+      <b>Ehrlich zur Reichweite:</b> Die 752'322 Haushalte sind unsere Gesamt-Markenreichweite über bald 50 Jahre. Pro Promo-Welle aktivieren wir realistisch einen <b>Bruchteil</b> davon — darum rechnet der Regler bewusst konservativ mit ~80'000/Monat. Und: Der <b>Markenwert</b> (Vertrauen, Bekanntheit, Tür-Öffner) kommt obendrauf und ist hier <b>nicht</b> eingerechnet. Ziehen Sie die Werte ruhig nach unten — die Rechnung soll halten.
+    </div>
+    <details class="assump">
+      <summary>Alle Annahmen offen gelegt</summary>
+      <ul id="assump-list"></ul>
+    </details>
+  </div>
+</section>
+
+<!-- SO LÄUFT ES -->
+<section>
+  <div class="wrap">
+    <div class="shead">
+      <div class="eyebrow">So läuft die Zusammenarbeit</div>
+      <h2>Klar, schnell, ohne Aufwand auf Ihrer Seite.</h2>
+      <p>Sie sehen das Video vor der Veröffentlichung und geben es frei. Vom ersten Call bis live sind es wenige, klare Schritte.</p>
+    </div>
+    <div class="steps">
+      <div class="step"><div class="num">1</div><b>Erstgespräch</b><p>Wir prüfen, ob Ihr Produkt zur Community passt. Ein kurzer Call genügt.</p></div>
+      <div class="step"><div class="num">2</div><b>Grill senden</b><p>Sie schicken uns einen Grill oder Ihr Grill-Zubehör — wir inszenieren ihn echt an der Feuerplatte.</p></div>
+      <div class="step"><div class="num">3</div><b>Valentin dreht</b><p>Das Video entsteht mit dem HärdöpfelGwürz®. Sie geben es vor der Veröffentlichung frei.</p></div>
+      <div class="step"><div class="num">4</div><b>Listing & Start</b><p>Wir listen Ihr Produkt auf sofein.ch und starten die Promotion.</p></div>
+      <div class="step"><div class="num">5</div><b>Laufend Traffic</b><p>Monatlich weiter Sichtbarkeit. Kündbar, kein Knebelvertrag.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PREISE -->
+<section class="band-cream" id="pakete">
+  <div class="wrap">
+    <div class="shead center">
+      <div class="eyebrow">Partner-Pakete</div>
+      <h2>Transparent. Einmaliger Setup fürs Video, dann laufende Promotion.</h2>
+      <p>Werbe-/Produktionsaufwand transparent. Die monatliche Gebühr startet erst, wenn Video und Listing live sind. Monatlich kündbar.</p>
+    </div>
+    <div class="anchor" style="margin-top:0;margin-bottom:22px">Zum Vergleich, bevor Sie die Preise sehen: <b>Schweiz Tourismus zahlt CHF 27'500 für ein einziges 30-Sekunden-Sponsorvideo.</b> Allein eine Schweizer Videoproduktion kostet CHF 2'900–7'500 — ohne jede Reichweite. Hier ist Video, Listing <b>und</b> Dauer-Präsenz unter der Nr. 1 schon ab dem Folgenden dabei.</div>
+    <div class="prices" id="prices"></div>
+    <div class="guarantee">
+      <div class="shield">🛡️</div>
+      <div><b>Was wir kontrollieren, garantieren wir — und nur das.</b><p>Wir garantieren die Video-Qualität (gedreht von Valentin, glaubwürdig mit dem HärdöpfelGwürz®) und die zugesagte Reichweite: Video live, Listing live, die vereinbarten Promo-Wellen pro Monat, jeden Monat ein ehrlicher Report. Gefällt Ihnen das fertige Video vor Veröffentlichung nicht, drehen wir eine Korrekturrunde — oder Sie zahlen den Setup nicht. Die monatliche Gebühr läuft erst ab dem Tag, an dem Video und Listing live sind — danach jederzeit zum Monatsende kündbar, kein Knebel. Was wir bewusst NICHT versprechen: eine fixe Verkaufszahl. Das wäre unseriös.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FÜR WELCHE PRODUKTE + WARUM JETZT -->
+<section id="passt">
+  <div class="wrap">
+    <div class="shead">
+      <div class="eyebrow">Für welche Produkte das passt</div>
+      <h2>Alles, was sich glaubwürdig mit gutem Essen und unserem Hauptgewürz verbindet.</h2>
+      <p>Wir nehmen bewusst nur ausgewählte Produkte auf, die wir guten Gewissens zeigen. Genau diese Selektivität schützt Ihren Auftritt — und das Vertrauen der Community.</p>
+    </div>
+    <div class="deliver" id="passt-list"></div>
+    <div class="guarantee" style="background:linear-gradient(160deg,#fff,#fdeef4);border-color:rgba(200,20,94,.22);margin-top:24px">
+      <div class="shield">⏳</div>
+      <div><b>Warum jetzt — pro Kategorie nur ein Partner.</b><p>Wir nehmen pro Kategorie nur EINEN Partner auf, und die Grill-Kategorie ist aktuell frei. Jedes Video braucht echte Dreh-Zeit — darum halten wir die Zahl bewusst klein, keine künstliche Verknappung. Sobald ein Wettbewerber Ihre Kategorie nimmt, ist sie für Sie zu. Wer zuerst da ist, hat den Vertrauensvorsprung der Nr. 1 allein.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- EINWÄNDE -->
+<section class="band-cream" id="einwaende">
+  <div class="wrap">
+    <div class="shead center">
+      <div class="eyebrow">Ihre offenen Fragen</div>
+      <h2>Ehrlich beantwortet, auch das Unbequeme.</h2>
+    </div>
+    <div class="faq" id="faq"></div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="finalcta" id="kontakt">
+  <div class="wrap">
+    <div class="eyebrow">Sichern Sie sich einen Partner-Platz</div>
+    <h2>Bringen wir azado auf die Bühne der Schweizer Nr. 1?</h2>
+    <p class="lead">Unverbindlich. 15 Minuten genügen, um zu prüfen, ob Ihr Grill passt und ob die Grill-Kategorie noch frei ist — vorbereiten müssen Sie nichts.</p>
+    <div class="ctabtns">
+      <a class="btn btn-primary" href="tel:+41795051744" style="font-size:17px;padding:15px 26px">📞 Kurzer Call: <span class="ln">079 505 17 44</span></a>
+    </div>
+    <div style="margin-top:14px;font-size:14px;color:#6a565b">Lieber schreiben? <a href="https://wa.me/41795051744?text=Hallo%20Estefano%2C%20ich%20bin%20von%20azado%20und%20m%C3%B6chte%20die%20Stedy-Partnerschaft%20kurz%20besprechen." target="_blank" rel="noopener" style="font-weight:700;color:var(--teal-deep)">WhatsApp</a> &nbsp;oder&nbsp; <a href="mailto:estefano@estefano-elhawary.ch?subject=azado%20%C3%97%20Stedy%20%E2%80%94%20Partner-B%C3%BChne" style="font-weight:700;color:var(--teal-deep)"><span class="ln">E-Mail</span></a></div>
+    <div class="ps"><b>PS:</b> Das Teuerste an einer Marke ist nicht die Produktion — es ist das Vertrauen. Das haben wir in fast 50 Jahren aufgebaut: 752'322 Haushalte, 4.91★ aus über 100'000 Bewertungen. Ihr Grill darf sich das ab dem ersten Video ausleihen. Den Grill-Platz vergeben wir pro Kategorie nur einmal — solange er frei ist, gehört er Ihnen. Sprechen Sie mit uns, bevor es ein Wettbewerber tut.</div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap row">
+    <div><b>Stedy Gwürz AG</b> · Partner-Bühne für azado · sofein.ch &nbsp;·&nbsp; Marketing: Estefano Elhawary AG</div>
+    <div><span class="ln">079 505 17 44 · estefano@estefano-elhawary.ch</span></div>
+  </div>
+</footer>
+
+<script>
+var CHF=function(n){return "CHF "+Math.round(n).toLocaleString('de-CH').replace(/’|,|\./g,"'");};
+var fmt=function(n){return Math.round(n).toLocaleString('de-CH').replace(/’|,|\./g,"'");};
+
+var ROI_INPUTS=[
+  {key:'reach',label:'Erreichte Stedy-Reichweite / Monat',def:80000,min:5000,max:500000,step:5000,unit:''},
+  {key:'click',label:'Klickrate auf Ihr Produkt',def:2,min:0.5,max:10,step:0.1,unit:'%'},
+  {key:'conv',label:'Conversion-Rate im Shop',def:2.3,min:1,max:8,step:0.1,unit:'%'},
+  {key:'price',label:'Verkaufspreis Ihres Produkts',def:290,min:5,max:2000,step:1,unit:'CHF'},
+  {key:'margin',label:'Ihre Bruttomarge',def:40,min:15,max:80,step:1,unit:'%'},
+  {key:'repeat',label:'Wiederkäufe pro Jahr (1 = nur Erstkauf)',def:1,min:1,max:4,step:0.5,unit:'×'}
+];
+var ASSUMPTIONS=[
+  "Beispiel-Werte, keine Garantie: Alle Voreinstellungen sind bewusst konservativ und mit Ihren echten Zahlen exakt nachrechenbar. Der Rechner zeigt eine Grössenordnung.",
+  "Erreichte Reichweite (Default 80'000/Mt.): Mischwert aus Video-Views, Newsletter-Öffnungen und Shop-Sichtbarkeit — ein Bruchteil der Gesamt-Markenreichweite (752'322 Haushalte).",
+  "Klickrate 2,0 %: bewusst am unteren Rand der Food-Video-/Social-Benchmarks (Mobile-Video-CTR ~3,4 %, Instagram-Food ~2,5 %). Quelle: Dash Social / Smart Insights.",
+  "Conversion 2,3 %: Wir rechnen mit dem Schweizer Gesamtmarkt-Wert, nicht mit dem Food-Bestwert (6,0 %) und nicht mit dem Video-Uplift-Wert (4,8 %). Die Empfehlung der Nr. 1 hebt erfahrungsgemäss an — diesen Bonus lassen wir bewusst weg. So ist die Rechnung mit sich selbst konsistent und nach oben offen.",
+  "Verkaufspreis / Marge: Beispiel-Werte für ein typisches Produkt Ihrer Kategorie — mit Ihren echten Zahlen exakt ersetzbar.",
+  "Wiederkauf-Faktor wirkt nur auf den Jahreswert. Lebensmittel erreichen real 40 %+ Wiederkaufrate — der Default 1,0 unterschlägt das bewusst.",
+  "NICHT eingerechnet (alles zusätzlicher Hebel): Halo-/Vertrauenseffekt der Empfehlung, Co-Branding-Wirkung, Markenbekanntheit, Distributions-Türöffner. Diese machen die echte Rechnung tendenziell besser, nicht schlechter."
+];
+var DELIVER=[
+  ["Produkt-Video mit Valentin Stettler","Ihr Produkt wird echt mit dem HärdöpfelGwürz® in Szene gesetzt — im Stil unserer 13 bestehenden Testimonial-Videos. Kein Stock-Material."],
+  ["Fester Listing-Platz auf sofein.ch","Eigene Produktseite mit eingebettetem Video, dort wo unsere Foodie-Community ohnehin einkauft."],
+  ["Der Halo der #1-Marke","Ihr Produkt erscheint Seite an Seite mit Stedy (4.91★, 100'000+ Bewertungen) — Sie leihen sich ~50 Jahre Vertrauen."],
+  ["Laufende monatliche Promo-Wellen","Newsletter-Platzierung an die Community + Social-Posts — dauerhafte Sichtbarkeit, nicht ein einzelner Post."],
+  ["Das Video gehört auch Ihnen","Sie erhalten das fertige Video und dürfen es auf Ihren eigenen Kanälen weiterverwenden."],
+  ["Monatliches Reporting in Klartext","Video-Views, Shop-Aufrufe, Klicks aus Newsletter und Social — plus ein eigener Tracking-Link und Rabattcode nur für Ihre Bühne, damit Sie die Verkäufe sehen, die DURCH Stedy kamen. Was wir nicht sauber messen können, behaupten wir nicht."],
+  ["Kategorie-Exklusivität (ab Paket Rampenlicht)","In Ihrer Produktkategorie nehmen wir keinen direkten Wettbewerber auf, solange Sie Partner sind."],
+  ["Fester Ansprechpartner","Direkt aus dem Stedy-Marketing — kurze Wege, schnelle Umsetzung, keine Agentur-Warteschlange."]
+];
+var PASST=[["Grills, Smoker & Aussenküchen", "Gas-, Holzkohle- und Keramikgrills sowie Outdoor-Küchen — im Video mit echtem Grillgut und dem HärdöpfelGwürz®."], ["Grillzubehör", "Planchas, Pfannen, Thermometer, Werkzeug — alles, was beim Grillieren wirklich zum Einsatz kommt."], ["Rubs, Saucen, Marinaden", "Grill-Würzen neben dem Schweizer Nr.-1-Gewürz — der perfekte Vertrauenstransfer."], ["Passt zur Marke", "HärdöpfelGwürz® gehört in der Schweiz längst auf den Grill — Ihr Sortiment trifft genau diese Gewohnheit."]];
+var TIERS=[
+  {nm:"Auftritt",monthly:390,setup:2900,best:false,desc:"1 professionelles Produkt-Video mit Valentin + HärdöpfelGwürz®, Shop-Listing auf sofein.ch, danach laufend 1 Promo-Welle/Monat (Social oder Newsletter im Wechsel) + Basis-Reporting.",bf:"Zum risikoarmen Testen der Stedy-Bühne — die Grill-Kategorie bleibt dabei offen. Wer sie sichern will, nimmt Rampenlicht."},
+  {nm:"Rampenlicht",monthly:790,setup:4500,best:true,desc:"1 hochwertiges Video mit Valentin, Shop-Listing PLUS Kategorie-Exklusivität (kein Wettbewerber neben Ihnen). Laufend 2 Promo-Wellen/Monat (Newsletter UND Social), feste Newsletter-Platzierung, detailliertes Reporting.",bf:"Etablierte Marken, die ihre Kategorie bei Stedy sichern und dauerhaft Reichweite wollen."},
+  {nm:"Hauptrolle",monthly:1490,setup:7900,best:false,desc:"2 Videos mit Valentin (verschiedene Anwendungs-Szenen), Premium-Listing, garantierte Kategorie-Exklusivität, Aufnahme ins Testimonial-/Story-Format. Laufend bis zu 4 Promo-Wellen/Monat über alle Kanäle + Voll-Reporting.",bf:"Marken, die maximale Sichtbarkeit wollen und Stedy zum festen Wachstumskanal machen."}
+];
+var FAQ=[
+  ["Reichweite kann ich auch selbst aufbauen — dann gehört sie mir.","Stimmt, und langfristig sollten Sie eine eigene Audience haben — alles, was wir für Sie drehen, dürfen Sie auch auf Ihren Kanälen weiterverwenden. Aber Reichweite UND Vertrauen selbst aufzubauen dauert Jahre und kostet laut Branchenrichtwert EUR 5'000–10'000/Monat über Monate, mit ungewissem Ausgang. Sie mieten sich hier sofort in eine fertige, treue Community ein — schneller und sicherer als bei null zu starten."],
+  ["Das ist mir zu teuer.","Verständlich — und genau deshalb läuft die monatliche Gebühr erst, wenn Video und Listing live sind, und ist jederzeit zum Monatsende kündbar. Womit vergleichen Sie? Ein Video können Sie überall kaufen. Was Sie hier bekommen, ist das Urteil der Schweizer Nr. 1: fast 50 Jahre Vertrauen, 752'322 Haushalte, 4.91★ aus über 100'000 Bewertungen. Diesen Vorsprung selbst aufzubauen dauert Jahre und ist mit keinem Budget garantiert. Sie mieten ihn hier sofort — und in Ihrer Kategorie nur einmal."],
+  ["Passt mein Produkt überhaupt zu Stedy?","Wir nehmen bewusst nicht jedes Produkt, sondern nur ausgewählte, die zu unserer Genuss- und Kochwelt passen — ob Sauce, Öl, Küchengerät, Snack oder Fleisch. Genau diese Selektivität ist Ihr Vorteil: Unsere Community erwartet, dass alles, was Stedy zeigt, gut ist. Im Erstgespräch klären wir in 15 Minuten, ob es passt."],
+  ["Bringt mir das wirklich Verkäufe?","Ehrlich: Wir garantieren keine fixe Verkaufszahl, das wäre unseriös. Aber die Mechanik ist belegt — ein echtes Produktvideo unter einer Marke, der die Schweiz vertraut, bringt Aufmerksamkeit, die ein anonymer Werbespot nicht bekommt. Damit Sie es schwarz auf weiss sehen: Sie bekommen einen eigenen Tracking-Link und Rabattcode nur für Ihre Bühne. So trennen Sie die Verkäufe DURCH Stedy vom Rest. Was wir nicht sauber messen können, behaupten wir nicht."],
+  ["Warum muss mein Produkt mit eurem Gewürz kombiniert werden?","Weil genau das den Vertrauenstransfer auslöst. Das HärdöpfelGwürz® ist das Produkt, das die Community kennt und liebt — der Anker, über den Stedy überhaupt vertraut wird. Wird Ihr Produkt neben diesem bekannten Original im echten Einsatz gezeigt, fällt dieses Vertrauen auf Ihr Produkt ab."]
+];
+var VIDEOS=['t-0993a11b','t-1ec30aec','t-510fc966','t-7ceb5251','t-85f38ee9','t-ad7e17b1','t-b14cae6f','t-b4ff546a','t-bb0ea3e3'];
+
+function el(h){var d=document.createElement('div');d.innerHTML=h.trim();return d.firstChild;}
+var dv=document.getElementById('deliver');
+DELIVER.forEach(function(d){dv.appendChild(el('<div class="d"><div class="ck">✓</div><span><b>'+d[0]+'.</b> '+d[1]+'</span></div>'));});
+var pl=document.getElementById('passt-list');
+PASST.forEach(function(d){pl.appendChild(el('<div class="d"><div class="ck">✓</div><span><b>'+d[0]+':</b> '+d[1]+'</span></div>'));});
+var pr=document.getElementById('prices');
+TIERS.forEach(function(t){
+  pr.appendChild(el('<div class="price'+(t.best?' best':'')+'">'+(t.best?'<div class="tag">Empfohlen</div>':'')+
+    '<div class="nm">'+t.nm+'</div><div class="amt">'+fmt(t.monthly)+'<small> CHF/Mt.</small></div>'+
+    '<div class="setup">+ einmalig <b>CHF '+fmt(t.setup)+'</b> Setup (Videoproduktion)</div>'+
+    '<div class="desc">'+t.desc+'</div><div class="best-for"><b>Für:</b> '+t.bf+'</div>'+
+    '<a class="pricecta" href="#kontakt">Diesen Platz anfragen →</a></div>'));
+});
+var fq=document.getElementById('faq');
+FAQ.forEach(function(q){fq.appendChild(el('<details class="qa"><summary>'+q[0]+'</summary><div class="a">'+q[1]+'</div></details>'));});
+var al=document.getElementById('assump-list');
+ASSUMPTIONS.forEach(function(a){al.appendChild(el('<li>'+a+'</li>'));});
+var ps2=document.getElementById('proofstrip');
+if(ps2){VIDEOS.slice(0,6).forEach(function(v){ps2.appendChild(el('<div class="vidcard"><img loading="lazy" src="/assets/proof/'+v+'.jpg" alt="Stedy Testimonial-Video"><div class="play"><span></span></div></div>'));});}
+
+// ROI
+var state={};
+var inputsBox=document.getElementById('inputs');
+ROI_INPUTS.forEach(function(f){
+  state[f.key]=f.def;
+  var row=el('<div class="field"><div class="lab"><span>'+f.label+'</span><span class="val"><span id="v-'+f.key+'"></span> <small>'+(f.unit||'')+'</small></span></div><input type="range" id="i-'+f.key+'" min="'+f.min+'" max="'+f.max+'" step="'+f.step+'" value="'+f.def+'"></div>');
+  inputsBox.appendChild(row);
+  var inp=row.querySelector('input');
+  inp.addEventListener('input',function(){state[f.key]=parseFloat(inp.value);calc();});
+});
+function calc(){
+  var R=state.reach, CL=state.click/100, CV=state.conv/100, P=state.price, M=state.margin/100, REP=state.repeat;
+  var klicks=R*CL;
+  var buys=klicks*CV;
+  var revM=buys*P;
+  var profM=revM*M;
+  var revY=revM*12*REP;
+  ROI_INPUTS.forEach(function(f){
+    var v=state[f.key];
+    document.getElementById('v-'+f.key).textContent=(f.key==='price')?fmt(v):(f.unit==='%'||f.unit==='×'?String(v):fmt(v));
+  });
+  document.getElementById('r-month').textContent='+ '+CHF(Math.round(revM/10)*10)+' /Mt';
+  document.getElementById('r-year').textContent='≈ '+CHF(Math.round(revY/100)*100)+' pro Jahr'+(REP>1?' (mit Wiederkauf ×'+REP+')':'');
+  document.getElementById('r-profit').textContent='+ '+CHF(Math.round(profM/10)*10)+'/Mt';
+  document.getElementById('r-buys').textContent='~ '+fmt(buys)+' Käufe';
+  document.getElementById('r-wk').textContent='Aus '+fmt(R)+' erreichten Personen → ~'+fmt(klicks)+' Klicks → ~'+fmt(buys)+' Käufe/Monat. Der Markenwert (Vertrauen, Bekanntheit) kommt obendrauf.';
+}
+calc();
+
+document.getElementById('demo').addEventListener('change',function(e){document.body.classList.toggle('demo',e.target.checked);});
+
+var FADE=document.querySelectorAll('.fadein');
+if('IntersectionObserver' in window){
+  var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});},{threshold:.08,rootMargin:'0px 0px -5% 0px'});
+  FADE.forEach(function(n){io.observe(n);});
+}else{FADE.forEach(function(n){n.classList.add('in');});}
+setTimeout(function(){document.querySelectorAll('.fadein:not(.in)').forEach(function(n){n.classList.add('in');});},1400);
+</script>
+<div class="mobilebar">
+  <a class="call" href="tel:+41795051744">📞 Anrufen <span class="ln">079 505 17 44</span></a>
+  <a class="wa" href="https://wa.me/41795051744" target="_blank" rel="noopener">WhatsApp</a>
+</div>
+</body>
+</html>

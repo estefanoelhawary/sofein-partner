@@ -1,488 +1,918 @@
-<!doctype html>
-<html lang="de-CH">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Stedy Partner-Bühne — Ihr Produkt vor der treuen Community der Schweizer Nr. 1</title>
+<!doctype html><html lang="de-CH"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Stedy Partner-Programm — 100 ausgewählte Schweizer Marken</title>
 <meta name="robots" content="noindex, nofollow">
-<meta name="description" content="Bringen Sie Ihr Produkt mit der Nr. 1-Gewürzmarke der Schweiz auf die Bühne: Video mit Valentin, Listing im Shop und laufender Traffic. Für ausgewählte Partner.">
 <link rel="icon" href="/favicon.png" type="image/png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{
-  --magenta:#c8145e; --magenta-deep:#a50f4e; --teal:#0f8473; --teal-deep:#0b6357;
-  --ink:#27191c; --muted:#7c6a6e; --paper:#fffdfb; --cream:#fbf2ec; --cream2:#f6e9e1;
-  --line:#efe0d8; --gold:#e6a02e; --white:#ffffff;
-  --shadow:0 1px 2px rgba(39,25,28,.04),0 12px 34px -12px rgba(165,15,78,.18);
-  --shadow-lg:0 30px 70px -28px rgba(165,15,78,.35);
-  --r:18px; --rs:12px; --maxw:1080px;
-  --sans:'Inter',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
-  --serif:'Fraunces',Georgia,'Times New Roman',serif;
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden}
-h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.08;letter-spacing:-.01em;margin:0}
-p{margin:0 0 .9em}
-a{color:inherit}
-img{max-width:100%;display:block}
-.wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
-.eyebrow{font-family:var(--sans);font-weight:700;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--magenta)}
-.muted{color:var(--muted)}
-section{padding:74px 0}
-@media(max-width:640px){section{padding:52px 0}body{font-size:16px}}
-
-.topbar{position:sticky;top:0;z-index:50;background:rgba(255,253,251,.86);backdrop-filter:saturate(160%) blur(12px);border-bottom:1px solid var(--line)}
+:root{--magenta:#c8145e;--magenta-deep:#a50f4e;--teal:#0f8473;--ink:#27191c;--muted:#7c6a6e;--paper:#fffdfb;--cream:#fbf2ec;--line:#efe0d8;--gold:#e6a02e}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:'Inter',system-ui,sans-serif;font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:'Fraunces',Georgia,serif;font-weight:600;line-height:1.08;letter-spacing:-.01em;margin:0}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+.eyebrow{font-weight:700;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--magenta)}
+.topbar{position:sticky;top:0;z-index:50;background:rgba(255,253,251,.9);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
 .topbar .row{display:flex;align-items:center;gap:14px;height:58px}
-.brandmark{display:flex;align-items:center;gap:9px;font-weight:700;font-family:var(--serif);font-size:19px;letter-spacing:-.01em;white-space:nowrap}
-.brandmark .wm{letter-spacing:-.02em}
-@media(max-width:560px){.brandmark .bm-sub{display:none}}
-.dot{width:11px;height:11px;border-radius:50%;background:var(--magenta);box-shadow:0 0 0 4px rgba(200,20,94,.14);flex:none}
-.topbar .spacer{flex:1}
-.confchip{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:5px 11px;white-space:nowrap}
-@media(max-width:760px){.confchip{display:none}}
+.brandmark{display:flex;align-items:center;gap:9px;font-weight:700;font-family:'Fraunces',serif;font-size:19px}
+.dot{width:11px;height:11px;border-radius:50%;background:var(--magenta);box-shadow:0 0 0 4px rgba(200,20,94,.14)}
+.spacer{flex:1}
 .demo-toggle{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--muted);cursor:pointer;user-select:none}
 .demo-toggle input{accent-color:var(--magenta)}
-.btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--sans);font-weight:700;font-size:15px;border-radius:999px;padding:12px 20px;text-decoration:none;border:0;cursor:pointer;white-space:nowrap;transition:transform .15s ease,box-shadow .15s ease,background .15s}
-.btn-primary{background:var(--magenta);color:#fff;box-shadow:0 10px 24px -8px rgba(200,20,94,.6)}
-.btn-primary:hover{background:var(--magenta-deep);transform:translateY(-1px)}
-.btn-ghost{background:transparent;color:var(--ink);border:1.5px solid var(--line)}
-.btn-ghost:hover{border-color:var(--magenta);color:var(--magenta)}
-.btn-sm{padding:9px 16px;font-size:14px}
-@media(max-width:520px){.topbar .btn .full{display:none}}
-
-.hero{position:relative;padding:48px 0 64px;background:
-   radial-gradient(120% 90% at 85% -10%,rgba(200,20,94,.10),transparent 55%),
-   radial-gradient(90% 80% at -10% 10%,rgba(15,132,115,.08),transparent 50%);}
-.hero .eyebrow{margin-bottom:16px}
-.hero h1{font-size:clamp(34px,6.6vw,60px);font-weight:700}
+.hero{padding:54px 0 26px;background:radial-gradient(120% 90% at 85% -10%,rgba(200,20,94,.10),transparent 55%),radial-gradient(90% 80% at -10% 10%,rgba(15,132,115,.08),transparent 50%)}
+.hero h1{font-size:clamp(30px,5.4vw,50px);font-weight:700;max-width:18ch}
 .hero h1 .accent{color:var(--magenta)}
-.hero .lead{font-size:clamp(17px,2.2vw,20px);max-width:40ch;margin:18px 0 26px;color:#4a3a3d}
-.hero-cta{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
-.heroimg{position:relative;margin-top:30px;border-radius:24px;overflow:hidden;box-shadow:var(--shadow-lg);aspect-ratio:16/10}
-.heroimg img{width:100%;height:100%;object-fit:cover}
-.heroimg .imgtag{position:absolute;left:16px;bottom:16px;background:rgba(255,253,251,.92);backdrop-filter:blur(6px);border-radius:999px;padding:8px 14px;font-size:12.5px;font-weight:600;display:flex;gap:8px;align-items:center}
-.heroimg .imgtag .ai{color:var(--magenta);font-weight:700}
-.trustrow{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:26px;align-items:center;font-size:14px;font-weight:600;color:#5a484b}
-.trustrow b{color:var(--ink)}
-.stars{color:var(--gold);letter-spacing:1px}
-.sep{width:5px;height:5px;border-radius:50%;background:var(--line)}
-@media(max-width:880px){.heroimg{aspect-ratio:4/3}}
+.hero p.lead{font-size:clamp(16px,2vw,19px);max-width:60ch;color:#4a3a3d;margin:16px 0 0}
+.kpis{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.kpi{background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 16px;box-shadow:0 1px 2px rgba(39,25,28,.04)}
+.kpi .n{font-family:'Fraunces',serif;font-weight:700;font-size:24px;color:var(--magenta);line-height:1}
+.kpi .l{font-size:12px;color:var(--muted);font-weight:600;margin-top:3px}
+.showcase{display:grid;grid-template-columns:1.15fr .85fr;gap:0;margin:26px 0 8px;background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:0 30px 70px -34px rgba(165,15,78,.32)}
+.showcase .txt{padding:28px}
+.showcase .pill{display:inline-block;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#fff;background:var(--teal);border-radius:999px;padding:5px 11px}
+.showcase h2{font-size:26px;margin:12px 0 8px}
+.showcase p{font-size:14.5px;color:#52424a;margin:0 0 16px}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:15px;border-radius:999px;padding:12px 20px;text-decoration:none;border:0;cursor:pointer}
+.btn-primary{background:var(--magenta);color:#fff;box-shadow:0 10px 24px -8px rgba(200,20,94,.6)}
+.btn-ghost{background:transparent;color:var(--ink);border:1.5px solid var(--line)}
+.showcase .shot{background:url('/assets/ai/feuerplatte-b-web.jpg') center/cover;min-height:240px;position:relative}
+.showcase .shot .tag{position:absolute;left:14px;bottom:14px;background:rgba(255,253,251,.92);border-radius:999px;padding:7px 13px;font-size:12px;font-weight:700}
+section{padding:30px 0}
+.dist{background:linear-gradient(180deg,var(--cream),#fff);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.dist h3{font-size:15px;margin:0 0 10px} .dist .grp{margin-bottom:16px}
+.chip{display:inline-block;background:#fff;border:1px solid var(--line);border-radius:999px;padding:5px 11px;font-size:12.5px;margin:0 6px 7px 0;color:#52424a}
+.chip b{color:var(--magenta);font-family:'Fraunces',serif}
+.tablehead{display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:12px}
+.tablehead h2{font-size:clamp(22px,3.4vw,30px)}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th{text-align:left;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:700;padding:8px 10px;border-bottom:2px solid var(--ink)}
+td{padding:11px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+td.num{color:var(--muted);font-variant-numeric:tabular-nums;width:34px}
+tr.built{background:linear-gradient(90deg,rgba(200,20,94,.06),transparent)}
+.grund{font-size:12px;color:var(--muted);margin-top:3px;max-width:46ch}
+.kt{font-size:13px} td.sc{font-variant-numeric:tabular-nums;color:#52424a;white-space:nowrap}
+.bdg.live{display:inline-block;font-size:10px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:#fff;background:var(--teal);border-radius:999px;padding:2px 8px;margin-left:6px;vertical-align:middle}
+.prep{font-size:12px;color:var(--muted);font-weight:600}
+.mini{display:inline-block;font-size:12.5px;font-weight:700;text-decoration:none;border-radius:999px;padding:6px 12px;background:var(--magenta);color:#fff;margin:0 4px 4px 0}
+.mini.ghost{background:#fff;color:var(--magenta);border:1.5px solid var(--line)}
+td.act{white-space:nowrap;width:160px}
+body.demo .ln{filter:blur(5px);user-select:none}
+footer{background:var(--ink);color:#c8b4ba;padding:30px 0;font-size:13px;margin-top:18px}
+footer b{color:#fff;font-family:'Fraunces',serif}
+@media(max-width:820px){.showcase{grid-template-columns:1fr}.showcase .shot{min-height:180px;order:-1} .grund{display:none} td.act{width:auto}}
+</style></head><body>
+<div class="topbar"><div class="wrap row">
+  <div class="brandmark"><span class="dot"></span>Stedy Partner-Programm</div>
+  <div class="spacer"></div>
+  <label class="demo-toggle" title="Namen für Aufnahmen unkenntlich"><input type="checkbox" id="demo"> Demo</label>
+</div></div>
 
-.shead{max-width:680px;margin-bottom:34px}
-.shead h2{font-size:clamp(27px,4.2vw,40px);margin:12px 0 12px}
-.shead p{font-size:18px;color:#52424a}
-.center{margin-left:auto;margin-right:auto;text-align:center}
-.band-cream{background:linear-gradient(180deg,var(--cream),#fff)}
-
-.statgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:26px}
-.stat{background:#fff;border:1px solid var(--line);border-radius:var(--rs);padding:18px 16px;text-align:center;box-shadow:var(--shadow)}
-.stat .n{font-family:var(--serif);font-weight:700;font-size:clamp(22px,3.6vw,32px);color:var(--magenta);line-height:1}
-.stat .l{font-size:12.5px;color:var(--muted);margin-top:7px;font-weight:600;letter-spacing:.02em}
-@media(max-width:680px){.statgrid{grid-template-columns:repeat(2,1fr)}}
-
-.vidstrip{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(140px,1fr);gap:14px;overflow-x:auto;padding:6px 2px 18px;-webkit-overflow-scrolling:touch}
-.vidstrip::-webkit-scrollbar{height:8px}.vidstrip::-webkit-scrollbar-thumb{background:var(--cream2);border-radius:8px}
-.vidcard{position:relative;border-radius:14px;overflow:hidden;aspect-ratio:9/14;box-shadow:var(--shadow);background:var(--cream2)}
-.vidcard img{width:100%;height:100%;object-fit:cover}
-.vidcard .play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
-.vidcard .play span{width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.9);display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(0,0,0,.25)}
-.vidcard .play span::after{content:"";border-left:13px solid var(--magenta);border-top:8px solid transparent;border-bottom:8px solid transparent;margin-left:3px}
-
-.duo{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:8px}
-.duo figure{margin:0;border-radius:var(--r);overflow:hidden;position:relative;box-shadow:var(--shadow);aspect-ratio:4/3}
-.duo img{width:100%;height:100%;object-fit:cover}
-.duo .cap{position:absolute;left:12px;bottom:12px;background:rgba(255,253,251,.92);border-radius:999px;padding:6px 12px;font-size:12px;font-weight:600}
-@media(max-width:680px){.duo{grid-template-columns:1fr}}
-
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-@media(max-width:880px){.cards{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:560px){.cards{grid-template-columns:1fr}}
-.card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:22px;box-shadow:var(--shadow)}
-.card .ic{width:40px;height:40px;border-radius:11px;background:linear-gradient(135deg,rgba(200,20,94,.14),rgba(15,132,115,.14));display:flex;align-items:center;justify-content:center;font-size:20px;margin-bottom:14px}
-.card h3{font-size:19px;margin-bottom:7px}
-.card p{font-size:14.5px;color:#56454a;margin:0}
-
-.deliver{display:grid;grid-template-columns:repeat(2,1fr);gap:12px 26px;margin-top:8px}
-.deliver .d{display:flex;gap:13px;padding:14px 0;border-bottom:1px solid var(--line);align-items:flex-start}
-.deliver .d .ck{flex:none;width:24px;height:24px;border-radius:50%;background:rgba(15,132,115,.12);color:var(--teal);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:13px;margin-top:2px}
-.deliver .d span{font-size:14.5px;color:#52424a}
-@media(max-width:700px){.deliver{grid-template-columns:1fr}}
-.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:30px}
-.step{background:#fff;border:1px solid var(--line);border-radius:var(--rs);padding:16px;box-shadow:var(--shadow)}
-.step .num{font-family:var(--serif);font-weight:700;color:var(--magenta);font-size:15px;background:rgba(200,20,94,.1);width:30px;height:30px;border-radius:8px;display:flex;align-items:center;justify-content:center;margin-bottom:11px}
-.step b{display:block;margin-bottom:4px;font-size:14.5px}
-.step p{font-size:13px;color:#56454a;margin:0}
-@media(max-width:860px){.steps{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:480px){.steps{grid-template-columns:1fr}}
-
-.band-dark{background:radial-gradient(120% 120% at 80% 0%,#3a1722,#27141a 60%,#1f1015);color:#fff}
-.band-dark .shead p{color:#cdb6bd}
-.calc{display:grid;grid-template-columns:1.05fr 1fr;gap:26px;align-items:stretch;margin-top:8px}
-.calc .panel{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:var(--r);padding:24px}
-.field{margin-bottom:18px}
-.field .lab{display:flex;justify-content:space-between;align-items:baseline;font-size:13.5px;font-weight:600;color:#e9d8de;margin-bottom:8px}
-.field .val{font-family:var(--serif);font-weight:700;color:#fff;font-size:16px}
-.field .val small{font-weight:500;color:#c8b0b7;font-size:12px}
-input[type=range]{-webkit-appearance:none;width:100%;height:6px;border-radius:6px;background:rgba(255,255,255,.18);outline:none}
-input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:22px;height:22px;border-radius:50%;background:var(--magenta);border:3px solid #fff;cursor:pointer;box-shadow:0 3px 10px rgba(0,0,0,.4)}
-input[type=range]::-moz-range-thumb{width:18px;height:18px;border-radius:50%;background:var(--magenta);border:3px solid #fff;cursor:pointer}
-.result{display:flex;flex-direction:column;justify-content:center;background:linear-gradient(165deg,var(--magenta),var(--magenta-deep));border-radius:var(--r);padding:30px 26px;box-shadow:var(--shadow-lg)}
-.result .rl{font-size:13px;text-transform:uppercase;letter-spacing:.12em;font-weight:700;color:rgba(255,255,255,.85)}
-.result .big{font-family:var(--serif);font-weight:700;font-size:clamp(34px,7vw,52px);line-height:1;margin:8px 0 2px}
-.result .yr{font-size:17px;font-weight:600;color:#ffe3ee}
-.result .brk{display:flex;gap:10px;margin-top:20px;flex-wrap:wrap}
-.result .pill{background:rgba(255,255,255,.16);border-radius:11px;padding:10px 13px;font-size:12.5px;font-weight:600;flex:1;min-width:130px}
-.result .pill b{display:block;font-family:var(--serif);font-size:18px;margin-top:3px}
-.result .wk{margin-top:16px;font-size:13px;color:#ffd9e7;border-top:1px solid rgba(255,255,255,.2);padding-top:14px}
-.reach-note{margin-top:18px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:12px;padding:14px 16px;font-size:13px;color:#e3cdd4}
-.reach-note b{color:#fff}
-.assump{margin-top:16px}
-.assump summary{cursor:pointer;font-size:13.5px;font-weight:600;color:#e9d8de;list-style:none}
-.assump summary::-webkit-details-marker{display:none}
-.assump summary::before{content:"＋ ";color:#ff9ec3}
-.assump[open] summary::before{content:"− "}
-.assump ul{margin:12px 0 0;padding-left:18px}
-.assump li{font-size:12.5px;color:#c3aab1;margin-bottom:8px;line-height:1.5}
-@media(max-width:820px){.calc{grid-template-columns:1fr}}
-
-.prices{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:10px;align-items:stretch}
-.price{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:24px;display:flex;flex-direction:column;box-shadow:var(--shadow);position:relative}
-.price.best{border:2px solid var(--magenta);box-shadow:var(--shadow-lg);transform:translateY(-6px)}
-.price .tag{position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--magenta);color:#fff;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:5px 13px;border-radius:999px;white-space:nowrap}
-.price .nm{font-family:var(--serif);font-weight:700;font-size:21px;margin-bottom:8px}
-.price .amt{font-family:var(--serif);font-weight:700;font-size:32px;color:var(--magenta);line-height:1}
-.price .amt small{font-family:var(--sans);font-size:14px;color:var(--muted);font-weight:600}
-.price .setup{font-size:13px;color:#52424a;margin:6px 0 14px;font-weight:600}
-.price .setup b{color:var(--ink)}
-.price .best-for{font-size:13.5px;color:#52424a;border-top:1px solid var(--line);padding-top:13px;margin-top:6px}
-.price .desc{font-size:13.5px;color:#56454a;flex:1}
-@media(max-width:820px){.prices{grid-template-columns:1fr}.price.best{transform:none}}
-.anchor{margin-top:22px;text-align:center;font-size:15px;color:#52424a}
-.anchor b{color:var(--ink)}
-.guarantee{margin-top:22px;background:linear-gradient(160deg,#fff,#f0f8f5);border:1px solid rgba(15,132,115,.25);border-radius:var(--r);padding:24px;display:flex;gap:16px;align-items:flex-start}
-.guarantee .shield{flex:none;font-size:26px}
-.guarantee b{color:var(--teal-deep)}
-.guarantee p{font-size:14.5px;color:#3f3034;margin:0}
-
-.faq{max-width:780px;margin:0 auto}
-.qa{background:#fff;border:1px solid var(--line);border-radius:var(--rs);margin-bottom:11px;overflow:hidden}
-.qa summary{cursor:pointer;list-style:none;padding:18px 20px;font-weight:700;font-size:16px;display:flex;justify-content:space-between;gap:14px;align-items:center}
-.qa summary::-webkit-details-marker{display:none}
-.qa summary::after{content:"+";color:var(--magenta);font-size:22px;font-weight:400;flex:none}
-.qa[open] summary::after{content:"–"}
-.qa .a{padding:0 20px 18px;font-size:15px;color:#52424a}
-
-.finalcta{background:radial-gradient(120% 120% at 20% 0%,#fdeef4,#fff);text-align:center}
-.finalcta h2{font-size:clamp(28px,4.6vw,44px);max-width:20ch;margin:0 auto 14px}
-.finalcta .lead{font-size:18px;color:#52424a;max-width:48ch;margin:0 auto 26px}
-.ctabtns{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
-.ps{max-width:620px;margin:30px auto 0;font-size:15px;color:#52424a;background:#fff;border:1px solid var(--line);border-radius:var(--rs);padding:18px 22px;text-align:left}
-footer{background:var(--ink);color:#c8b4ba;padding:34px 0;font-size:13px}
-footer .row{display:flex;flex-wrap:wrap;gap:8px 18px;justify-content:space-between;align-items:center}
-footer b{color:#fff;font-family:var(--serif)}
-
-body.demo .ln{filter:blur(6px);user-select:none}
-.fadein{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
-.fadein.in{opacity:1;transform:none}
-@media(prefers-reduced-motion:reduce){.fadein{opacity:1;transform:none;transition:none}}
-</style>
-</head>
-<body>
-
-<div class="topbar">
-  <div class="wrap row">
-    <div class="brandmark"><span class="dot"></span><span class="wm">Stedy<span class="bm-sub"> Partner-Bühne</span></span></div>
-    <span class="confchip">Für ausgewählte Partner · vertraulich</span>
-    <div class="spacer"></div>
-    <label class="demo-toggle" title="Kontaktdaten für Aufnahmen unkenntlich machen"><input type="checkbox" id="demo"> Demo</label>
-    <a class="btn btn-primary btn-sm" href="#kontakt">Partner-Platz<span class="full"> anfragen</span></a>
+<header class="hero"><div class="wrap">
+  <div class="eyebrow">Akquise-Pipeline · intern für Stedy</div>
+  <h1>100 ausgewählte Schweizer Marken — <span class="accent">bereit für Ihre Partner-Bühne.</span></h1>
+  <p class="lead">Handverlesene Genuss- und Küchenmarken aus der ganzen Schweiz, die zu Stedy passen und das Budget mitbringen, um für Ihre Reichweite zu zahlen. Jede bekommt ein persönliches Portal und einen physischen Brief. Hier sehen Sie ein fertiges Beispiel — und die ganze Liste dahinter.</p>
+  <div class="kpis">
+    <div class="kpi"><div class="n">100</div><div class="l">ausgewählte Partner</div></div>
+    <div class="kpi"><div class="n">25</div><div class="l">Kantone abgedeckt</div></div>
+    <div class="kpi"><div class="n">18</div><div class="l">Kategorien</div></div>
+    <div class="kpi"><div class="n">1</div><div class="l">fertiges Live-Beispiel</div></div>
   </div>
-</div>
 
-<!-- HERO -->
-<header class="hero">
-  <div class="wrap">
-    <div class="eyebrow">Stedy Partner-Programm · für ausgewählte Marken</div>
-    <h1>Ihr Produkt vor der treuen Community der Schweizer Nr. 1.<br><span class="accent">Empfohlen von der Marke, der 752'322 Haushalte vertrauen.</span></h1>
-    <p class="lead">Stedy ist seit fast 50 Jahren die Nr. 1-Gewürzmarke der Schweiz. Wir drehen ein Video mit Ihrem Produkt und unserem HärdöpfelGwürz®, listen es im sofein.ch-Shop und bewerben es laufend. Ihr Produkt erbt unsere Reichweite und unser Vertrauen — ab Tag eins.</p>
-    <div class="hero-cta">
-      <a class="btn btn-primary" href="#rechner">Was das bringen kann →</a>
-      <a class="btn btn-ghost" href="#kontakt">Partner-Platz anfragen</a>
-    </div>
-    <div class="trustrow">
-      <b>Schweizer Nr. 1</b>&nbsp;Gewürzmarke <span class="sep"></span>
-      <span class="stars">★★★★★</span> <b>4.91</b>&nbsp;/ 100'000+ Bewertungen <span class="sep"></span>
-      <b>5'215</b>&nbsp;Läden
-    </div>
-    <figure class="heroimg">
-      <img src="/assets/ai/partner-airfryer-b-web.jpg" alt="Beispiel-Partnerprodukt mit dem Stedy HärdöpfelGwürz in Szene gesetzt" fetchpriority="high">
-      <figcaption class="imgtag"><span class="ai">●</span> So kommt Ihr Produkt rüber — Beispiel, KI-visualisiert mit dem echten Streuer</figcaption>
-    </figure>
-  </div>
-</header>
-
-<!-- WAS IHR BEKOMMT -->
-<section class="band-cream" id="bekommen">
-  <div class="wrap">
-    <div class="shead">
-      <div class="eyebrow">Was Sie bekommen</div>
-      <h2>Video, Listing und laufender Traffic — drei Dinge, die zusammen wirken.</h2>
-      <p>Kein einmaliger Werbeflash, sondern dauerhafte Präsenz vor einem Publikum, das uns vertraut. Sie liefern das Produkt, wir machen den Rest.</p>
-    </div>
-    <div class="duo fadein">
-      <figure><img loading="lazy" src="/assets/ai/partner-airfryer-b-web.jpg" alt="Beispiel: Küchengerät mit HärdöpfelGwürz"><figcaption class="cap">Beispiel: Küchengerät</figcaption></figure>
-      <figure><img loading="lazy" src="/assets/ai/partner-sauce-web.jpg" alt="Beispiel: Food-Produkt mit HärdöpfelGwürz"><figcaption class="cap">Beispiel: Food-Produkt</figcaption></figure>
-    </div>
-    <div class="deliver" id="deliver" style="margin-top:26px"></div>
-  </div>
-</section>
-
-<!-- WARUM STEDY VERKAUFT -->
-<section id="warum">
-  <div class="wrap">
-    <div class="shead">
-      <div class="eyebrow">Warum Stedys Empfehlung verkauft</div>
-      <h2>Das Teuerste an einer Marke ist Vertrauen. Wir haben es — Sie leihen es sich.</h2>
-      <p>Der Käufer glaubt nicht einem Werbeclaim von null an. Er glaubt dem Urteil einer Marke, der er schon vertraut. Genau das springt an, wenn die Nr. 1 Ihr Produkt zeigt.</p>
-    </div>
-    <div class="cards">
-      <div class="card fadein"><div class="ic">🤝</div><h3>Geliehenes Vertrauen</h3><p>Menschen vertrauen einer Empfehlung weit mehr als bezahlter Werbung — <b>92 %</b> mehr als Werbung generell (Nielsen). Dasselbe Vertrauensprinzip nutzt Ihr Produkt, wenn die Nr. 1-Marke es zeigt.</p></div>
-      <div class="card fadein"><div class="ic">👥</div><h3>Fertige, treue Community</h3><p>752'322 Haushalte, 5'215 Läden, 2 Mio.+ Social-Reaktionen, 4.91★ aus 100'000+ Bewertungen. Eine aktive Foodie-Community, die schon da ist — Sie müssen sie nicht über Jahre aufbauen.</p></div>
-      <div class="card fadein"><div class="ic">🔥</div><h3>Video weckt Appetit</h3><p>Ein echtes Anwendungs-Video verkauft, weil es Begehren auslöst. Studien: Produktseiten mit Video konvertieren spürbar besser (4,8 % statt 2,9 %), 84 % entscheiden nach einem Marken-Video.</p></div>
-      <div class="card fadein"><div class="ic">🛡️</div><h3>Empfehlung schlägt Eigenwerbung</h3><p>Marken­gestützter Content gilt als rund <b>50 % vertrauenswürdiger</b> und konvertiert spürbar besser als klassische Eigenwerbung. Ein Dritter, der Sie zeigt, überzeugt stärker als Sie selbst.</p></div>
-      <div class="card fadein"><div class="ic">⚙️</div><h3>Done-for-you</h3><p>Produktion, Listing, Promotion — alles aus einer Hand. Sie müssen kein Team stellen und keinen Drehtag organisieren. Sie sagen Ja, wir setzen um.</p></div>
-      <div class="card fadein"><div class="ic">🎟️</div><h3>Nur einer pro Kategorie</h3><p>Wir vergeben Kategorie-Exklusivität: In Ihrer Kategorie steht kein direkter Wettbewerber neben Ihnen. Den Vertrauensvorsprung der Nr. 1 gibt es pro Kategorie nur einmal.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- ROI -->
-<section class="band-dark" id="rechner">
-  <div class="wrap">
-    <div class="shead">
-      <div class="eyebrow" style="color:#ff7eb0">Was das bringen kann</div>
-      <h2>Schieben Sie an Ihren eigenen Zahlen.</h2>
-      <p>Konservativ gerechnet auf Branchen-Benchmarks. Die Voreinstellungen sind <b style="color:#fff">Beispiel-Werte</b> — mit Ihren echten Zahlen (Preis, Marge) wird es exakt.</p>
-    </div>
-    <div class="calc">
-      <div class="panel">
-        <div style="display:inline-flex;align-items:center;gap:7px;font-size:11.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#ff9ec3;border:1px solid rgba(255,158,195,.4);border-radius:999px;padding:5px 11px;margin-bottom:16px">● Beispiel-Werte · frei einstellbar</div>
-        <div id="inputs"></div>
-      </div>
-      <div class="result">
-        <div class="rl">Möglicher Zusatz-Umsatz über Stedy</div>
-        <div class="big" id="r-month">–</div>
-        <div class="yr" id="r-year">–</div>
-        <div class="brk">
-          <div class="pill">Ihr Ertrag (Marge)<b id="r-profit">–</b></div>
-          <div class="pill">Käufe / Monat<b id="r-buys">–</b></div>
-        </div>
-        <div class="wk" id="r-wk">–</div>
-        <a href="#kontakt" style="display:inline-block;margin-top:14px;font-size:12.5px;font-weight:700;color:#fff;text-decoration:underline;text-underline-offset:3px">Mit Ihren echten Zahlen durchrechnen →</a>
+  <div class="showcase">
+    <div class="txt">
+      <span class="pill">Fertiges Beispiel · live</span>
+      <h2>azado — Schweizer Premiumgrills, St. Galler Manufaktur</h2>
+      <p>So sieht ein fertiges Partner-Portal aus: persönlich auf azado zugeschnitten, mit Video-Idee, Reichweiten-Beweis, ROI-Rechner und Partner-Paketen. Dazu der physische Brief mit QR-Code, der genau hierher führt.</p>
+      <div class="btns">
+        <a class="btn btn-primary" href="/azado" target="_blank">azado-Portal ansehen →</a>
+        <a class="btn btn-ghost" href="/brief/azado.html" target="_blank">Brief ansehen</a>
       </div>
     </div>
-    <div class="reach-note">
-      <b>Ehrlich zur Reichweite:</b> Die 752'322 Haushalte sind unsere Gesamt-Markenreichweite über bald 50 Jahre. Pro Promo-Welle aktivieren wir realistisch einen <b>Bruchteil</b> davon — darum rechnet der Regler bewusst konservativ mit ~80'000/Monat. Und: Der <b>Markenwert</b> (Vertrauen, Bekanntheit, Tür-Öffner) kommt obendrauf und ist hier <b>nicht</b> eingerechnet. Ziehen Sie die Werte ruhig nach unten — die Rechnung soll halten.
-    </div>
-    <details class="assump">
-      <summary>Alle Annahmen offen gelegt</summary>
-      <ul id="assump-list"></ul>
-    </details>
+    <div class="shot"><span class="tag">azado × Stedy · Live-Portal</span></div>
   </div>
-</section>
+</div></header>
 
-<!-- SO LÄUFT ES -->
-<section>
-  <div class="wrap">
-    <div class="shead">
-      <div class="eyebrow">So läuft die Zusammenarbeit</div>
-      <h2>Klar, schnell, ohne Aufwand auf Ihrer Seite.</h2>
-      <p>Sie sehen das Video vor der Veröffentlichung und geben es frei. Vom ersten Call bis live sind es wenige, klare Schritte.</p>
-    </div>
-    <div class="steps">
-      <div class="step"><div class="num">1</div><b>Erstgespräch</b><p>Wir prüfen, ob Ihr Produkt zur Community passt. Ein kurzer Call genügt.</p></div>
-      <div class="step"><div class="num">2</div><b>Produkt senden</b><p>Sie schicken uns Ihr Produkt — Sauce, Öl, Gerät, Snack, Fleischspezialität.</p></div>
-      <div class="step"><div class="num">3</div><b>Valentin dreht</b><p>Das Video entsteht mit dem HärdöpfelGwürz®. Sie geben es vor der Veröffentlichung frei.</p></div>
-      <div class="step"><div class="num">4</div><b>Listing & Start</b><p>Wir listen Ihr Produkt auf sofein.ch und starten die Promotion.</p></div>
-      <div class="step"><div class="num">5</div><b>Laufend Traffic</b><p>Monatlich weiter Sichtbarkeit. Kündbar, kein Knebelvertrag.</p></div>
-    </div>
+<section class="dist"><div class="wrap">
+  <div class="grp"><h3>Verteilung über die Schweiz (bevölkerungs-proportional, statistisch sauber)</h3><span class="chip">Zürich <b>18</b></span> <span class="chip">Bern <b>12</b></span> <span class="chip">Waadt <b>9</b></span> <span class="chip">Aargau <b>8</b></span> <span class="chip">St. Gallen <b>6</b></span> <span class="chip">Genf <b>6</b></span> <span class="chip">Luzern <b>5</b></span> <span class="chip">Tessin <b>4</b></span> <span class="chip">Wallis <b>4</b></span> <span class="chip">Freiburg <b>4</b></span> <span class="chip">Basel-Land <b>3</b></span> <span class="chip">Thurgau <b>3</b></span> <span class="chip">Solothurn <b>3</b></span> <span class="chip">Graubünden <b>2</b></span> <span class="chip">Basel-Stadt <b>2</b></span> <span class="chip">Schwyz <b>2</b></span> <span class="chip">Neuenburg <b>1</b></span> <span class="chip">Zug <b>1</b></span> <span class="chip">Jura <b>1</b></span> <span class="chip">Appenzell A.Rh. <b>1</b></span> <span class="chip">Nidwalden <b>1</b></span> <span class="chip">Glarus <b>1</b></span> <span class="chip">Obwalden <b>1</b></span> <span class="chip">Uri <b>1</b></span> <span class="chip">Appenzell I.Rh. <b>1</b></span></div>
+  <div class="grp"><h3>Sprachregionen</h3><span class="chip">Deutschschweiz <b>73</b></span> <span class="chip">Romandie <b>23</b></span> <span class="chip">Tessin <b>4</b></span></div>
+  <div class="grp"><h3>Kategorien (Vielfalt, kein Klumpenrisiko)</h3><span class="chip">Fleisch/Charcuterie <b>22</b></span> <span class="chip">Käse <b>19</b></span> <span class="chip">Feinkost <b>14</b></span> <span class="chip">Öl/Essig <b>6</b></span> <span class="chip">Sauce/Dip <b>5</b></span> <span class="chip">Senf <b>5</b></span> <span class="chip">Pasta <b>4</b></span> <span class="chip">Bier <b>4</b></span> <span class="chip">Grill <b>4</b></span> <span class="chip">Honig <b>3</b></span> <span class="chip">Spirituose <b>3</b></span> <span class="chip">Snack <b>2</b></span> <span class="chip">Getränk <b>2</b></span> <span class="chip">Grillzubehör <b>2</b></span> <span class="chip">Küchengerät <b>2</b></span> <span class="chip">Ketchup <b>1</b></span> <span class="chip">Kochgeschirr <b>1</b></span> <span class="chip">Marinade/Rub <b>1</b></span></div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="tablehead">
+    <h2>Die 100 ausgewählten Partner</h2>
+    <div class="prep">Score = Fit / Zahlungsbereitschaft (0–100) · azado ist als Beispiel bereits gebaut, die übrigen sind startbereit</div>
   </div>
-</section>
-
-<!-- PREISE -->
-<section class="band-cream" id="pakete">
-  <div class="wrap">
-    <div class="shead center">
-      <div class="eyebrow">Partner-Pakete</div>
-      <h2>Transparent. Einmaliger Setup fürs Video, dann laufende Promotion.</h2>
-      <p>Werbe-/Produktionsaufwand transparent. Die monatliche Gebühr startet erst, wenn Video und Listing live sind. Monatlich kündbar.</p>
-    </div>
-    <div class="prices" id="prices"></div>
-    <div class="anchor">Zum Vergleich: <b>Schweiz Tourismus zahlt CHF 27'500 für ein einziges 30-Sekunden-Sponsorvideo</b> mit Distribution. Allein eine Schweizer Videoproduktion kostet CHF 2'900–7'500 — ohne jede Reichweite. Hier bekommen Sie Video <b>und</b> Dauer-Präsenz unter der Nr. 1 für einen Bruchteil.</div>
-    <div class="guarantee">
-      <div class="shield">🛡️</div>
-      <div><b>Was wir kontrollieren, garantieren wir — und nur das.</b><p>Wir garantieren die Video-Qualität (gedreht von Valentin, glaubwürdig mit dem HärdöpfelGwürz®) und die zugesagte Reichweite: Video live, Listing live, die vereinbarten Promo-Wellen pro Monat raus, jeden Monat ein ehrlicher Report. Gefällt Ihnen das fertige Video vor Veröffentlichung nicht, drehen wir eine Korrekturrunde — oder Sie zahlen den Setup nicht. Was wir NICHT versprechen: eine fixe Verkaufszahl. Das wäre unseriös. Wir geben Ihnen das Vertrauen und die Aufmerksamkeit der Schweizer Nr. 1 — die monatliche Gebühr läuft erst ab dem Tag, an dem Ihr Auftritt live ist.</p></div>
-    </div>
+  <div style="overflow-x:auto">
+  <table>
+    <thead><tr><th>#</th><th>Marke</th><th>Kategorie</th><th>Kanton</th><th>Fit/Pay</th><th></th></tr></thead>
+    <tbody><tr class="built">
+      <td class="num">1</td>
+      <td><b class="ln">azado</b> <span class="bdg live">fertig · live</span><div class="grund ln">Azado verkauft hochwertige Schweizer Grills und Outdoor-Küchen, die sich glaubwürdig mit Stedys HärdöpfelGwürz für Grill- und Beilagenk</div></td>
+      <td>Grill</td>
+      <td><span class="kt">St. Gallen</span></td>
+      <td class="sc ln">90/85</td>
+      <td class="act"><a class="mini" href="/azado" target="_blank">Portal&nbsp;→</a><a class="mini ghost" href="/brief/azado.html" target="_blank">Brief</a></td>
+    </tr>
+<tr class="">
+      <td class="num">2</td>
+      <td><b class="ln">Rolf Beeler Maître Fromager</b> <div class="grund ln">Käse (insbesondere Raclette-/Grill- und Käseplatten) passt geschmacklich sehr gut zu Kartoffelgewürz und gemeinsamen Rezept- und Genuss</div></td>
+      <td>Käse</td>
+      <td><span class="kt">Aargau</span></td>
+      <td class="sc ln">88/85</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">3</td>
+      <td><b class="ln">Metzgerei Schmid</b> <div class="grund ln">Ihre Bratwürste und Trockenfleisch passen sehr gut zu Stedys Kartoffel-/Grillgewürz für Rezepte und Grillkombinationen.</div></td>
+      <td>Fleisch/Charcuterie</td>
+      <td><span class="kt">St. Gallen</span></td>
+      <td class="sc ln">90/82</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">4</td>
+      <td><b class="ln">Meaty</b> <div class="grund ln">Meatys Grill- und Charcuterie-Produkte passen natürlich zu Stedys HärdöpfelGwürz und können gemeinsam in Rezepten/Grill-Kampagnen gezei</div></td>
+      <td>Fleisch/Charcuterie</td>
+      <td><span class="kt">Genf</span></td>
+      <td class="sc ln">88/82</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">5</td>
+      <td><b class="ln">Fromages Spielhofer</b> <div class="grund ln">Regionaler Käse, Fondue und Feinkost bieten starke Synergien für Rezepte/Pairings mit STEDY‑Würzen.</div></td>
+      <td>Käse</td>
+      <td><span class="kt">Bern</span></td>
+      <td class="sc ln">88/80</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">6</td>
+      <td><b class="ln">Caseificio del Gottardo</b> <div class="grund ln">Raclette- und Fondue-Käse passen sehr gut zu mit dem HärdöpfelGwürz gewürzten Kartoffelgerichten (Gratin, Ofenkartoffeln, Rösti).</div></td>
+      <td>Käse</td>
+      <td><span class="kt">Tessin</span></td>
+      <td class="sc ln">88/80</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">7</td>
+      <td><b class="ln">Walker Delicia (Arnold Walker AG)</b> <div class="grund ln">Raclette- und Fondue-Käse werden klassisch mit Kartoffeln und Gewürzen serviert — Stedys HärdöpfelGwürz ergänzt ihr Sortiment direkt.</div></td>
+      <td>Käse</td>
+      <td><span class="kt">Wallis</span></td>
+      <td class="sc ln">86/80</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">8</td>
+      <td><b class="ln">Noser-Inox</b> <div class="grund ln">Hochwertige Pfannen und Töpfe ergänzen Stedys Würze ideal für Rezept-Videos und Grill-/Brat-Anwendungen.</div></td>
+      <td>Kochgeschirr</td>
+      <td><span class="kt">Aargau</span></td>
+      <td class="sc ln">83/82</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">9</td>
+      <td><b class="ln">Just Meat</b> <div class="grund ln">Premium-Fleisch und Grillpakete lassen sich natürlich mit Stedys Würzmischungen kombinieren und erhöhen den Wahrnehmungs- und Warenkorb</div></td>
+      <td>Fleisch/Charcuterie</td>
+      <td><span class="kt">Genf</span></td>
+      <td class="sc ln">85/80</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">10</td>
+      <td><b class="ln">Rapelli</b> <div class="grund ln">Cured meats aus Tessin passen glaubwürdig als Beilage/Grillkomponente zu gewürzten Kartoffeln und Grillrezepten.</div></td>
+      <td>Fleisch/Charcuterie</td>
+      <td><span class="kt">Tessin</span></td>
+      <td class="sc ln">85/80</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">11</td>
+      <td><b class="ln">LEADER Digital / Schwiizer Grill</b> <div class="grund ln">Schweizer Hersteller eines eigenmarkigen Premium‑Grills, der sich glaubwürdig im Zusammenspiel mit Stedys HärdöpfelGwürz für Grill‑Cont</div></td>
+      <td>Grill</td>
+      <td><span class="kt">Thurgau</span></td>
+      <td class="sc ln">85/80</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">12</td>
+      <td><b class="ln">Alpahirt</b> <div class="grund ln">Regionale Premium-Fleischmanufaktur; Produkte eignen sich gut für Grill-/Beilagen-Rezepte zusammen mit Stedys Gewürzen.</div></td>
+      <td>Fleisch/Charcuterie</td>
+      <td><span class="kt">Graubünden</span></td>
+      <td class="sc ln">85/80</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">13</td>
+      <td><b class="ln">Züger Frischkäse (frischkaese.ch)</b> <div class="grund ln">Grillkäse und Frischkäse lassen sich gut mit dem HärdöpfelGwürz in Rezepten und Grillkombinationen kombinieren.</div></td>
+      <td>Käse</td>
+      <td><span class="kt">St. Gallen</span></td>
+      <td class="sc ln">78/85</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">14</td>
+      <td><b class="ln">Natur Konkret (Guido Leutenegger AG)</b> <div class="grund ln">Trockenfleisch und Charcuterie werden oft mit Bratkartoffeln/Beilagen serviert und passen daher direkt zu einem HärdöpfelGwürz-Video un</div></td>
+      <td>Fleisch/Charcuterie</td>
+      <td><span class="kt">Thurgau</span></td>
+      <td class="sc ln">85/78</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">15</td>
+      <td><b class="ln">Fromage MAUERHOFER</b> <div class="grund ln">Käse ergänzt Kartoffelgerichte ideal — z.B. geschmolzener Mauerhofer auf mit Stedy HärdöpfelGwürz gewürzten Ofenkartoffeln.</div></td>
+      <td>Käse</td>
+      <td><span class="kt">Bern</span></td>
+      <td class="sc ln">82/80</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">16</td>
+      <td><b class="ln">Hubihof</b> <div class="grund ln">Grill- und Fondue-Produkte (Angus/Wagyu, Tischgrillplatten) passen direkt als Hauptkomponenten zu Kartoffel-/Beilagenwürzungen wie dem </div></td>
+      <td>Fleisch/Charcuterie</td>
+      <td><span class="kt">Aargau</span></td>
+      <td class="sc ln">82/80</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">17</td>
+      <td><b class="ln">Bio Pasta Bonetti</b> <div class="grund ln">Artisanale Pasta und hausgemachte Saucen ergänzen Stedys Gewürze gut für Rezept-Kooperationen und gemeinsame Promotionen.</div></td>
+      <td>Pasta</td>
+      <td><span class="kt">St. Gallen</span></td>
+      <td class="sc ln">82/80</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">18</td>
+      <td><b class="ln">La Culina</b> <div class="grund ln">Verkauft mehrere Kartoffel-basierte Produkte (Maluns, Kartoffelravioli, Pizokels), die direkt vom HärdöpfelGwürz profitieren.</div></td>
+      <td>Feinkost</td>
+      <td><span class="kt">St. Gallen</span></td>
+      <td class="sc ln">82/80</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">19</td>
+      <td><b class="ln">Italo Hispano</b> <div class="grund ln">Italo Hispano verkauft Öle, Käse und Charcuterie sowie Geschenksets, die sich direkt mit gewürzten Kartoffelbeilagen/Grillbeilagen und </div></td>
+      <td>Feinkost</td>
+      <td><span class="kt">Luzern</span></td>
+      <td class="sc ln">82/80</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">20</td>
+      <td><b class="ln">Igneus</b> <div class="grund ln">Igneus’ Schweizer Chili‑Saucen und Chiliöle ergänzen Kartoffelgewürze und Grillgerichte geschmacklich und sprechen dieselbe Foodie‑Ziel</div></td>
+      <td>Sauce/Dip</td>
+      <td><span class="kt">Wallis</span></td>
+      <td class="sc ln">82/80</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">21</td>
+      <td><b class="ln">SwissPeaks</b> <div class="grund ln">SwissPeaks&#x27; handgefertigte Planchas und Grillzubehör passen glaubwürdig zu Stedys HärdöpfelGwürz für Plancha-/Grillrezepte und Fondue-B</div></td>
+      <td>Grillzubehör</td>
+      <td><span class="kt">Thurgau</span></td>
+      <td class="sc ln">82/80</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">22</td>
+      <td><b class="ln">Schloss Salenegg</b> <div class="grund ln">Ihre Essige &amp; Öle ergänzen das HärdöpfelGwürz ideal als Dressing oder Marinade zu Kartoffelgerichten.</div></td>
+      <td>Öl/Essig</td>
+      <td><span class="kt">Graubünden</span></td>
+      <td class="sc ln">82/80</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">23</td>
+      <td><b class="ln">Grauwiler 1821</b> <div class="grund ln">Grauwilers Charcuterie- und Grillprodukte ergänzen Stedys HärdöpfelGwürz ideal beim Braten/Grillen von Kartoffeln und Fleisch.</div></td>
+      <td>Fleisch/Charcuterie</td>
+      <td><span class="kt">Basel-Stadt</span></td>
+      <td class="sc ln">86/75</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">24</td>
+      <td><b class="ln">H. Schwarzenbach</b> <div class="grund ln">Feinkostartikel wie Öle, Saucen und Nüsse lassen sich direkt mit dem HärdöpfelGwürz kombinieren und cross-sellen.</div></td>
+      <td>Feinkost</td>
+      <td><span class="kt">Zürich</span></td>
+      <td class="sc ln">82/78</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">25</td>
+      <td><b class="ln">Degusta Manufaktur (part of CSG)</b> <div class="grund ln">Degustas Grill- und Dipsaucen ergänzen Stedys Kartoffelgewürz natürlich (z.B. als Dip oder Grillbeilage) und sprechen die gleiche Foodi</div></td>
+      <td>Sauce/Dip</td>
+      <td><span class="kt">Bern</span></td>
+      <td class="sc ln">84/76</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">26</td>
+      <td><b class="ln">Gustav Spiess AG (Spiess Berneck)</b> <div class="grund ln">St. Galler Bratwurst, Schüblig und Co. sind klassische Beilagen zu gebackenen oder Bratkartoffeln, die sich direkt mit Stedy HärdöpfelG</div></td>
+      <td>Fleisch/Charcuterie</td>
+      <td><span class="kt">St. Gallen</span></td>
+      <td class="sc ln">82/78</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">27</td>
+      <td><b class="ln">Gabbani</b> <div class="grund ln">Verkauft Fleisch, Feinkost, Condimenti und Koch‑Kits, die sich glaubwürdig mit Stedys HärdöpfelGwürz für Beilagen, Grill und Braten kom</div></td>
+      <td>Feinkost</td>
+      <td><span class="kt">Tessin</span></td>
+      <td class="sc ln">78/82</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">28</td>
+      <td><b class="ln">Kernser Pasta</b> <div class="grund ln">Pasta ergänzt Stedys Rezept- und Genusskommunikation gut (gemeinsame Gerichte/Rezepte: z.B. Älpler-Magronä/Gratin mit Würze), cross-pro</div></td>
+      <td>Pasta</td>
+      <td><span class="kt">Obwalden</span></td>
+      <td class="sc ln">78/82</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">29</td>
+      <td><b class="ln">akari taste GmbH (KABUKI, BIO huusgmacht)</b> <div class="grund ln">Akari’s Dressings und Marinaden funktionieren gut als Dip oder Marinade für Kartoffelgerichte und ergänzen das HärdöpfelGwürz geschmack</div></td>
+      <td>Sauce/Dip</td>
+      <td><span class="kt">Zürich</span></td>
+      <td class="sc ln">82/76</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">30</td>
+      <td><b class="ln">Chäsbueb</b> <div class="grund ln">Käse (insbes. Raclette/Fondue und Käseplatten) passt geschmacklich sehr gut zu Kartoffelgerichten und dem HärdöpfelGwürz von Stedy.</div></td>
+      <td>Käse</td>
+      <td><span class="kt">Bern</span></td>
+      <td class="sc ln">78/80</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">31</td>
+      <td><b class="ln">La Gazza</b> <div class="grund ln">Olivenöle, Saucen und Antipasti von La Gazza ergänzen Stedys HärdöpfelGwürz natürlich bei Beilagen, Grill- und Kochrezepten.</div></td>
+      <td>Feinkost</td>
+      <td><span class="kt">Aargau</span></td>
+      <td class="sc ln">83/75</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">32</td>
+      <td><b class="ln">Château Constellation</b> <div class="grund ln">Weine passen natürlich zu Grill- und Kartoffelgerichten und lassen sich als glaubwürdiges Pairing bei Stedys Foodie-Community cross‑ver</div></td>
+      <td>Getränk</td>
+      <td><span class="kt">Wallis</span></td>
+      <td class="sc ln">78/80</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">33</td>
+      <td><b class="ln">Terra Rossa</b> <div class="grund ln">Kaltgepresstes Olivenöl passt geschmacklich und Gebrauchsszenarisch zu Kartoffelgerichten und ergänzt Stedys HärdöpfelGwürz ideal.</div></td>
+      <td>Öl/Essig</td>
+      <td><span class="kt">Zürich</span></td>
+      <td class="sc ln">82/75</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">34</td>
+      <td><b class="ln">Mimosa</b> <div class="grund ln">Mimosa verkauft Schweizer Grill-/Backöfen, Grillzubehör und eigene Gewürze — ideal komplementär zum HärdöpfelGwürz und relevant für Ste</div></td>
+      <td>Grillzubehör</td>
+      <td><span class="kt">Aargau</span></td>
+      <td class="sc ln">82/75</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">35</td>
+      <td><b class="ln">Urnäscher Käse</b> <div class="grund ln">Urnäscher bietet explizit Grillkäse an, der sich glaubwürdig mit Stedys HärdöpfelGwürz beim Grillen und Braten kombinieren lässt.</div></td>
+      <td>Käse</td>
+      <td><span class="kt">Appenzell A.Rh.</span></td>
+      <td class="sc ln">82/75</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">36</td>
+      <td><b class="ln">Metzgerei Künzli</b> <div class="grund ln">Charcuterie und Trockenfleisch ergänzen Stedys Kartoffelgewürz ideal bei Grillplatten, Beilagen und Feinkost-Kombinationen.</div></td>
+      <td>Fleisch/Charcuterie</td>
+      <td><span class="kt">Zürich</span></td>
+      <td class="sc ln">76/80</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">37</td>
+      <td><b class="ln">Brauerei Locher (Locher Craft)</b> <div class="grund ln">Craft-Bier passt gut zu Grill- und Kartoffelgerichten, so ist eine gemeinsame Promotion (z.B. Bier+HärdöpfelGwürz-Pairing) glaubwürdig </div></td>
+      <td>Bier</td>
+      <td><span class="kt">Appenzell I.Rh.</span></td>
+      <td class="sc ln">76/80</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">38</td>
+      <td><b class="ln">Wildberg Käse AG</b> <div class="grund ln">Grillkäse passt thematisch perfekt zu Stedys Grill-/Koch-Inhalten und ergänzt Würzmischungen wie HärdöpfelGwürz.</div></td>
+      <td>Käse</td>
+      <td><span class="kt">Zürich</span></td>
+      <td class="sc ln">85/70</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">39</td>
+      <td><b class="ln">Ueli‑Hof</b> <div class="grund ln">Bio-Grillprodukte (Grillbratwurst, Steaks) passen direkt zu Stedys HärdöpfelGwürz und gemeinsamen Grill-/Beilagen-Promotions.</div></td>
+      <td>Fleisch/Charcuterie</td>
+      <td><span class="kt">Luzern</span></td>
+      <td class="sc ln">75/80</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">40</td>
+      <td><b class="ln">Birrificio Ticinese San Martino</b> <div class="grund ln">Regionaler Craft‑Bierproduzent – Bier passt sehr gut zu Grill‑ und Genuss‑Inhalten und ergänzt STEDYs Gewürz-/Grill‑Promotionen.</div></td>
+      <td>Bier</td>
+      <td><span class="kt">Tessin</span></td>
+      <td class="sc ln">85/70</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">41</td>
+      <td><b class="ln">Misterraclette</b> <div class="grund ln">Raclettekäse wird klassisch mit Kartoffeln serviert, weshalb ein Kartoffel-/Grillgewürz wie Stedys HärdöpfelGwürz als Cross‑Sell und Co</div></td>
+      <td>Käse</td>
+      <td><span class="kt">Wallis</span></td>
+      <td class="sc ln">85/70</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">42</td>
+      <td><b class="ln">Birtel</b> <div class="grund ln">Craft-Bier passt gut zu Grill- und Snack-Situationen — ideale Kombi mit Stedys HärdöpfelGwürz bei BBQs, Events und Promos.</div></td>
+      <td>Bier</td>
+      <td><span class="kt">Basel-Land</span></td>
+      <td class="sc ln">75/80</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">43</td>
+      <td><b class="ln">Honest Catch</b> <div class="grund ln">Geräucherter Lachs und Seafood lassen sich gut mit STEDY-Rezepten und Kartoffel-/Grillgewürzen kombinieren.</div></td>
+      <td>Feinkost</td>
+      <td><span class="kt">Zürich</span></td>
+      <td class="sc ln">82/72</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">44</td>
+      <td><b class="ln">Metzgerei Spahni AG</b> <div class="grund ln">Als etablierte Metzgerei mit Grill- und Dry‑Aged-Produkten ergänzen ihre Fleischartikel STEDYs Grill-/Würz-Angebot und sprechen dieselb</div></td>
+      <td>Fleisch/Charcuterie</td>
+      <td><span class="kt">Bern</span></td>
+      <td class="sc ln">84/70</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">45</td>
+      <td><b class="ln">Platzhirsch Fleischspezialitäten</b> <div class="grund ln">Regionale Fleisch- und Wildprodukte lassen sich ideal mit Gewürzen (z.B. HärdöpfelGwürz) in Rezepten und Grill-/Bratvideos kombinieren.</div></td>
+      <td>Fleisch/Charcuterie</td>
+      <td><span class="kt">Bern</span></td>
+      <td class="sc ln">82/72</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">46</td>
+      <td><b class="ln">La Nébuleuse</b> <div class="grund ln">Craft-Biere passen sehr gut zu Grill- und Kartoffelgerichten – ideale Cross-Promo mit Stedys Würzen für Foodies und BBQ-Events.</div></td>
+      <td>Bier</td>
+      <td><span class="kt">Waadt</span></td>
+      <td class="sc ln">82/72</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">47</td>
+      <td><b class="ln">Oliven &amp; Öl Handelshaus AG (Oliven &amp; Öl)</b> <div class="grund ln">Olivenöl passt natürlich zu Koch- und Grillgewürzen und lässt sich gemeinsam mit dem HärdöpfelGwürz in Rezepten, Dressings und Dips bew</div></td>
+      <td>Öl/Essig</td>
+      <td><span class="kt">Zürich</span></td>
+      <td class="sc ln">73/80</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">48</td>
+      <td><b class="ln">Bernerboden Feinkost</b> <div class="grund ln">Regionale Feinkost- und Delikatessenprodukte aus Bern ergänzen Stedys HärdöpfelGwürz natürlich als Beilage/Topping und in Rezept-Kooper</div></td>
+      <td>Feinkost</td>
+      <td><span class="kt">Bern</span></td>
+      <td class="sc ln">78/75</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">49</td>
+      <td><b class="ln">Pastasy</b> <div class="grund ln">Frische, handgemachte Pasta passt gut zu Rezept-Kooperationen mit Gewürzen (z.B. Pasta-Beilage mit Stedy HärdöpfelGwürz) und ist für St</div></td>
+      <td>Pasta</td>
+      <td><span class="kt">Zürich</span></td>
+      <td class="sc ln">82/70</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">50</td>
+      <td><b class="ln">LocalFish</b> <div class="grund ln">Fisch- und Grillprodukte plus eigene Saucen passen gut zu STEDYs Grill-/Kartoffel-Community und bieten Cross‑selling-Potenzial.</div></td>
+      <td>Snack</td>
+      <td><span class="kt">Zürich</span></td>
+      <td class="sc ln">82/70</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">51</td>
+      <td><b class="ln">Härzbluet-Pasta</b> <div class="grund ln">Regionale Premium-Pasta passt natürlich zu Rezeptvideos mit Stedys HärdöpfelGwürz und lässt sich leicht als Kombi-Produkt im Shop/Promo</div></td>
+      <td>Pasta</td>
+      <td><span class="kt">Bern</span></td>
+      <td class="sc ln">82/70</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">52</td>
+      <td><b class="ln">Baumann Käse AG</b> <div class="grund ln">Käse passt hervorragend zu Stedy&#x27;s HärdöpfelGwürz bei Gratins, Raclette und Ofenkartoffeln.</div></td>
+      <td>Käse</td>
+      <td><span class="kt">Bern</span></td>
+      <td class="sc ln">72/80</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">53</td>
+      <td><b class="ln">Metzgerei Stettler</b> <div class="grund ln">Regionale Bratwurstmanufaktur mit starkem Grill- und Onlineshop-Fokus – ideale Ergänzung zu Stedys Grill- und Kartoffelgewürzen.</div></td>
+      <td>Fleisch/Charcuterie</td>
+      <td><span class="kt">Bern</span></td>
+      <td class="sc ln">82/70</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">54</td>
+      <td><b class="ln">La Moutarde Dudit JO</b> <div class="grund ln">Senf ergänzt Kartoffelgerichte perfekt und lässt sich glaubwürdig mit dem HärdöpfelGwürz cross-promoten.</div></td>
+      <td>Senf</td>
+      <td><span class="kt">Waadt</span></td>
+      <td class="sc ln">82/70</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">55</td>
+      <td><b class="ln">SteelSign</b> <div class="grund ln">Swiss-made Premium-Grills und Zubehör sind eine sehr glaubwürdige Ergänzung zu Stedys Grill-/Küchenwürzen für gemeinsame Produktvideos </div></td>
+      <td>Grill</td>
+      <td><span class="kt">Aargau</span></td>
+      <td class="sc ln">82/70</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">56</td>
+      <td><b class="ln">Moutarde Fribourgeoise (Primatessa AG)</b> <div class="grund ln">Senf ergänzt Kartoffelgerichte und Grillspeisen ideal und ist somit eine natürliche Kombi zum HärdöpfelGwürz.</div></td>
+      <td>Senf</td>
+      <td><span class="kt">Freiburg</span></td>
+      <td class="sc ln">82/70</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">57</td>
+      <td><b class="ln">Jenzer Fleisch &amp; Feinkost (Goldwurst)</b> <div class="grund ln">Metzgerei-Produkte (Wurst/Fleisch) harmonieren gut mit Grill- und Kartoffelgewürzen und sprechen dieselbe Foodie-Zielgruppe an.</div></td>
+      <td>Fleisch/Charcuterie</td>
+      <td><span class="kt">Basel-Land</span></td>
+      <td class="sc ln">82/70</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">58</td>
+      <td><b class="ln">Sterchi Fromages</b> <div class="grund ln">Sterchi verkauft Raclette und Fondues – ideale Ergänzung für Kartoffelgewürz-Cross-Selling an Genuss- und Grillkundschaft.</div></td>
+      <td>Käse</td>
+      <td><span class="kt">Neuenburg</span></td>
+      <td class="sc ln">82/70</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">59</td>
+      <td><b class="ln">Glarner Schabziger (GESKA AG)</b> <div class="grund ln">Schabziger wird ausdrücklich als Würze für Pasta, Kartoffeln und Saucen empfohlen und ergänzt damit STEDYs HärdöpfelGwürz optimal.</div></td>
+      <td>Käse</td>
+      <td><span class="kt">Glarus</span></td>
+      <td class="sc ln">82/70</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">60</td>
+      <td><b class="ln">Pura Culina</b> <div class="grund ln">Pura Culina verkauft regionale Feinkost und Saucen sowie Apéro‑Produkte, die sich natürlich mit Stedys HärdöpfelGwürz als Beilage/Finis</div></td>
+      <td>Feinkost</td>
+      <td><span class="kt">Luzern</span></td>
+      <td class="sc ln">79/72</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">61</td>
+      <td><b class="ln">Jucker Farm (Juckershop)</b> <div class="grund ln">Hausgemachte Saucen, Vinaigrettes und Feinkost passen gut zu Kartoffelgewürz/Grill-Anwendungen und sprechen dieselbe Foodie-Zielgruppe </div></td>
+      <td>Feinkost</td>
+      <td><span class="kt">Zürich</span></td>
+      <td class="sc ln">90/60</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">62</td>
+      <td><b class="ln">Waldfleisch</b> <div class="grund ln">Wildfleisch eignet sich für Grill- und Kartoffelgerichte, wo Stedy-Gewürze als geschmackliche Ergänzung gut funktionieren.</div></td>
+      <td>Fleisch/Charcuterie</td>
+      <td><span class="kt">Zürich</span></td>
+      <td class="sc ln">82/68</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">63</td>
+      <td><b class="ln">Ziegler delikat essen AG (Ziegler Metzg)</b> <div class="grund ln">Bietet grillfähige Fleisch‑ und Wurstprodukte, die sich perfekt mit Stedys Gewürzen/HärdöpfelGwürz kombinieren lassen.</div></td>
+      <td>Fleisch/Charcuterie</td>
+      <td><span class="kt">Zürich</span></td>
+      <td class="sc ln">85/65</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">64</td>
+      <td><b class="ln">Wüthrich Metzg</b> <div class="grund ln">Hausgemachte Fleisch- und Trockenfleischprodukte eignen sich sehr gut für Grill- und Beilagen-Kombinationen mit Stedys Kartoffelgewürz.</div></td>
+      <td>Fleisch/Charcuterie</td>
+      <td><span class="kt">Bern</span></td>
+      <td class="sc ln">80/70</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">65</td>
+      <td><b class="ln">Fonduesaucen (chaemimetzg AG)</b> <div class="grund ln">Ihre hausgemachten Grill‑ und Dip‑Saucen ergänzen das HärdöpfelGwürz ideal als Dip oder Marinade für Grill, Fondue und Bratkartoffeln.</div></td>
+      <td>Sauce/Dip</td>
+      <td><span class="kt">Aargau</span></td>
+      <td class="sc ln">78/72</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">66</td>
+      <td><b class="ln">Fromages Sciboz et Fils SA</b> <div class="grund ln">Käse, Fondues und Raclette ergänzen Kartoffel-/Grillgewürze perfekt und sprechen dieselbe Foodie-Zielgruppe an.</div></td>
+      <td>Käse</td>
+      <td><span class="kt">Freiburg</span></td>
+      <td class="sc ln">85/65</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">67</td>
+      <td><b class="ln">Salt-Pepper (Hofer + Co Präzisionsdrehteile AG)</b> <div class="grund ln">Premium‑Salz‑/Pfeffermühlen ergänzen Gewürzprodukte ideal als Upsell und Markenbotschafter in der Küche/Grill.</div></td>
+      <td>Küchengerät</td>
+      <td><span class="kt">Solothurn</span></td>
+      <td class="sc ln">80/70</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">68</td>
+      <td><b class="ln">Milchhuesli beider Basel (Wyniger Gruppe)</b> <div class="grund ln">Käse-Spezialitäten passen gut zu Kartoffelgerichten und profitieren von Cross-Promotion mit einem beliebten Kartoffelgewürz.</div></td>
+      <td>Käse</td>
+      <td><span class="kt">Basel-Stadt</span></td>
+      <td class="sc ln">70/80</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">69</td>
+      <td><b class="ln">Helvetic Barbeque</b> <div class="grund ln">BBQ‑Saucen und Grillrezepte ergänzen Stedys HärdöpfelGwürz nahtlos beim Grillen und Braten.</div></td>
+      <td>Sauce/Dip</td>
+      <td><span class="kt">Uri</span></td>
+      <td class="sc ln">80/70</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">70</td>
+      <td><b class="ln">Stoli</b> <div class="grund ln">Handveredelte Nüsse lassen sich glaubwürdig mit dem HärdöpfelGwürz zu gewürzten Snack-Varianten oder Co‑Branded‑Geschenksets kombiniere</div></td>
+      <td>Snack</td>
+      <td><span class="kt">Luzern</span></td>
+      <td class="sc ln">74/75</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">71</td>
+      <td><b class="ln">Senfgenoss</b> <div class="grund ln">Der Knoblauch-Rosmarin- und Grill-Senf von Senfgenoss lässt sich direkt als Marinade, Dip oder Topping zu Stedys HärdöpfelGwürz und Gri</div></td>
+      <td>Senf</td>
+      <td><span class="kt">Zürich</span></td>
+      <td class="sc ln">78/70</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">72</td>
+      <td><b class="ln">Metzgerei Keller</b> <div class="grund ln">Metzgerei Kellers Fleisch- und Wurstprodukte sind ideale Begleiter zu Gewürzen und Grillaktionen; Onlineshop + Catering ermöglichen dir</div></td>
+      <td>Fleisch/Charcuterie</td>
+      <td><span class="kt">Zürich</span></td>
+      <td class="sc ln">88/60</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">73</td>
+      <td><b class="ln">S-Fabrik / Scala Vini - Scala Gusti AG</b> <div class="grund ln">Verkauft Essig, Öle, Saucen und Gewürze – Produkte, die sich natürlich mit Stedys HärdöpfelGwürz in Rezepten und Promotions kombinieren</div></td>
+      <td>Feinkost</td>
+      <td><span class="kt">Bern</span></td>
+      <td class="sc ln">78/70</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">74</td>
+      <td><b class="ln">Moulin de Sévery</b> <div class="grund ln">Als Schweizer Feinkost-Anbieter mit Ölen, Saucen und Beilagen eignet sich das Sortiment gut für Cross‑Selling mit Stedys HärdöpfelGwürz</div></td>
+      <td>Feinkost</td>
+      <td><span class="kt">Waadt</span></td>
+      <td class="sc ln">78/70</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">75</td>
+      <td><b class="ln">Chäs Barmettler</b> <div class="grund ln">Fondue- und Raclette-Produkte (Kartoffeln + Käse) passen direkt zu Stedys HärdöpfelGwürz und erlauben gemeinsame Bundle- und Rezept-Pro</div></td>
+      <td>Käse</td>
+      <td><span class="kt">Luzern</span></td>
+      <td class="sc ln">78/70</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">76</td>
+      <td><b class="ln">Gourmetsenf</b> <div class="grund ln">Gourmet-Senf passt geschmacklich sehr gut zu Kartoffel-/Grillgewürzen und lässt sich als Bundle oder Beigabe gemeinsam vermarkten.</div></td>
+      <td>Senf</td>
+      <td><span class="kt">Freiburg</span></td>
+      <td class="sc ln">78/70</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">77</td>
+      <td><b class="ln">Paola&#x27;s Delikatessen</b> <div class="grund ln">Paola’s verkauft hochwertige Apéro-/Feinkostprodukte (Chutney, Antipasti, Öle, Pasta), die sich glaubwürdig als Beilage/Combo mit Stedy</div></td>
+      <td>Feinkost</td>
+      <td><span class="kt">Solothurn</span></td>
+      <td class="sc ln">72/75</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">78</td>
+      <td><b class="ln">Pappy Vuc</b> <div class="grund ln">Trockenfleisch eignet sich als Snack/Beilage auf Grill- und Tapas-Platten und ergänzt Ofen- oder Grillkartoffeln, die mit Stedys Härdöp</div></td>
+      <td>Fleisch/Charcuterie</td>
+      <td><span class="kt">Waadt</span></td>
+      <td class="sc ln">76/70</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">79</td>
+      <td><b class="ln">Essighüsli</b> <div class="grund ln">Essig ergänzt Kartoffelgerichte und Grillbeilagen (z.B. Kartoffelsalat, Dressings) und lässt sich glaubwürdig mit dem HärdöpfelGwürz ko</div></td>
+      <td>Öl/Essig</td>
+      <td><span class="kt">Aargau</span></td>
+      <td class="sc ln">76/70</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">80</td>
+      <td><b class="ln">Casa di Mattoni (Swiss Vinegar Manufactory AG)</b> <div class="grund ln">Balsamico und Spezialessige ergänzen Stedys HärdöpfelGwürz ideal als Dressing/Marinade für Kartoffel‑ und Grillrezepte.</div></td>
+      <td>Öl/Essig</td>
+      <td><span class="kt">Freiburg</span></td>
+      <td class="sc ln">74/72</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">81</td>
+      <td><b class="ln">Swiss Craft Drinks</b> <div class="grund ln">Getränke (Limonaden, Bier) passen thematisch gut zu Grill-/Gewürz‑Pairings und Kartoffelrezepten, gute Cross‑Promo‑Synergien.</div></td>
+      <td>Getränk</td>
+      <td><span class="kt">Waadt</span></td>
+      <td class="sc ln">80/65</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">82</td>
+      <td><b class="ln">Kisag</b> <div class="grund ln">Kisag ist eine etablierte Schweizer Küchenmarke ohne Gewürz‑Konflikt und eignet sich gut für Cross‑Selling in Rezept- und Grillvideos m</div></td>
+      <td>Küchengerät</td>
+      <td><span class="kt">Solothurn</span></td>
+      <td class="sc ln">75/70</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">83</td>
+      <td><b class="ln">Connie&#x27;s Kitchen</b> <div class="grund ln">Bio‑Ketchup passt natürlich zu Pommes, Grillgut und dem HärdöpfelGwürz und spricht dieselbe Familien-/Foodie-Zielgruppe an.</div></td>
+      <td>Ketchup</td>
+      <td><span class="kt">Zürich</span></td>
+      <td class="sc ln">76/68</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">84</td>
+      <td><b class="ln">Minnig Metzgerei AG</b> <div class="grund ln">Trockenfleisch/Charcuterie ergänzt Beilagen wie gewürzte Kartoffeln gut und ist glaubwürdig in gemeinsamen Rezept-/Apéro- und Grill-Con</div></td>
+      <td>Fleisch/Charcuterie</td>
+      <td><span class="kt">Zürich</span></td>
+      <td class="sc ln">76/68</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">85</td>
+      <td><b class="ln">TrueBrodo</b> <div class="grund ln">TrueBrodo ist eine Schweizer Koch-/Feinkostmarke mit DTC-Shop, ergänzt Koch- und Grillinhalte gut und ist kein Gewürzkonkurrent.</div></td>
+      <td>Feinkost</td>
+      <td><span class="kt">Zürich</span></td>
+      <td class="sc ln">78/65</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">86</td>
+      <td><b class="ln">Amstad Chäslädeli</b> <div class="grund ln">Fondues und Raclette werden häufig mit Kartoffeln serviert – Stedys HärdöpfelGwürz passt direkt zu ihren Fonduemischungen und Raclette-</div></td>
+      <td>Käse</td>
+      <td><span class="kt">Zürich</span></td>
+      <td class="sc ln">72/70</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">87</td>
+      <td><b class="ln">Miellerie</b> <div class="grund ln">Honig passt als Glasur/Marinade und geschmacklich hervorragend zu Grill- und Kartoffelrezepten mit Stedys HärdöpfelGwürz.</div></td>
+      <td>Honig</td>
+      <td><span class="kt">Waadt</span></td>
+      <td class="sc ln">72/70</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">88</td>
+      <td><b class="ln">Del Maître</b> <div class="grund ln">Charcuterie zum Grillen und Belegen passt hervorragend zu Stedys Foodie-/Grill-Community und ergänzenden Würz- bzw. Beilagen-Inhalten.</div></td>
+      <td>Fleisch/Charcuterie</td>
+      <td><span class="kt">Genf</span></td>
+      <td class="sc ln">82/60</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">89</td>
+      <td><b class="ln">Vinaigrerie-Moutarderie du Grand-Pré (moutardes.ch)</b> <div class="grund ln">Artisanale Senfe und Gewürzmischungen passen geschmacklich gut zu Stedys HärdöpfelGwürz und lassen sich in Rezepten oder Bundles kombin</div></td>
+      <td>Senf</td>
+      <td><span class="kt">Waadt</span></td>
+      <td class="sc ln">75/65</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">90</td>
+      <td><b class="ln">Smoker - Grill (Lack Storen AG)</b> <div class="grund ln">Perfekte Ergänzung: STEDY-Gewürze/Rubs sind ideal für die gleiche BBQ-/Grill-Zielgruppe und funktionieren sehr gut in Kombi mit Smoker-</div></td>
+      <td>Grill</td>
+      <td><span class="kt">Basel-Land</span></td>
+      <td class="sc ln">75/65</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">91</td>
+      <td><b class="ln">cheezy</b> <div class="grund ln">Käse (z.B. Raclette, Gratin oder geschmolzener Käse) passt sehr gut zu Kartoffelgerichten und würde sich glaubwürdig mit Stedys Härdöpf</div></td>
+      <td>Käse</td>
+      <td><span class="kt">Genf</span></td>
+      <td class="sc ln">68/70</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">92</td>
+      <td><b class="ln">Etter</b> <div class="grund ln">Premium-Schweizer Genussprodukte mit Fokus auf Foodies und Geschenke passen gut zu Rezept-/Grillpairings mit Stedys Gewürz.</div></td>
+      <td>Spirituose</td>
+      <td><span class="kt">Zug</span></td>
+      <td class="sc ln">73/65</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">93</td>
+      <td><b class="ln">Miellerie de Céligny</b> <div class="grund ln">Demeter-Honig eignet sich als süße Glasur/Marinade für Grill- und Ofengerichte und ergänzt Stedys HärdöpfelGwürz geschmacklich.</div></td>
+      <td>Honig</td>
+      <td><span class="kt">Genf</span></td>
+      <td class="sc ln">72/65</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">94</td>
+      <td><b class="ln">Culti-Shop (Keuffer Sàrl)</b> <div class="grund ln">Verkauf von Ölen, Senf sowie frischen Kartoffeln passt thematisch und geschmacklich direkt zum HärdöpfelGwürz und gemeinsamen Rezept-/P</div></td>
+      <td>Öl/Essig</td>
+      <td><span class="kt">Waadt</span></td>
+      <td class="sc ln">75/60</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">95</td>
+      <td><b class="ln">See-Distillerie Beckenried</b> <div class="grund ln">Regionale Premium-Spirituosen passen gut zu Foodie-/Grill‑Content und ergänzen Gewürz-/Grill-Pairings.</div></td>
+      <td>Spirituose</td>
+      <td><span class="kt">Nidwalden</span></td>
+      <td class="sc ln">72/62</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">96</td>
+      <td><b class="ln">SWISSMISO</b> <div class="grund ln">Miso bringt kräftige Umami-Aromen und eignet sich als Marinade oder Sauce, die gut mit Kartoffelgewürzen und Grillrezepten harmoniert.</div></td>
+      <td>Feinkost</td>
+      <td><span class="kt">Waadt</span></td>
+      <td class="sc ln">68/62</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">97</td>
+      <td><b class="ln">Meera&#x27;s Finest</b> <div class="grund ln">Marinaden und BBQ-Saucen aus der Schweiz ergänzen Kartoffel-/Grillgerichte ideal und lassen sich glaubwürdig mit dem HärdöpfelGwürz kom</div></td>
+      <td>Marinade/Rub</td>
+      <td><span class="kt">Schwyz</span></td>
+      <td class="sc ln">70/60</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">98</td>
+      <td><b class="ln">Fromagerie Les Reussilles</b> <div class="grund ln">Käse passt hervorragend zu Gewürzen und zu Grill-/Kochrezepten, ideal für gemeinsame Promotions.</div></td>
+      <td>Käse</td>
+      <td><span class="kt">Jura</span></td>
+      <td class="sc ln">76/52</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">99</td>
+      <td><b class="ln">Fassbind (S. Fassbind AG)</b> <div class="grund ln">Passt, weil Whisky und Spirituosen gut zu Grill-/Food‑Pairings, Geschenk‑Bundles und Event‑Videos rund ums Kochen/Grillen kombiniert we</div></td>
+      <td>Spirituose</td>
+      <td><span class="kt">Schwyz</span></td>
+      <td class="sc ln">72/55</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr>
+<tr class="">
+      <td class="num">100</td>
+      <td><b class="ln">Les Miels de Stéphanie</b> <div class="grund ln">Honig funktioniert gut als Glasur/Marinade bei Grillgerichten und bringt eine süsse Note, die Kartoffelwürze geschmacklich ergänzen kan</div></td>
+      <td>Honig</td>
+      <td><span class="kt">Genf</span></td>
+      <td class="sc ln">62/62</td>
+      <td class="act"><span class="prep">startbereit</span></td>
+    </tr></tbody>
+  </table>
   </div>
-</section>
+</div></section>
 
-<!-- FÜR WELCHE PRODUKTE + WARUM JETZT -->
-<section id="passt">
-  <div class="wrap">
-    <div class="shead">
-      <div class="eyebrow">Für welche Produkte das passt</div>
-      <h2>Alles, was sich glaubwürdig mit gutem Essen und unserem Hauptgewürz verbindet.</h2>
-      <p>Wir nehmen bewusst nur ausgewählte Produkte auf, die wir guten Gewissens zeigen. Genau diese Selektivität schützt Ihren Auftritt — und das Vertrauen der Community.</p>
-    </div>
-    <div class="deliver" id="passt-list"></div>
-    <div class="guarantee" style="background:linear-gradient(160deg,#fff,#fdeef4);border-color:rgba(200,20,94,.22);margin-top:24px">
-      <div class="shield">⏳</div>
-      <div><b>Warum jetzt — die Plätze sind begrenzt.</b><p>Jedes Video braucht echte Dreh-Zeit, und die Community merkt sofort, wenn etwas nach Massenwerbung aussieht. Darum nehmen wir pro Quartal nur eine kleine Zahl neuer Partner auf — keine künstliche Verknappung, sondern echte Produktionskapazität. Und wir halten Kategorien sauber: Wer zuerst da ist, sichert sich Platz und (ab Paket „Rampenlicht") die Kategorie, bevor sie ein Wettbewerber besetzt.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- EINWÄNDE -->
-<section class="band-cream" id="einwaende">
-  <div class="wrap">
-    <div class="shead center">
-      <div class="eyebrow">Was Sie sich jetzt vielleicht fragen</div>
-      <h2>Die ehrlichen Antworten.</h2>
-    </div>
-    <div class="faq" id="faq"></div>
-  </div>
-</section>
-
-<!-- FINAL CTA -->
-<section class="finalcta" id="kontakt">
-  <div class="wrap">
-    <div class="eyebrow">Sichern Sie sich einen Partner-Platz</div>
-    <h2>Bringen wir Ihr Produkt auf die Bühne der Schweizer Nr. 1?</h2>
-    <p class="lead">Ein kurzer Call mit Estefano (Marketing Stedy) genügt, um zu prüfen, ob Ihr Produkt passt und welcher Platz frei ist. Unverbindlich.</p>
-    <div class="ctabtns">
-      <a class="btn btn-primary" href="tel:+41795051744">📞 Anrufen: <span class="ln">079 505 17 44</span></a>
-      <a class="btn btn-ghost" href="https://wa.me/41795051744" target="_blank" rel="noopener">WhatsApp</a>
-      <a class="btn btn-ghost" href="mailto:estefano@estefano-elhawary.ch?subject=Stedy%20Partner-Bühne"><span class="ln">E-Mail</span></a>
-    </div>
-    <div class="ps"><b>PS:</b> Das Teuerste an einer Marke ist nicht die Produktion — es ist das Vertrauen. Das haben wir in fast 50 Jahren aufgebaut: 752'322 Haushalte, 4.91★ aus über 100'000 Bewertungen. Ihr Produkt darf sich das ab dem ersten Video ausleihen. Melden Sie sich, solange dieses Quartal noch Plätze frei sind.</div>
-  </div>
-</section>
-
-<footer>
-  <div class="wrap row">
-    <div><b>Stedy Gwürz AG</b> · Partner-Bühne · sofein.ch &nbsp;·&nbsp; Marketing: Estefano Elhawary AG</div>
-    <div><span class="ln">079 505 17 44 · estefano@estefano-elhawary.ch</span></div>
-  </div>
-</footer>
-
-<script>
-var CHF=function(n){return "CHF "+Math.round(n).toLocaleString('de-CH').replace(/’|,|\./g,"'");};
-var fmt=function(n){return Math.round(n).toLocaleString('de-CH').replace(/’|,|\./g,"'");};
-
-var ROI_INPUTS=[
-  {key:'reach',label:'Erreichte Stedy-Reichweite / Monat',def:80000,min:5000,max:500000,step:5000,unit:''},
-  {key:'click',label:'Klickrate auf Ihr Produkt',def:3,min:0.5,max:10,step:0.1,unit:'%'},
-  {key:'conv',label:'Conversion-Rate im Shop',def:3,min:1,max:8,step:0.1,unit:'%'},
-  {key:'price',label:'Verkaufspreis Ihres Produkts',def:95,min:15,max:400,step:1,unit:'CHF'},
-  {key:'margin',label:'Ihre Bruttomarge',def:35,min:15,max:70,step:1,unit:'%'},
-  {key:'repeat',label:'Wiederkäufe pro Jahr (1 = nur Erstkauf)',def:1,min:1,max:4,step:0.5,unit:'×'}
-];
-var ASSUMPTIONS=[
-  "Beispiel-Werte, keine Garantie: Alle Voreinstellungen sind bewusst konservativ und mit Ihren echten Zahlen exakt nachrechenbar. Der Rechner zeigt eine Grössenordnung.",
-  "Erreichte Reichweite (Default 80'000/Mt.): Mischwert aus Video-Views, Newsletter-Öffnungen und Shop-Sichtbarkeit — ein Bruchteil der Gesamt-Markenreichweite (752'322 Haushalte).",
-  "Klickrate 3,0 %: am unteren Rand der Food-Video-/Social-Benchmarks (Mobile-Video-CTR ~3,4 %, Instagram-Food ~2,5 %). Quelle: Dash Social / Smart Insights.",
-  "Conversion 3,0 %: konservativ zwischen CH-Gesamtmarkt (2,3 %) und Food-Bestwert (6,0 %). Eine Empfehlung + Video hebt erfahrungsgemäss an — wir bleiben tief. Quellen: Statista, Invesp.",
-  "Verkaufspreis 95 CHF / Marge 35 %: typischer Specialty-Food-Warenkorb bzw. unterer Margenwert. Mit Ihren echten Zahlen ersetzen.",
-  "Wiederkauf-Faktor wirkt nur auf den Jahreswert. Lebensmittel erreichen real 40 %+ Wiederkaufrate — der Default 1,0 unterschlägt das bewusst.",
-  "NICHT eingerechnet (alles zusätzlicher Hebel): Halo-/Vertrauenseffekt der Empfehlung, Co-Branding-Wirkung, Markenbekanntheit, Distributions-Türöffner. Diese machen die echte Rechnung tendenziell besser, nicht schlechter."
-];
-var DELIVER=[
-  ["Produkt-Video mit Valentin Stettler","Ihr Produkt wird echt mit dem HärdöpfelGwürz® in Szene gesetzt — im Stil unserer 13 bestehenden Testimonial-Videos. Kein Stock-Material."],
-  ["Fester Listing-Platz auf sofein.ch","Eigene Produktseite mit eingebettetem Video, dort wo unsere Foodie-Community ohnehin einkauft."],
-  ["Der Halo der #1-Marke","Ihr Produkt erscheint Seite an Seite mit Stedy (4.91★, 100'000+ Bewertungen) — Sie leihen sich ~50 Jahre Vertrauen."],
-  ["Laufende monatliche Promo-Wellen","Newsletter-Platzierung an die Community + Social-Posts — dauerhafte Sichtbarkeit, nicht ein einzelner Post."],
-  ["Das Video gehört auch Ihnen","Sie erhalten das fertige Video und dürfen es auf Ihren eigenen Kanälen weiterverwenden."],
-  ["Monatliches Reporting in Klartext","Video-Views, Shop-Aufrufe Ihrer Seite, Klicks aus Newsletter/Social — Sie sehen schwarz auf weiss, was die Bühne bringt."],
-  ["Kategorie-Exklusivität (ab Paket Rampenlicht)","In Ihrer Produktkategorie nehmen wir keinen direkten Wettbewerber auf, solange Sie Partner sind."],
-  ["Fester Ansprechpartner","Direkt aus dem Stedy-Marketing — kurze Wege, schnelle Umsetzung, keine Agentur-Warteschlange."]
-];
-var PASST=[
-  ["Food","Premium-Saucen, Öle, Marinaden, Snacks, Fleisch- & Grillspezialitäten."],
-  ["Küche","Geräte und Helfer wie Heissluftfritteusen, Pfannen, Kochzubehör."],
-  ["Echt anwendbar","Produkte, die im Video wirklich verwendet werden können — kein Stillstand-Marketing."],
-  ["Passt zur Marke","Bevorzugt Schweizer Qualität oder Produkte, die zur Swiss-Made-Manufaktur passen."]
-];
-var TIERS=[
-  {nm:"Auftritt",monthly:390,setup:2900,best:false,desc:"1 professionelles Produkt-Video mit Valentin + HärdöpfelGwürz®, Shop-Listing auf sofein.ch, danach laufend 1 Promo-Welle/Monat (Social oder Newsletter im Wechsel) + Basis-Reporting.",bf:"Kleinere Hersteller / erste Marken, die Stedys Bühne risikoarm testen wollen."},
-  {nm:"Rampenlicht",monthly:790,setup:4500,best:true,desc:"1 hochwertiges Video mit Valentin, Shop-Listing PLUS Kategorie-Exklusivität (kein Wettbewerber neben Ihnen). Laufend 2 Promo-Wellen/Monat (Newsletter UND Social), feste Newsletter-Platzierung, detailliertes Reporting.",bf:"Etablierte Marken, die ihre Kategorie bei Stedy sichern und dauerhaft Reichweite wollen."},
-  {nm:"Hauptrolle",monthly:1490,setup:7900,best:false,desc:"2 Videos mit Valentin (verschiedene Anwendungs-Szenen), Premium-Listing, garantierte Kategorie-Exklusivität, Aufnahme ins Testimonial-/Story-Format. Laufend bis zu 4 Promo-Wellen/Monat über alle Kanäle + Voll-Reporting.",bf:"Marken, die maximale Sichtbarkeit wollen und Stedy zum festen Wachstumskanal machen."}
-];
-var FAQ=[
-  ["Reichweite kann ich auch selbst aufbauen — dann gehört sie mir.","Stimmt, und langfristig sollten Sie eine eigene Audience haben — alles, was wir für Sie drehen, dürfen Sie auch auf Ihren Kanälen weiterverwenden. Aber Reichweite UND Vertrauen selbst aufzubauen dauert Jahre und kostet laut Branchenrichtwert EUR 5'000–10'000/Monat über Monate, mit ungewissem Ausgang. Sie mieten sich hier sofort in eine fertige, treue Community ein — schneller und sicherer als bei null zu starten."],
-  ["Das ist mir zu teuer.","Schauen wir die Alternativen an: Allein ein professionelles Produktvideo kostet in der Schweiz CHF 2'900–7'500 — ganz ohne Distribution. Schweiz Tourismus zahlt CHF 27'500 für ein einziges 30-Sekunden-Sponsorvideo. Ein einzelner Macro-Influencer-Post liegt bei CHF 800–5'000 — ohne Dauerpräsenz. Sie bekommen Video, Listing und laufende Promotion unter der Nr. 1 für deutlich weniger — und pro Kategorie nur einmal."],
-  ["Passt mein Produkt überhaupt zu Stedy?","Wir nehmen bewusst nicht jedes Produkt, sondern nur ausgewählte, die zu unserer Genuss- und Kochwelt passen — ob Sauce, Öl, Küchengerät, Snack oder Fleisch. Genau diese Selektivität ist Ihr Vorteil: Unsere Community erwartet, dass alles, was Stedy zeigt, gut ist. Im Erstgespräch klären wir in 15 Minuten, ob es passt."],
-  ["Bringt mir das wirklich Verkäufe — oder nur Aufmerksamkeit?","Ehrlich: Wir garantieren keine fixe Verkaufszahl, das wäre unseriös. Aber die Mechanik ist belegt: Produktvideos heben die Shop-Conversion (4,8 % statt 2,9 %), 84 % entscheiden nach einem Marken-Video, und Traffic aus einer vertrauten Marke konvertiert erfahrungsgemäss besser als kalte Werbung. Im Rechner sehen Sie die Grössenordnung — und den Markenwert gibt es obendrauf."],
-  ["Warum muss mein Produkt mit eurem Gewürz kombiniert werden?","Weil genau das den Vertrauenstransfer auslöst. Das HärdöpfelGwürz® ist das Produkt, das die Community kennt und liebt — der Anker, über den Stedy überhaupt vertraut wird. Wird Ihr Produkt neben diesem bekannten Original im echten Einsatz gezeigt, fällt dieses Vertrauen auf Ihr Produkt ab."]
-];
-var VIDEOS=['t-0993a11b','t-1ec30aec','t-510fc966','t-7ceb5251','t-85f38ee9','t-ad7e17b1','t-b14cae6f','t-b4ff546a','t-bb0ea3e3'];
-
-function el(h){var d=document.createElement('div');d.innerHTML=h.trim();return d.firstChild;}
-var dv=document.getElementById('deliver');
-DELIVER.forEach(function(d){dv.appendChild(el('<div class="d"><div class="ck">✓</div><span><b>'+d[0]+'.</b> '+d[1]+'</span></div>'));});
-var pl=document.getElementById('passt-list');
-PASST.forEach(function(d){pl.appendChild(el('<div class="d"><div class="ck">✓</div><span><b>'+d[0]+':</b> '+d[1]+'</span></div>'));});
-var pr=document.getElementById('prices');
-TIERS.forEach(function(t){
-  pr.appendChild(el('<div class="price'+(t.best?' best':'')+'">'+(t.best?'<div class="tag">Empfohlen</div>':'')+
-    '<div class="nm">'+t.nm+'</div><div class="amt">'+fmt(t.monthly)+'<small> CHF/Mt.</small></div>'+
-    '<div class="setup">+ einmalig <b>CHF '+fmt(t.setup)+'</b> Setup (Videoproduktion)</div>'+
-    '<div class="desc">'+t.desc+'</div><div class="best-for"><b>Für:</b> '+t.bf+'</div></div>'));
-});
-var fq=document.getElementById('faq');
-FAQ.forEach(function(q){fq.appendChild(el('<details class="qa"><summary>'+q[0]+'</summary><div class="a">'+q[1]+'</div></details>'));});
-var al=document.getElementById('assump-list');
-ASSUMPTIONS.forEach(function(a){al.appendChild(el('<li>'+a+'</li>'));});
-
-// ROI
-var state={};
-var inputsBox=document.getElementById('inputs');
-ROI_INPUTS.forEach(function(f){
-  state[f.key]=f.def;
-  var row=el('<div class="field"><div class="lab"><span>'+f.label+'</span><span class="val"><span id="v-'+f.key+'"></span> <small>'+(f.unit||'')+'</small></span></div><input type="range" id="i-'+f.key+'" min="'+f.min+'" max="'+f.max+'" step="'+f.step+'" value="'+f.def+'"></div>');
-  inputsBox.appendChild(row);
-  var inp=row.querySelector('input');
-  inp.addEventListener('input',function(){state[f.key]=parseFloat(inp.value);calc();});
-});
-function calc(){
-  var R=state.reach, CL=state.click/100, CV=state.conv/100, P=state.price, M=state.margin/100, REP=state.repeat;
-  var klicks=R*CL;
-  var buys=klicks*CV;
-  var revM=buys*P;
-  var profM=revM*M;
-  var revY=revM*12*REP;
-  ROI_INPUTS.forEach(function(f){
-    var v=state[f.key];
-    document.getElementById('v-'+f.key).textContent=(f.key==='price')?fmt(v):(f.unit==='%'||f.unit==='×'?String(v):fmt(v));
-  });
-  document.getElementById('r-month').textContent='+ '+CHF(Math.round(revM/10)*10)+' /Mt';
-  document.getElementById('r-year').textContent='≈ '+CHF(Math.round(revY/100)*100)+' pro Jahr'+(REP>1?' (mit Wiederkauf ×'+REP+')':'');
-  document.getElementById('r-profit').textContent='+ '+CHF(Math.round(profM/10)*10)+'/Mt';
-  document.getElementById('r-buys').textContent='~ '+fmt(buys)+' Käufe';
-  document.getElementById('r-wk').textContent='Aus '+fmt(R)+' erreichten Personen → ~'+fmt(klicks)+' Klicks → ~'+fmt(buys)+' Käufe/Monat. Der Markenwert (Vertrauen, Bekanntheit) kommt obendrauf.';
-}
-calc();
-
-document.getElementById('demo').addEventListener('change',function(e){document.body.classList.toggle('demo',e.target.checked);});
-
-var FADE=document.querySelectorAll('.fadein');
-if('IntersectionObserver' in window){
-  var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});},{threshold:.08,rootMargin:'0px 0px -5% 0px'});
-  FADE.forEach(function(n){io.observe(n);});
-}else{FADE.forEach(function(n){n.classList.add('in');});}
-setTimeout(function(){document.querySelectorAll('.fadein:not(.in)').forEach(function(n){n.classList.add('in');});},1400);
-</script>
-</body>
-</html>
+<footer><div class="wrap">
+  <b>Stedy Gwürz AG</b> · Partner-Programm · sofein.ch &nbsp;·&nbsp; Akquise &amp; Marketing: Estefano Elhawary AG · 079 505 17 44 · estefano@estefano-elhawary.ch
+</div></footer>
+<script>document.getElementById('demo').addEventListener('change',function(e){document.body.classList.toggle('demo',e.target.checked);});</script>
+</body></html>
