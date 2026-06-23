@@ -43,15 +43,18 @@ section{padding:74px 0}
 .dot{width:11px;height:11px;border-radius:50%;background:var(--magenta);box-shadow:0 0 0 4px rgba(200,20,94,.14);flex:none}
 .topbar .spacer{flex:1}
 .confchip{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:5px 11px;white-space:nowrap}
-@media(max-width:760px){.confchip{display:none}}
 .demo-toggle{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--muted);cursor:pointer;user-select:none}
+@media(max-width:760px){.confchip{font-size:9.5px;padding:4px 9px;max-width:52vw;overflow:hidden;text-overflow:ellipsis}}
+@media(max-width:640px){.topbar .demo-toggle{display:none}}
 .demo-toggle input{accent-color:var(--magenta)}
 .btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--sans);font-weight:700;font-size:15px;border-radius:999px;padding:12px 20px;text-decoration:none;border:0;cursor:pointer;white-space:nowrap;transition:transform .15s ease,box-shadow .15s ease,background .15s}
 .btn-primary{background:var(--magenta);color:#fff;box-shadow:0 10px 24px -8px rgba(200,20,94,.6)}
 .btn-primary:hover{background:var(--magenta-deep);transform:translateY(-1px)}
 .btn-ghost{background:transparent;color:var(--ink);border:1.5px solid var(--line)}
 .btn-ghost:hover{border-color:var(--magenta);color:var(--magenta)}
-.btn-sm{padding:9px 16px;font-size:14px}
+.btn-sm{padding:10px 16px;font-size:14px;min-height:44px}
+.yearly{font-size:12.5px;color:var(--teal-deep);font-weight:600;margin:2px 0 12px}
+.price.best .yearly{color:#fff;opacity:.92}
 @media(max-width:520px){.topbar .btn .full{display:none}}
 
 .hero{position:relative;padding:48px 0 64px;background:
@@ -175,7 +178,7 @@ input[type=range]::-moz-range-thumb{width:18px;height:18px;border-radius:50%;bac
 .qa summary::-webkit-details-marker{display:none}
 .qa summary::after{content:"+";color:var(--magenta);font-size:22px;font-weight:400;flex:none}
 .qa[open] summary::after{content:"–"}
-.qa .a{padding:0 20px 18px;font-size:15px;color:#52424a}
+.qa .a{padding:0 20px 18px;font-size:15px;color:#52424a;line-height:1.64}
 
 .finalcta{background:radial-gradient(120% 120% at 20% 0%,#fdeef4,#fff);text-align:center}
 .finalcta h2{font-size:clamp(28px,4.6vw,44px);max-width:20ch;margin:0 auto 14px}
@@ -191,7 +194,7 @@ body.demo .ln{filter:blur(6px);user-select:none}
 .fadein.in{opacity:1;transform:none}
 @media(prefers-reduced-motion:reduce){.fadein{opacity:1;transform:none;transition:none}}
 
-.hero-sub{font-family:var(--serif);font-size:clamp(16px,2vw,20px);color:var(--magenta);font-weight:600;margin:10px 0 0}
+.hero-sub{font-family:var(--serif);font-size:clamp(15px,1.9vw,19px);color:var(--magenta);font-weight:600;margin:6px 0 10px}
 .hero-sec{font-weight:700;font-size:15px;color:var(--ink);text-decoration:underline;text-underline-offset:3px}
 .hero-sec:hover{color:var(--magenta)}
 .proofband{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
@@ -223,7 +226,7 @@ body.demo .ln{filter:blur(6px);user-select:none}
     <span class="confchip">Persönlich für Grillfürst · vertraulich</span>
     <div class="spacer"></div>
     <label class="demo-toggle" title="Kontaktdaten für Aufnahmen unkenntlich machen"><input type="checkbox" id="demo"> Demo</label>
-    <a class="btn btn-primary btn-sm" href="tel:+41795051744">📞 <span class="ln">079 505 17 44</span></a>
+    <a class="btn btn-primary btn-sm" href="tel:+41795051744">📞 Anrufen<span class="full ln">&nbsp;· 079 505 17 44</span></a>
   </div>
 </div>
 
@@ -231,8 +234,8 @@ body.demo .ln{filter:blur(6px);user-select:none}
 <header class="hero">
   <div class="wrap">
     <div class="eyebrow">Stedy Partner-Programm · persönlich für Grillfürst</div>
-    <h1>Ihr Grill, getragen vom Vertrauen der <span class="accent">Schweizer Nr. 1</span> — vor 752'322 Haushalten.</h1>
     <div class="hero-sub">Den Grill-Platz vergeben wir pro Kategorie nur einmal.</div>
+    <h1>Ihr Grill, getragen vom Vertrauen der <span class="accent">Schweizer Nr. 1</span> — vor 752'322 Haushalten.</h1>
     <div class="hero-cta">
       <a class="btn btn-primary" href="tel:+41795051744">📞 Kurzer Call — <span class="ln">079 505 17 44</span></a>
       <a class="btn btn-ghost" href="#rechner">📊 Zahlen ansehen</a>
@@ -283,7 +286,7 @@ body.demo .ln{filter:blur(6px);user-select:none}
       <p>Der Käufer glaubt nicht einem Werbeclaim von null an. Er glaubt dem Urteil einer Marke, der er schon vertraut. Genau das springt an, wenn die Nr. 1 Ihr Produkt zeigt.</p>
     </div>
     <div class="cards">
-      <div class="card fadein"><div class="ic">🤝</div><h3>Wie der Vertrauenstransfer wirkt</h3><p>Das HärdöpfelGwürz® kennen und schätzen Hunderttausende Schweizer Haushalte. Steht Ihr Produkt im Video daneben, überträgt sich dieses Vertrauen — nicht, weil Sie behaupten, gut zu sein, sondern weil der bekannte Anker es glaubwürdig macht. <b>92 %</b> der Menschen vertrauen Empfehlungen mehr als jeder Werbung (Nielsen, Global Trust in Advertising).</p></div>
+      <div class="card fadein"><div class="ic">🤝</div><h3>Wie der Vertrauenstransfer wirkt</h3><p>Das HärdöpfelGwürz® kennen und schätzen Hunderttausende Schweizer Haushalte. Steht Ihr Produkt im Video daneben, überträgt sich dieses Vertrauen — nicht, weil Sie behaupten, gut zu sein, sondern weil der bekannte Anker es glaubwürdig macht. Menschen vertrauen einer Empfehlung deutlich mehr als bezahlter Werbung — am stärksten, wenn die empfehlende Marke selbst Vertrauen geniesst.</p></div>
       <div class="card fadein"><div class="ic">👥</div><h3>Fertige, treue Community</h3><p><b>752'322 Haushalte</b>, 5'215 Läden, 4.91★ aus über 100'000 echten Bewertungen, 2 Mio.+ Social-Reaktionen. Diese Reichweite müssen Sie nicht über Jahre aufbauen — Sie mieten sie sich ab dem ersten Video.</p></div>
       <div class="card fadein"><div class="ic">🔥</div><h3>Video weckt Appetit</h3><p>Ein echtes Anwendungs-Video weckt Begehren — und das zahlt auf die Conversion ein. In fremden Shop-Benchmarks kaufen mit Produktvideo spürbar mehr als ohne (4,8 % statt 2,9 %, fremde Benchmark, nicht unsere Zusage). Ihre echte Zahl rechnen wir im Rechner bewusst tiefer.</p></div>
       <div class="card fadein"><div class="ic">🛡️</div><h3>Empfehlung schlägt Eigenwerbung</h3><p>Ein Dritter, der Sie zeigt, überzeugt stärker als Sie selbst. Genau dieses Vertrauen trägt Ihr Grill, sobald die Nr. 1 es zeigt — nicht ein Werbeclaim aus eigenem Mund.</p></div>
@@ -320,7 +323,7 @@ body.demo .ln{filter:blur(6px);user-select:none}
       </div>
     </div>
     <div class="reach-note">
-      <b>Ehrlich zur Reichweite:</b> Die 752'322 Haushalte sind unsere Gesamt-Markenreichweite über bald 50 Jahre. Pro Promo-Welle aktivieren wir realistisch einen <b>Bruchteil</b> davon — darum rechnet der Regler bewusst konservativ mit ~80'000/Monat. Und: Der <b>Markenwert</b> (Vertrauen, Bekanntheit, Tür-Öffner) kommt obendrauf und ist hier <b>nicht</b> eingerechnet. Ziehen Sie die Werte ruhig nach unten — die Rechnung soll halten.
+      <b>Ehrlich zur Reichweite:</b> Die 752'322 Haushalte sind unsere Gesamt-Markenreichweite über bald 50 Jahre. Pro Promo-Welle aktivieren wir realistisch einen <b>Bruchteil</b> davon — darum rechnet der Regler bewusst konservativ mit ~80'000/Monat. Und: Der <b>Markenwert</b> (Vertrauen, Bekanntheit, Tür-Öffner) kommt obendrauf und ist hier <b>nicht</b> eingerechnet. Ziehen Sie die Werte ruhig nach unten — die Rechnung soll halten. <b>Selten gekaufte Hochpreis-Produkte</b> (z. B. Grills, Maschinen): Conversion-Regler bewusst tief stellen (0,5–1 %) — das ist realistischer als der allgemeine Shop-Wert.
     </div>
     <details class="assump">
       <summary>Alle Annahmen offen gelegt</summary>
@@ -355,7 +358,7 @@ body.demo .ln{filter:blur(6px);user-select:none}
       <h2>Transparent. Einmaliger Setup fürs Video, dann laufende Promotion.</h2>
       <p>Werbe-/Produktionsaufwand transparent. Die monatliche Gebühr startet erst, wenn Video und Listing live sind. Monatlich kündbar.</p>
     </div>
-    <div class="anchor" style="margin-top:0;margin-bottom:22px">Zum Vergleich, bevor Sie die Preise sehen: <b>Schweiz Tourismus zahlt CHF 27'500 für ein einziges 30-Sekunden-Sponsorvideo.</b> Allein eine Schweizer Videoproduktion kostet CHF 2'900–7'500 — ohne jede Reichweite. Hier ist Video, Listing <b>und</b> Dauer-Präsenz unter der Nr. 1 schon ab dem Folgenden dabei.</div>
+    <div class="anchor" style="margin-top:0;margin-bottom:22px">Zum Vergleich, bevor Sie die Preise sehen: <b>Schweiz Tourismus zahlt CHF 27'500 für ein einziges 30-Sekunden-Sponsorvideo.</b> Allein eine Schweizer Videoproduktion kostet CHF 2'900–7'500 — ohne jede Reichweite. Hier ist Video, Listing <b>und</b> laufende Dauer-Präsenz unter der Schweizer Nr. 1 bereits ab <b>CHF 390 im Monat</b> dabei — plus einmaliger Produktion.</div>
     <div class="prices" id="prices"></div>
     <div style="text-align:center;font-size:12.5px;color:var(--muted);margin-top:14px">Alle Preise in CHF, zzgl. gesetzlicher MwSt. Geschäftskunden in der EU: Reverse-Charge. Monatlich kündbar, Monatsgebühr erst ab Live-Schaltung. EUR-Äquivalent auf Anfrage.</div>
     <div class="guarantee">
@@ -421,7 +424,7 @@ var fmt=function(n){return Math.round(n).toLocaleString('de-CH').replace(/’|,|
 var ROI_INPUTS=[
   {key:'reach',label:'Erreichte Stedy-Reichweite / Monat',def:80000,min:5000,max:500000,step:5000,unit:''},
   {key:'click',label:'Klickrate auf Ihr Produkt',def:2,min:0.5,max:10,step:0.1,unit:'%'},
-  {key:'conv',label:'Conversion-Rate im Shop',def:2.3,min:1,max:8,step:0.1,unit:'%'},
+  {key:'conv',label:'Conversion-Rate im Shop',def:1.0,min:0.3,max:8,step:0.1,unit:'%'},
   {key:'price',label:'Verkaufspreis Ihres Produkts',def:290,min:5,max:2000,step:1,unit:'CHF'},
   {key:'margin',label:'Ihre Bruttomarge',def:40,min:15,max:80,step:1,unit:'%'},
   {key:'repeat',label:'Wiederkäufe pro Jahr (1 = nur Erstkauf)',def:1,min:1,max:4,step:0.5,unit:'×'}
@@ -440,7 +443,7 @@ var DELIVER=[
   ["Fester Listing-Platz auf sofein.ch","Eigene Produktseite mit eingebettetem Video, dort wo unsere Foodie-Community ohnehin einkauft."],
   ["Der Halo der #1-Marke","Ihr Produkt erscheint Seite an Seite mit Stedy (4.91★, 100'000+ Bewertungen) — Sie leihen sich ~50 Jahre Vertrauen."],
   ["Laufende monatliche Promo-Wellen","Newsletter-Platzierung an die Community + Social-Posts — dauerhafte Sichtbarkeit, nicht ein einzelner Post."],
-  ["Das Video gehört auch Ihnen","Sie erhalten das fertige Video und dürfen es auf Ihren eigenen Kanälen weiterverwenden."],
+  ["Das Video gehört auch Ihnen","Sie erhalten das fertige Video und nutzen es unbegrenzt auf Ihren eigenen Kanälen — Website, Social, Werbung. Eine vergleichbare Profi-Produktion kostet am Markt CHF 3'000–8'000; bei Ihnen ist sie inbegriffen."],
   ["Monatliches Reporting in Klartext","Video-Views, Shop-Aufrufe, Klicks aus Newsletter und Social — plus ein eigener Tracking-Link und Rabattcode nur für Ihre Bühne, damit Sie die Verkäufe sehen, die DURCH Stedy kamen. Was wir nicht sauber messen können, behaupten wir nicht."],
   ["Kategorie-Exklusivität (ab Paket Rampenlicht)","In Ihrer Produktkategorie nehmen wir keinen direkten Wettbewerber auf, solange Sie Partner sind."],
   ["Fester Ansprechpartner","Direkt aus dem Stedy-Marketing — kurze Wege, schnelle Umsetzung, keine Agentur-Warteschlange."]
@@ -469,9 +472,10 @@ var pr=document.getElementById('prices');
 TIERS.forEach(function(t){
   pr.appendChild(el('<div class="price'+(t.best?' best':'')+'">'+(t.best?'<div class="tag">Empfohlen</div>':'')+
     '<div class="nm">'+t.nm+'</div><div class="amt">'+fmt(t.monthly)+'<small> CHF/Mt.</small></div>'+
-    '<div class="setup">+ einmalig <b>CHF '+fmt(t.setup)+'</b> Setup (Videoproduktion)</div>'+
+    '<div class="setup">Profi-Videoproduktion (Marktwert ab CHF 5\'000) — einmalig <b>CHF '+fmt(t.setup)+'</b></div>'+
+    '<div class="yearly">oder jährlich: <b>CHF '+fmt(Math.round(t.monthly*10/12/10)*10)+'</b>/Mt. — 2 Monate geschenkt</div>'+
     '<div class="desc">'+t.desc+'</div><div class="best-for"><b>Für:</b> '+t.bf+'</div>'+
-    '<a class="pricecta" href="#kontakt">Diesen Platz anfragen →</a></div>'));
+    '<a class="pricecta" href="tel:+41795051744">📞 Diesen Platz sichern</a></div>'));
 });
 var fq=document.getElementById('faq');
 FAQ.forEach(function(q){fq.appendChild(el('<details class="qa"><summary>'+q[0]+'</summary><div class="a">'+q[1]+'</div></details>'));});
@@ -520,7 +524,7 @@ setTimeout(function(){document.querySelectorAll('.fadein:not(.in)').forEach(func
 </script>
 <div class="mobilebar">
   <a class="call" href="tel:+41795051744">📞 Anrufen <span class="ln">079 505 17 44</span></a>
-  <a class="wa" href="https://wa.me/41795051744?text=Hallo%20Estefano%2C%20ich%20bin%20von%20Grillf%C3%BCrst%20und%20m%C3%B6chte%20die%20Stedy-Partnerschaft%20kurz%20besprechen." target="_blank" rel="noopener">WhatsApp</a>
+  <a class="wa" href="https://wa.me/41795051744?text=Hallo%20Estefano%2C%20ich%20bin%20von%20Grillf%C3%BCrst%20und%20m%C3%B6chte%20die%20Stedy-Partnerschaft%20kurz%20besprechen." target="_blank" rel="noopener">💬 WhatsApp</a>
 </div>
 </body>
 </html>
