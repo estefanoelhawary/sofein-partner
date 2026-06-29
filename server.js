@@ -18,6 +18,26 @@ const TYPES = {
 
 http.createServer((req, res) => {
   try {
+    // Slack-Notify bei Kontaktklick (WhatsApp). Webhook NUR aus ENV (Repo ist public).
+    if (req.method === 'POST' && (req.url || '').split('?')[0] === '/api/notify') {
+      let body = '';
+      req.on('data', c => { body += c; if (body.length > 4000) req.destroy(); });
+      req.on('end', () => {
+        res.writeHead(204); res.end();
+        try {
+          const hook = process.env.SLACK_WEBHOOK_URL;
+          if (!hook) return;
+          let d = {}; try { d = JSON.parse(body || '{}'); } catch (e) {}
+          const portal = String(d.portal || '?').slice(0, 60);
+          const type = String(d.type || 'event').slice(0, 30);
+          const txt = (type === 'whatsapp')
+            ? '\u{1F4AC} *WhatsApp-Anfrage* auf der Stedy Partner-Bühne — jemand will dich anschreiben (Portal: *' + portal + '*). Schau auf WhatsApp.'
+            : '\u{1F514} Stedy Partner-Bühne: ' + type + ' (Portal: ' + portal + ')';
+          fetch(hook, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ text: txt }) }).catch(() => {});
+        } catch (e) {}
+      });
+      return;
+    }
     let urlPath = decodeURIComponent((req.url || '/').split('?')[0]);
     if (urlPath === '/') urlPath = '/index.html';
     const filePath = path.join(ROOT, path.normalize(urlPath).replace(/^(\.\.[/\\])+/, ''));
