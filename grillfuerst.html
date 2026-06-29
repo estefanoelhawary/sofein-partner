@@ -247,6 +247,31 @@ body.demo .ln{filter:blur(6px);user-select:none}
   .book-side .alt{font-size:12.5px;color:#b3a1a7;margin-top:14px}
   .btn-wa{background:#1FA855 !important;border-color:#1FA855 !important;color:#fff !important}
   @media(max-width:820px){.book-grid{grid-template-columns:1fr}}
+  .heroimg .playbtn{position:absolute;inset:0;margin:auto;width:84px;height:84px;border:0;border-radius:50%;background:rgba(255,255,255,.93);cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 12px 34px rgba(0,0,0,.32);transition:transform .15s}
+  .heroimg .playbtn:hover{transform:scale(1.06)}
+  .heroimg .playbtn span{border-left:26px solid var(--magenta);border-top:16px solid transparent;border-bottom:16px solid transparent;margin-left:6px}
+  .reachband{margin-top:24px;background:linear-gradient(135deg,#ffffff,#fff5fa);border:1px solid var(--line);border-radius:var(--r);padding:22px 22px 18px;box-shadow:var(--shadow)}
+  .reachband .rb-lead{font-weight:700;font-size:15px;color:var(--ink);margin-bottom:14px}
+  .reachband .rb-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+  .reachband .rb{text-align:center}
+  .reachband .rb .n{font-family:var(--serif);font-weight:700;font-size:clamp(20px,3vw,30px);color:var(--magenta);line-height:1}
+  .reachband .rb .l{font-size:12px;color:var(--muted);margin-top:7px;font-weight:600;line-height:1.3}
+  .reachband .rb-foot{margin-top:16px;padding-top:14px;border-top:1px solid var(--line);font-size:13px;color:#5a484b;line-height:1.6}
+  .reachband .rb-foot b{color:var(--ink)}
+  @media(max-width:680px){.reachband .rb-grid{grid-template-columns:repeat(2,1fr)}}
+  .guarviews{background:rgba(200,20,94,.08);border:1px solid rgba(200,20,94,.22);border-radius:10px;padding:9px 12px;margin:10px 0 6px;font-size:14px;color:var(--ink);font-weight:600;text-align:center}
+  .guarviews b{color:var(--magenta);font-size:15px}
+  .budgetslider{background:linear-gradient(135deg,var(--ink),#3a2230);color:#fff;border-radius:var(--r);padding:28px 26px;margin-top:24px}
+  .budgetslider .bs-h{font-family:var(--serif);font-weight:700;font-size:clamp(19px,2.6vw,26px);margin-bottom:20px}
+  .budgetslider input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:8px;border-radius:8px;background:#eadfd8;outline:none}
+  .budgetslider input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:26px;height:26px;border-radius:50%;background:#fff;border:4px solid var(--magenta);cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,.4)}
+  .budgetslider input[type=range]::-moz-range-thumb{width:26px;height:26px;border-radius:50%;background:#fff;border:4px solid var(--magenta);cursor:pointer}
+  .budgetslider .bs-out{display:flex;justify-content:space-between;align-items:flex-end;margin-top:20px;flex-wrap:wrap;gap:12px}
+  .budgetslider .bs-budget{font-size:15px;color:#e9d6df}
+  .budgetslider .bs-budget span{font-size:22px;font-weight:700;color:#fff;font-family:var(--serif)}
+  .budgetslider .bs-views{text-align:right;color:#cbb9bf;font-size:13px}
+  .budgetslider .bs-views span{font-size:clamp(28px,4vw,40px);font-weight:700;color:#ff9ec4;font-family:var(--serif);display:inline-block;line-height:1}
+  .budgetslider .bs-note{font-size:12.5px;color:#cbb9bf;margin-top:18px;line-height:1.55}
 </style>
 </head>
 <body>
@@ -265,26 +290,33 @@ body.demo .ln{filter:blur(6px);user-select:none}
 <header class="hero">
   <div class="wrap">
     <div class="eyebrow">Stedy Partner-Programm · persönlich für Grillfürst</div>
-    <div class="hero-sub">Den Grill-Platz vergeben wir pro Kategorie nur einmal.</div>
-    <h1>Ihr Grill, getragen vom Vertrauen der <span class="accent">Schweizer Nr. 1</span> — vor 752'322 Haushalten.</h1>
-    <div class="hero-cta">
-      <a class="btn btn-primary" href="#termin">📅 Termin buchen</a>
-      <a class="btn btn-ghost" href="#rechner">📊 Zahlen ansehen</a>
-    </div>
-    <p class="lead lead-first">Wenn die Schweizer Nr. 1 beim Essen Ihren Grill zeigt, glaubt der Käufer dem Produkt — nicht einem Werbeclaim.</p>
-    <p class="lead">Wir drehen ein echtes Anwendungs-Video mit Ihrem Sortiment, geben ihm einen festen Platz auf sofein.ch und bewerben ihn Monat für Monat.</p>
-    <p class="lead">Reichweite kann man kaufen. Das Vertrauen der Schweizer Nr. 1 leihen Sie sich nur hier — und in Ihrer Kategorie nur ein einziges Mal.</p>
-    <div class="trustrow">
-      <b>Schweizer Nr. 1</b>&nbsp;Gewürzmarke <span class="sep"></span>
-      <span class="stars">★★★★★</span> <b>4.91</b>&nbsp;/ 100'000+ Bewertungen <span class="sep"></span>
-      <b>5'215</b>&nbsp;Läden
-    </div>
+    <h1>Ein Video mit Ihrem Grill — <span class="accent">gesehen von Millionen Schweizern.</span></h1>
+    <p class="lead lead-first">Valentin dreht ein echtes Video mit Ihrem Produkt und dem HärdöpfelGwürz, gibt ihm einen festen Platz im Stedy-Shop und zeigt es Monat für Monat unserer Community. Sie schicken nur das Produkt — die Reichweite steht schon.</p>
+
     <figure class="heroimg">
       <img src="/assets/ai/feuerplatte-b-web.jpg" alt="Grillfürst mit dem Stedy HärdöpfelGwürz®" fetchpriority="high">
-      <figcaption class="imgtag"><span class="ai">●</span> So käme Grillfürst rüber — an der Feuerplatte mit dem HärdöpfelGwürz®, realistisch visualisiert</figcaption>
+      <button class="playbtn" type="button" aria-label="Video abspielen"><span></span></button>
+      <figcaption class="imgtag"><span class="ai">▶</span> So sieht Ihr Video aus — Ihr Grill mit dem HärdöpfelGwürz®</figcaption>
     </figure>
+
+    <div class="reachband">
+      <div class="rb-lead">Diese Reichweite bekommt Ihr Video ab Tag eins:</div>
+      <div class="rb-grid">
+        <div class="rb"><div class="n">≈ 1,5 Mio.</div><div class="l">Video-Views pro Monat (TikTok &amp; Meta)</div></div>
+        <div class="rb"><div class="n">261'599</div><div class="l">Reichweite über Meta / Monat (bezahlt)</div></div>
+        <div class="rb"><div class="n">5'215</div><div class="l">Läden · gelistet auf sofein.ch</div></div>
+        <div class="rb"><div class="n">752'322</div><div class="l">Haushalte würzen mit Stedy</div></div>
+      </div>
+      <div class="rb-foot"><b>4.91★</b> aus 100'000+ Bewertungen &nbsp;·&nbsp; <b>2 Mio.+</b> Reaktionen auf unsere Social-Posts &nbsp;·&nbsp; Schweizer Familienmanufaktur <b>seit 1980</b></div>
+    </div>
+
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="#termin">📅 Termin buchen</a>
+      <a class="btn btn-ghost" href="https://wa.me/41795051744?text=Gr%C3%BCezi%2C%20wir%20w%C3%BCrden%20gerne%20mit%20Stedy%20zusammenarbeiten." target="_blank" rel="noopener">💬 WhatsApp</a>
+    </div>
   </div>
 </header>
+
 
 <!-- PROOF-BAND (13 Videos) -->
 <section class="proofband"><div class="wrap inner">
@@ -328,40 +360,7 @@ body.demo .ln{filter:blur(6px);user-select:none}
 </section>
 
 <!-- ROI -->
-<section class="band-dark" id="rechner">
-  <div class="wrap">
-    <div class="shead">
-      <div class="eyebrow" style="color:#ff7eb0">Was das bringen kann</div>
-      <h2>Schieben Sie an Ihren eigenen Zahlen.</h2>
-      <p>Konservativ gerechnet auf Branchen-Benchmarks. Die Voreinstellungen sind <b style="color:#fff">Beispiel-Werte</b> — mit Ihren echten Zahlen (Preis, Marge) wird es exakt.</p>
-    </div>
-    <div class="calc">
-      <div class="panel">
-        <div style="display:inline-flex;align-items:center;gap:7px;font-size:11.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#ff9ec3;border:1px solid rgba(255,158,195,.4);border-radius:999px;padding:5px 11px;margin-bottom:16px">● Beispiel-Werte · frei einstellbar</div>
-        <div id="inputs"></div>
-      </div>
-      <div class="result">
-        <div class="rl">Möglicher Zusatz-Umsatz über Stedy</div>
-        <div class="big" id="r-month">–</div>
-        <div class="yr" id="r-year">–</div>
-        <div class="brk">
-          <div class="pill">Ihr Ertrag (Marge)<b id="r-profit">–</b></div>
-          <div class="pill">Käufe / Monat<b id="r-buys">–</b></div>
-        </div>
-        <div class="wk" id="r-wk">–</div>
-        <div style="margin-top:12px;font-size:12px;color:#ffd9e7;line-height:1.45">Bewusst vorsichtig gerechnet — eine Grössenordnung über alle Stedy-Kanäle zusammen, kein garantierter Wert für einen einzelnen Kanal.</div>
-        <a href="https://wa.me/41795051744?text=Gr%C3%BCezi%2C%20wir%20w%C3%BCrden%20gerne%20mit%20Stedy%20zusammenarbeiten." target="_blank" rel="noopener" style="display:inline-block;margin-top:12px;font-size:13px;font-weight:800;color:#fff;text-decoration:underline;text-underline-offset:3px">Mit Ihren echten Zahlen durchrechnen → auf WhatsApp schreiben</a>
-      </div>
-    </div>
-    <div class="reach-note">
-      <b>Ehrlich zur Reichweite:</b> Die 752'322 Haushalte sind unsere Gesamt-Markenreichweite über bald 50 Jahre. Pro Promo-Welle aktivieren wir realistisch einen <b>Bruchteil</b> davon — darum rechnet der Regler bewusst konservativ mit ~80'000/Monat. Und: Der <b>Markenwert</b> (Vertrauen, Bekanntheit, Tür-Öffner) kommt obendrauf und ist hier <b>nicht</b> eingerechnet. Ziehen Sie die Werte ruhig nach unten — die Rechnung soll halten. <b>Selten gekaufte Hochpreis-Produkte</b> (z. B. Grills, Maschinen): Conversion-Regler bewusst tief stellen (0,5–1 %) — das ist realistischer als der allgemeine Shop-Wert.
-    </div>
-    <details class="assump">
-      <summary>Alle Annahmen offen gelegt</summary>
-      <ul id="assump-list"></ul>
-    </details>
-  </div>
-</section>
+
 
 <!-- SO LÄUFT ES -->
 <section>
@@ -389,12 +388,22 @@ body.demo .ln{filter:blur(6px);user-select:none}
       <h2>Transparent. Einmaliger Setup fürs Video, dann laufende Promotion.</h2>
       <p>Werbe-/Produktionsaufwand transparent. Die monatliche Gebühr startet erst, wenn Video und Listing live sind. Monatlich kündbar.</p>
     </div>
-    <div class="anchor" style="margin-top:0;margin-bottom:22px">Zum Vergleich, bevor Sie die Preise sehen: <b>Schweiz Tourismus zahlt CHF 27'500 für ein einziges 30-Sekunden-Sponsorvideo.</b> Allein eine Schweizer Videoproduktion kostet CHF 2'900–7'500 — ohne jede Reichweite. Hier ist Video, Listing <b>und</b> laufende Dauer-Präsenz unter der Schweizer Nr. 1 bereits ab <b>CHF 390 im Monat</b> dabei — plus einmaliger Produktion.</div>
+    <div class="anchor" style="margin-top:0;margin-bottom:22px">Zum Vergleich, bevor Sie die Preise sehen: <b>Schweiz Tourismus zahlt CHF 27'500 für ein einziges 30-Sekunden-Sponsorvideo.</b> Allein eine Schweizer Videoproduktion kostet CHF 2'900–7'500 — ohne jede Reichweite. Hier ist Video, Listing <b>und</b> laufende Dauer-Präsenz unter der Schweizer Nr. 1 bereits ab <b>CHF 970 im Monat</b> dabei — plus einmaliger Produktion.</div>
     <div class="prices" id="prices"></div>
+    <div class="budgetslider">
+      <div class="bs-h">Mehr Budget, mehr Reichweite — Sie bestimmen.</div>
+      <input type="range" id="bsRange" min="1000" max="30000" step="500" value="2470" aria-label="Werbebudget pro Monat">
+      <div class="bs-out">
+        <div class="bs-budget"><span id="bsBudget">CHF 2'470</span> Werbe-Power / Monat</div>
+        <div class="bs-views"><span id="bsViews">120'000</span> <small>garantierte Views / Monat</small></div>
+      </div>
+      <div class="bs-note">Misch-Kampagne über TikTok, Meta &amp; YouTube · ~12 € Misch-CPM · immer mit mind. 30 % unserer Marge. Ab CHF 20'000 im Monat sehen über 1 Million Schweizer Ihr Produkt — garantiert.</div>
+    </div>
+
     <div style="text-align:center;font-size:12.5px;color:var(--muted);margin-top:14px">Alle Preise in CHF, zzgl. gesetzlicher MwSt. Geschäftskunden in der EU: Reverse-Charge. Monatlich kündbar, Monatsgebühr erst ab Live-Schaltung. EUR-Äquivalent auf Anfrage.</div>
     <div class="guarantee">
       <div class="shield">🛡️</div>
-      <div><b>Was wir kontrollieren, garantieren wir — und nur das.</b><p>Wir garantieren die Video-Qualität (gedreht von Valentin, glaubwürdig mit dem HärdöpfelGwürz®) und die zugesagte Reichweite: Video live, Listing live, die vereinbarten Promo-Wellen pro Monat, jeden Monat ein ehrlicher Report. Gefällt Ihnen das fertige Video vor Veröffentlichung nicht, drehen wir eine Korrekturrunde — oder Sie zahlen den Setup nicht. Die monatliche Gebühr läuft erst ab dem Tag, an dem Video und Listing live sind — danach jederzeit zum Monatsende kündbar, kein Knebel. Was wir bewusst NICHT versprechen: eine fixe Verkaufszahl. Das wäre unseriös.<span style="display:block;margin-top:10px;font-size:12.5px;color:#6a565b">Garantiegeber: Stedy Gwürz AG, Gaswerkstrasse 13, CH-8570 Weinfelden. Geltendmachung schriftlich vor Freigabe des Videos; Ihre gesetzlichen Rechte bleiben unberührt.</span></p></div>
+      <div><b>Was wir kontrollieren, garantieren wir — und nur das.</b><p>Wir garantieren die Video-Qualität (gedreht von Valentin, glaubwürdig mit dem HärdöpfelGwürz®) und die zugesagte Reichweite: Video live, Listing live, die vereinbarten Promo-Wellen pro Monat, jeden Monat ein ehrlicher Report. Gefällt Ihnen das fertige Video vor Veröffentlichung nicht, drehen wir eine Korrekturrunde — oder Sie zahlen den Setup nicht. Die monatliche Gebühr läuft erst ab dem Tag, an dem Video und Listing live sind — danach mit 30 Tagen auf das Monatsende kündbar, kein Knebel. Was wir bewusst NICHT versprechen: eine fixe Verkaufszahl. Das wäre unseriös.<span style="display:block;margin-top:10px;font-size:12.5px;color:#6a565b">Garantiegeber: Stedy Gwürz AG, Gaswerkstrasse 13, CH-8570 Weinfelden. Geltendmachung schriftlich vor Freigabe des Videos; Ihre gesetzlichen Rechte bleiben unberührt.</span></p></div>
     </div>
   </div>
 </section>
@@ -486,23 +495,6 @@ body.demo .ln{filter:blur(6px);user-select:none}
 var CHF=function(n){return "CHF "+Math.round(n).toLocaleString('de-CH').replace(/’|,|\./g,"'");};
 var fmt=function(n){return Math.round(n).toLocaleString('de-CH').replace(/’|,|\./g,"'");};
 
-var ROI_INPUTS=[
-  {key:'reach',label:'Erreichte Stedy-Reichweite / Monat',def:80000,min:5000,max:500000,step:5000,unit:''},
-  {key:'click',label:'Klickrate auf Ihr Produkt',def:2,min:0.5,max:10,step:0.1,unit:'%'},
-  {key:'conv',label:'Conversion-Rate im Shop',def:1.0,min:0.3,max:8,step:0.1,unit:'%'},
-  {key:'price',label:'Verkaufspreis Ihres Produkts',def:290,min:5,max:2000,step:1,unit:'CHF'},
-  {key:'margin',label:'Ihre Bruttomarge',def:40,min:15,max:80,step:1,unit:'%'},
-  {key:'repeat',label:'Wiederkäufe pro Jahr (1 = nur Erstkauf)',def:1,min:1,max:4,step:0.5,unit:'×'}
-];
-var ASSUMPTIONS=[
-  "Beispiel-Werte, keine Garantie: Alle Voreinstellungen sind bewusst konservativ und mit Ihren echten Zahlen exakt nachrechenbar. Der Rechner zeigt eine Grössenordnung.",
-  "Erreichte Reichweite (Default 80'000/Mt.): Mischwert aus Video-Views, Newsletter-Öffnungen und Shop-Sichtbarkeit — ein Bruchteil der Gesamt-Markenreichweite (752'322 Haushalte).",
-  "Klickrate 2,0 %: bewusst am unteren Rand der Food-Video-/Social-Benchmarks (Mobile-Video-CTR ~3,4 %, Instagram-Food ~2,5 %). Quelle: Dash Social / Smart Insights.",
-  "Conversion 2,3 %: Wir rechnen mit dem Schweizer Gesamtmarkt-Wert, nicht mit dem Food-Bestwert (6,0 %) und nicht mit dem Video-Uplift-Wert (4,8 %). Die Empfehlung der Nr. 1 hebt erfahrungsgemäss an — diesen Bonus lassen wir bewusst weg. So ist die Rechnung mit sich selbst konsistent und nach oben offen.",
-  "Verkaufspreis / Marge: Beispiel-Werte für ein typisches Produkt Ihrer Kategorie — mit Ihren echten Zahlen exakt ersetzbar.",
-  "Wiederkauf-Faktor wirkt nur auf den Jahreswert. Lebensmittel erreichen real 40 %+ Wiederkaufrate — der Default 1,0 unterschlägt das bewusst.",
-  "NICHT eingerechnet (alles zusätzlicher Hebel): Halo-/Vertrauenseffekt der Empfehlung, Co-Branding-Wirkung, Markenbekanntheit, Distributions-Türöffner. Diese machen die echte Rechnung tendenziell besser, nicht schlechter."
-];
 var DELIVER=[
   ["Produkt-Video mit Valentin Stettler","Ihr Produkt wird echt mit dem HärdöpfelGwürz® in Szene gesetzt — im Stil unserer 13 bestehenden Testimonial-Videos. Kein Stock-Material."],
   ["Fester Listing-Platz auf sofein.ch","Eigene Produktseite mit eingebettetem Video, dort wo unsere Foodie-Community ohnehin einkauft."],
@@ -515,13 +507,15 @@ var DELIVER=[
 ];
 var PASST=[["Grills, Smoker & Aussenküchen", "Gas-, Holzkohle- und Keramikgrills sowie Outdoor-Küchen — im Video mit echtem Grillgut und dem HärdöpfelGwürz®."], ["Grillzubehör", "Planchas, Pfannen, Thermometer, Werkzeug — alles, was beim Grillieren wirklich zum Einsatz kommt."], ["Rubs, Saucen, Marinaden", "Grill-Würzen neben dem Schweizer Nr.-1-Gewürz — der perfekte Vertrauenstransfer."], ["Passt zur Marke", "HärdöpfelGwürz® gehört in der Schweiz längst auf den Grill — Ihr Sortiment trifft genau diese Gewohnheit."]];
 var TIERS=[
-  {nm:"Auftritt",monthly:390,setup:2900,best:false,desc:"1 professionelles Produkt-Video mit Valentin + HärdöpfelGwürz®, Shop-Listing auf sofein.ch, danach laufend 1 Promo-Welle/Monat (Social oder Newsletter im Wechsel) + Basis-Reporting.",bf:"Zum risikoarmen Testen der Stedy-Bühne — die Grill-Kategorie bleibt dabei offen. Wer sie sichern will, nimmt Rampenlicht."},
-  {nm:"Rampenlicht",monthly:790,setup:4500,best:true,desc:"1 hochwertiges Video mit Valentin, Shop-Listing PLUS Kategorie-Exklusivität (kein Wettbewerber neben Ihnen). Laufend 2 Promo-Wellen/Monat (Newsletter UND Social), feste Newsletter-Platzierung, detailliertes Reporting.",bf:"Etablierte Marken, die ihre Kategorie bei Stedy sichern und dauerhaft Reichweite wollen."},
-  {nm:"Hauptrolle",monthly:1490,setup:7900,best:false,desc:"2 Videos mit Valentin (verschiedene Anwendungs-Szenen), Premium-Listing, garantierte Kategorie-Exklusivität, Aufnahme ins Testimonial-/Story-Format. Laufend bis zu 4 Promo-Wellen/Monat über alle Kanäle + Voll-Reporting.",bf:"Marken, die maximale Sichtbarkeit wollen und Stedy zum festen Wachstumskanal machen."}
+  {nm:"Auftritt",monthly:970,setup:2900,views:"45'000",best:false,desc:"1 professionelles Produkt-Video mit Valentin + HärdöpfelGwürz®, Shop-Listing auf sofein.ch, garantiert an 45'000 Schweizer pro Monat ausgespielt (Mix aus TikTok, Meta & YouTube) + monatliches Reporting.",bf:"Marken, die mit garantierter Reichweite in die Stedy-Welt starten."},
+  {nm:"Kampagne",monthly:2470,setup:2900,views:"120'000",best:true,desc:"Hochwertiges Video, Shop-Listing PLUS Kategorie-Exklusivität (kein Wettbewerber neben Ihnen), garantierte 120'000 Views/Monat über alle Kanäle, feste Newsletter-Platzierung, detailliertes Reporting.",bf:"Der Sweet Spot — etablierte Marken, die ihre Kategorie sichern und ernsthaft Reichweite wollen."},
+  {nm:"Hauptsponsor",monthly:4970,setup:4900,views:"250'000",best:false,desc:"Mehrere Videos, exklusiver Hauptsponsor-Status, garantierte 250'000 Views/Monat, Story- und Testimonial-Formate, persönliche Betreuung + Voll-Reporting. Mehr Reichweite jederzeit per Budget-Erweiterung.",bf:"Marken, die maximale Sichtbarkeit und Premium-Status wollen."}
 ];
+
+
 var FAQ=[
   ["Reichweite kann ich auch selbst aufbauen — dann gehört sie mir.","Stimmt, und langfristig sollten Sie eine eigene Audience haben — alles, was wir für Sie drehen, dürfen Sie auch auf Ihren Kanälen weiterverwenden. Aber Reichweite UND Vertrauen selbst aufzubauen dauert Jahre und kostet laut Branchenrichtwert EUR 5'000–10'000/Monat über Monate, mit ungewissem Ausgang. Sie mieten sich hier sofort in eine fertige, treue Community ein — schneller und sicherer als bei null zu starten."],
-  ["Das ist mir zu teuer.","Verständlich — und genau deshalb läuft die monatliche Gebühr erst, wenn Video und Listing live sind, und ist jederzeit zum Monatsende kündbar. Womit vergleichen Sie? Ein Video können Sie überall kaufen. Was Sie hier bekommen, ist das Urteil der Schweizer Nr. 1: fast 50 Jahre Vertrauen, 752'322 Haushalte, 4.91★ aus über 100'000 Bewertungen. Diesen Vorsprung selbst aufzubauen dauert Jahre und ist mit keinem Budget garantiert. Sie mieten ihn hier sofort — und in Ihrer Kategorie nur einmal."],
+  ["Das ist mir zu teuer.","Verständlich — und genau deshalb läuft die monatliche Gebühr erst, wenn Video und Listing live sind, und ist mit 30 Tagen auf das Monatsende kündbar. Womit vergleichen Sie? Ein Video können Sie überall kaufen. Was Sie hier bekommen, ist das Urteil der Schweizer Nr. 1: fast 50 Jahre Vertrauen, 752'322 Haushalte, 4.91★ aus über 100'000 Bewertungen. Diesen Vorsprung selbst aufzubauen dauert Jahre und ist mit keinem Budget garantiert. Sie mieten ihn hier sofort — und in Ihrer Kategorie nur einmal."],
   ["Passt mein Produkt überhaupt zu Stedy?","Wir nehmen bewusst nicht jedes Produkt, sondern nur ausgewählte, die zu unserer Genuss- und Kochwelt passen — ob Sauce, Öl, Küchengerät, Snack oder Fleisch. Genau diese Selektivität ist Ihr Vorteil: Unsere Community erwartet, dass alles, was Stedy zeigt, gut ist. Im Erstgespräch klären wir in 15 Minuten, ob es passt."],
   ["Bringt mir das wirklich Verkäufe?","Ehrlich: Wir garantieren keine fixe Verkaufszahl, das wäre unseriös. Aber die Mechanik ist belegt — ein echtes Produktvideo unter einer Marke, der die Schweiz vertraut, bringt Aufmerksamkeit, die ein anonymer Werbespot nicht bekommt. Damit Sie es schwarz auf weiss sehen: Sie bekommen einen eigenen Tracking-Link und Rabattcode nur für Ihre Bühne. So trennen Sie die Verkäufe DURCH Stedy vom Rest. Was wir nicht sauber messen können, behaupten wir nicht."],
   ["Warum muss mein Produkt mit eurem Gewürz kombiniert werden?","Weil genau das den Vertrauenstransfer auslöst. Das HärdöpfelGwürz® ist das Produkt, das die Community kennt und liebt — der Anker, über den Stedy überhaupt vertraut wird. Wird Ihr Produkt neben diesem bekannten Original im echten Einsatz gezeigt, fällt dieses Vertrauen auf Ihr Produkt ab."]
@@ -537,46 +531,16 @@ var pr=document.getElementById('prices');
 TIERS.forEach(function(t){
   pr.appendChild(el('<div class="price'+(t.best?' best':'')+'">'+(t.best?'<div class="tag">Empfohlen</div>':'')+
     '<div class="nm">'+t.nm+'</div><div class="amt">'+fmt(t.monthly)+'<small> CHF/Mt.</small></div>'+
+    '<div class="guarviews">▶ <b>'+t.views+'</b> garantierte Video-Views / Monat</div>'+
     '<div class="setup">Profi-Videoproduktion (Marktwert ab CHF 5\'000) — einmalig <b>CHF '+fmt(t.setup)+'</b></div>'+
-    '<div class="yearly">oder jährlich: <b>CHF '+fmt(Math.round(t.monthly*10/12/10)*10)+'</b>/Mt. — 2 Monate geschenkt</div>'+
     '<div class="desc">'+t.desc+'</div><div class="best-for"><b>Für:</b> '+t.bf+'</div>'+
     '<a class="pricecta" href="#termin">📅 Diesen Platz sichern</a></div>'));
 });
 var fq=document.getElementById('faq');
 FAQ.forEach(function(q){fq.appendChild(el('<details class="qa"><summary>'+q[0]+'</summary><div class="a">'+q[1]+'</div></details>'));});
-var al=document.getElementById('assump-list');
-ASSUMPTIONS.forEach(function(a){al.appendChild(el('<li>'+a+'</li>'));});
 var ps2=document.getElementById('proofstrip');
 if(ps2){VIDEOS.slice(0,6).forEach(function(v){ps2.appendChild(el('<div class="vidcard"><img loading="lazy" src="/assets/proof/'+v+'.jpg" alt="Stedy Testimonial-Video"><div class="play"><span></span></div></div>'));});}
 
-// ROI
-var state={};
-var inputsBox=document.getElementById('inputs');
-ROI_INPUTS.forEach(function(f){
-  state[f.key]=f.def;
-  var row=el('<div class="field"><div class="lab"><span>'+f.label+'</span><span class="val"><span id="v-'+f.key+'"></span> <small>'+(f.unit||'')+'</small></span></div><input type="range" id="i-'+f.key+'" min="'+f.min+'" max="'+f.max+'" step="'+f.step+'" value="'+f.def+'"></div>');
-  inputsBox.appendChild(row);
-  var inp=row.querySelector('input');
-  inp.addEventListener('input',function(){state[f.key]=parseFloat(inp.value);calc();});
-});
-function calc(){
-  var R=state.reach, CL=state.click/100, CV=state.conv/100, P=state.price, M=state.margin/100, REP=state.repeat;
-  var klicks=R*CL;
-  var buys=klicks*CV;
-  var revM=buys*P;
-  var profM=revM*M;
-  var revY=revM*12*REP;
-  ROI_INPUTS.forEach(function(f){
-    var v=state[f.key];
-    document.getElementById('v-'+f.key).textContent=(f.key==='price')?fmt(v):(f.unit==='%'||f.unit==='×'?String(v):fmt(v));
-  });
-  document.getElementById('r-month').textContent='+ '+CHF(Math.round(revM/10)*10)+' /Mt';
-  document.getElementById('r-year').textContent='≈ '+CHF(Math.round(revY/100)*100)+' pro Jahr'+(REP>1?' (mit Wiederkauf ×'+REP+')':'');
-  document.getElementById('r-profit').textContent='+ '+CHF(Math.round(profM/10)*10)+'/Mt';
-  document.getElementById('r-buys').textContent='~ '+fmt(buys)+' Käufe';
-  document.getElementById('r-wk').textContent='Aus '+fmt(R)+' erreichten Personen → ~'+fmt(klicks)+' Klicks → ~'+fmt(buys)+' Käufe/Monat. Der Markenwert (Vertrauen, Bekanntheit) kommt obendrauf.';
-}
-calc();
 
 document.getElementById('demo').addEventListener('change',function(e){document.body.classList.toggle('demo',e.target.checked);});
 
@@ -642,6 +606,18 @@ setTimeout(function(){document.querySelectorAll('.fadein:not(.in)').forEach(func
         .catch(function(){btn.disabled=false;btn.textContent='Termin verbindlich buchen';err.hidden=false;err.textContent='Netzwerkfehler – bitte per WhatsApp melden.';});
     });
   })();
+</script>
+<script>
+(function(){
+  var r=document.getElementById('bsRange');if(!r)return;
+  var b=document.getElementById('bsBudget'),v=document.getElementById('bsViews');
+  function f(n){return n.toString().replace(/\B(?=(\d{3})+(?!\d))/g,"'");}
+  function u(){var x=parseInt(r.value,10);var views=Math.round(x*50/5000)*5000;
+    b.textContent="CHF "+f(x);v.textContent=f(views);
+    var p=(x-1000)/(30000-1000)*100;
+    r.style.background='linear-gradient(90deg,var(--magenta) '+p+'%,#eadfd8 '+p+'%)';}
+  r.addEventListener('input',u);u();
+})();
 </script>
 </body>
 </html>
