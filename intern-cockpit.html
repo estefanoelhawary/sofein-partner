@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="de"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Stedy · Partner-Auswahl (intern)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+<style>
+  :root{--magenta:#c8145e;--magenta-d:#a50f4d;--ink:#27191c;--bg:#faf7f5;--paper:#fff;--line:#ece4df;--muted:#8a7d80;--soft:#fbeaf1}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--ink);-webkit-font-smoothing:antialiased;line-height:1.45}
+  .wrap{max-width:1160px;margin:0 auto;padding:0 18px}
+  a{color:inherit}
+  /* Header */
+  header.top{background:var(--paper);border-bottom:2px solid var(--ink)}
+  .top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 18px}
+  .brand{display:flex;align-items:baseline;gap:12px}
+  .brand .mark{font-size:26px;font-weight:800;letter-spacing:-.5px}
+  .brand .mark .dot{color:var(--magenta)}
+  .brand .sub{font-size:13px;font-weight:600;color:var(--muted)}
+  .pill-int{font-size:11px;font-weight:700;letter-spacing:.4px;text-transform:uppercase;color:var(--magenta);background:var(--soft);border:1px solid #f3cfe0;padding:5px 11px;border-radius:999px;white-space:nowrap}
+  .lede{padding:22px 18px 4px}
+  .lede h1{font-size:23px;font-weight:800;letter-spacing:-.4px}
+  .lede p{color:var(--muted);font-size:14.5px;margin-top:5px;max-width:760px}
+  /* Portal preview banner */
+  .portalbar{margin:18px 0 4px;background:linear-gradient(100deg,#2a1a1f,#3a2027);border-radius:14px;color:#fff;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 20px;flex-wrap:wrap}
+  .portalbar .pl{display:flex;align-items:center;gap:14px;min-width:0}
+  .portalbar .ico{width:42px;height:42px;border-radius:10px;background:var(--magenta);display:flex;align-items:center;justify-content:center;font-size:20px;flex:none}
+  .portalbar b{font-size:15px}
+  .portalbar small{display:block;color:#d7c7cb;font-size:12.5px;margin-top:2px}
+  .portalbar a.btn{background:#fff;color:var(--ink);font-weight:700;font-size:13.5px;padding:10px 16px;border-radius:9px;text-decoration:none;white-space:nowrap;flex:none}
+  /* KPIs */
+  .kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:16px 0}
+  .kpi{background:var(--paper);border:1px solid var(--line);border-radius:13px;padding:15px 16px}
+  .kpi .n{font-family:'Space Mono',monospace;font-size:27px;font-weight:700;letter-spacing:-1px}
+  .kpi.rej .n{color:var(--magenta)}
+  .kpi .l{font-size:12px;color:var(--muted);font-weight:600;margin-top:2px}
+  /* Distribution */
+  .panel{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin:0 0 16px}
+  .panel h2{font-size:13px;font-weight:700;letter-spacing:.4px;text-transform:uppercase;color:var(--muted);margin-bottom:14px}
+  .bars{display:grid;grid-template-columns:1fr 1fr;gap:8px 30px}
+  @media(max-width:720px){.bars{grid-template-columns:1fr}}
+  .bar{display:grid;grid-template-columns:120px 1fr 34px;align-items:center;gap:10px;font-size:13px}
+  .bar .cat{color:var(--ink);font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .bar .track{height:9px;background:#f1e8e3;border-radius:999px;overflow:hidden}
+  .bar .fill{height:100%;background:var(--magenta);border-radius:999px}
+  .bar .v{font-family:'Space Mono',monospace;font-weight:700;text-align:right;color:var(--muted);font-size:12px}
+  .regions{display:flex;gap:8px;flex-wrap:wrap}
+  .rpill{font-size:13px;font-weight:600;border:1px solid var(--line);border-radius:999px;padding:6px 13px;background:#fff}
+  .rpill b{font-family:'Space Mono',monospace;color:var(--magenta)}
+  /* Controls */
+  .controls{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:0 0 14px;position:sticky;top:0;background:var(--bg);padding:10px 0;z-index:5}
+  .controls input,.controls select{font-family:inherit;font-size:14px;border:1px solid var(--line);border-radius:10px;padding:10px 12px;background:#fff;color:var(--ink)}
+  .controls input{flex:1;min-width:180px}
+  .controls .toggle{display:flex;align-items:center;gap:7px;font-size:13.5px;font-weight:600;color:var(--muted);cursor:pointer;user-select:none}
+  .count{font-size:13px;color:var(--muted);font-weight:600;margin-left:auto}
+  /* Grid */
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(255px,1fr));gap:13px;padding-bottom:60px}
+  .card{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:15px 16px;display:flex;flex-direction:column;gap:9px;transition:.15s;position:relative}
+  .card .top1{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+  .card .marke{font-size:17px;font-weight:800;letter-spacing:-.3px;line-height:1.15}
+  .card .fit{font-family:'Space Mono',monospace;font-size:11px;font-weight:700;color:var(--magenta);background:var(--soft);border-radius:7px;padding:3px 7px;white-space:nowrap;flex:none}
+  .card .chip{align-self:flex-start;font-size:11.5px;font-weight:600;color:var(--magenta-d);background:var(--soft);border:1px solid #f3cfe0;border-radius:999px;padding:3px 10px}
+  .card .verk{font-size:13px;color:#5b4d50;line-height:1.35}
+  .card .loc{font-size:12.5px;color:var(--muted);font-weight:600}
+  .card .row{display:flex;gap:8px;margin-top:3px}
+  .card a.web{flex:1;text-align:center;font-size:13px;font-weight:700;text-decoration:none;color:var(--ink);border:1px solid var(--line);border-radius:9px;padding:8px}
+  .card a.web:hover{border-color:var(--ink)}
+  .card button.rej{flex:none;font-family:inherit;font-size:13px;font-weight:700;color:var(--magenta);background:#fff;border:1px solid #f0c4d8;border-radius:9px;padding:8px 13px;cursor:pointer}
+  .card button.rej:hover{background:var(--soft)}
+  .card.rejected{opacity:.5;background:#f7f3f1}
+  .card.rejected .marke{text-decoration:line-through;text-decoration-color:var(--magenta)}
+  .card.rejected button.rej{color:var(--muted);border-color:var(--line)}
+  .card .rejtag{position:absolute;top:-9px;right:12px;font-size:10.5px;font-weight:800;letter-spacing:.5px;text-transform:uppercase;color:#fff;background:var(--magenta);border-radius:6px;padding:3px 8px;display:none}
+  .card.rejected .rejtag{display:block}
+  .empty{text-align:center;color:var(--muted);padding:50px 0;font-size:15px}
+  .toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--ink);color:#fff;font-size:13.5px;font-weight:600;padding:11px 18px;border-radius:10px;opacity:0;transition:.25s;pointer-events:none;z-index:50}
+  .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+  footer.ft{border-top:1px solid var(--line);color:var(--muted);font-size:12px;padding:20px 0 40px;text-align:center}
+</style></head>
+<body>
+<header class="top"><div class="wrap">
+  <div class="brand"><span class="mark">Stedy<span class="dot">.</span></span><span class="sub">Partner-Auswahl</span></div>
+  <span class="pill-int">Vertraulich · intern</span>
+</div></header>
+
+<div class="wrap">
+  <div class="lede">
+    <h1>Wer bekommt den Brief — Ihre Auswahl, Valentin.</h1>
+    <p>Das sind die Marken, die wir für eine Stedy-Partnerschaft anschreiben würden. Pro Kategorie listen wir am Ende nur eine. Schauen Sie durch — wen Sie <b>nicht</b> dabei haben möchten, lehnen Sie mit einem Klick ab. Das wird sofort übernommen.</p>
+  </div>
+
+  <a class="portalbar" href="https://stedy.leadliebe.com/grillfuerst" target="_blank" rel="noopener" style="text-decoration:none">
+    <div class="pl">
+      <div class="ico">▶</div>
+      <div><b>So sieht ein Partner-Portal aus</b><small>Beispiel Grillfürst — das bekommt jeder Partner nach dem Scan. Öffnet in neuem Tab.</small></div>
+    </div>
+    <span class="btn">Portal ansehen ↗</span>
+  </a>
+
+  <div class="kpis" id="kpis">
+    <div class="kpi"><div class="n" id="k-aktiv">–</div><div class="l">Partner aktiv</div></div>
+    <div class="kpi"><div class="n" id="k-kat">–</div><div class="l">Kategorien</div></div>
+    <div class="kpi"><div class="n" id="k-kan">–</div><div class="l">Kantone</div></div>
+    <div class="kpi rej"><div class="n" id="k-rej">0</div><div class="l">Abgelehnt</div></div>
+  </div>
+
+  <div class="panel">
+    <h2>Branchen-Verteilung</h2>
+    <div class="bars" id="bars"></div>
+    <div class="regions" id="regions" style="margin-top:16px"></div>
+  </div>
+
+  <div class="controls">
+    <input id="q" type="search" placeholder="Suchen (Marke, Branche, Ort)…" autocomplete="off">
+    <select id="fcat"><option value="">Alle Kategorien</option></select>
+    <select id="freg"><option value="">Alle Regionen</option><option value="DCH">Deutschschweiz</option><option value="FCH">Romandie</option><option value="ICH">Tessin</option></select>
+    <label class="toggle"><input type="checkbox" id="showRej"> Abgelehnte zeigen</label>
+    <span class="count" id="count"></span>
+  </div>
+
+  <div class="grid" id="grid"></div>
+</div>
+
+<div class="toast" id="toast"></div>
+<footer class="ft">Stedy Gwürz AG · interne Partner-Auswahl · vertraulich — bitte nicht weitergeben.</footer>
+
+<script>
+const TOKEN = location.pathname.split('/').filter(Boolean).pop() || new URLSearchParams(location.search).get('t') || '';
+const REGNAME = {DCH:'Deutschschweiz',FCH:'Romandie',ICH:'Tessin'};
+let PARTNERS = [], REJECTED = new Set();
+const $ = s => document.querySelector(s);
+const toast = (m)=>{const t=$('#toast');t.textContent=m;t.classList.add('show');clearTimeout(toast._t);toast._t=setTimeout(()=>t.classList.remove('show'),1900);};
+const esc = s => (s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+async function load(){
+  try{
+    const [p,r] = await Promise.all([
+      fetch('/api/partners?t='+encodeURIComponent(TOKEN)).then(x=>x.json()),
+      fetch('/api/rejections?t='+encodeURIComponent(TOKEN)).then(x=>x.json()).catch(()=>({rejected:[]}))
+    ]);
+    if(p.error){ $('#grid').innerHTML='<div class="empty">Zugang ungültig. Bitte den Link von Estefano verwenden.</div>'; return; }
+    PARTNERS = p.partners||[];
+    REJECTED = new Set((r.rejected)||[]);
+    initFilters(); renderStats(); render();
+  }catch(e){ $('#grid').innerHTML='<div class="empty">Konnte Daten nicht laden. Bitte neu laden.</div>'; }
+}
+
+function initFilters(){
+  const cats=[...new Set(PARTNERS.map(p=>p.k))].sort();
+  const sel=$('#fcat'); cats.forEach(c=>{const o=document.createElement('option');o.value=c;o.textContent=c;sel.appendChild(o);});
+  ['#q','#fcat','#freg'].forEach(s=>$(s).addEventListener('input',render));
+  $('#showRej').addEventListener('change',render);
+}
+
+function renderStats(){
+  const active = PARTNERS.filter(p=>!REJECTED.has(p.s));
+  $('#k-aktiv').textContent = active.length;
+  $('#k-kat').textContent = new Set(active.map(p=>p.k)).size;
+  $('#k-kan').textContent = new Set(active.map(p=>p.ka).filter(Boolean)).size;
+  $('#k-rej').textContent = REJECTED.size;
+  // Branchen-Bars (auf aktive Auswahl)
+  const c={}; active.forEach(p=>c[p.k]=(c[p.k]||0)+1);
+  const ent=Object.entries(c).sort((a,b)=>b[1]-a[1]);
+  const max=Math.max(1,...ent.map(e=>e[1]));
+  $('#bars').innerHTML = ent.map(([k,v])=>
+    `<div class="bar"><span class="cat" title="${esc(k)}">${esc(k)}</span><span class="track"><span class="fill" style="width:${Math.round(v/max*100)}%"></span></span><span class="v">${v}</span></div>`
+  ).join('');
+  const rc={}; active.forEach(p=>rc[p.r]=(rc[p.r]||0)+1);
+  $('#regions').innerHTML = Object.entries(rc).sort((a,b)=>b[1]-a[1]).map(([k,v])=>
+    `<span class="rpill">${esc(REGNAME[k]||k||'—')} <b>${v}</b></span>`
+  ).join('');
+}
+
+function render(){
+  const q=$('#q').value.trim().toLowerCase(), fc=$('#fcat').value, fr=$('#freg').value, showRej=$('#showRej').checked;
+  let list = PARTNERS.filter(p=>{
+    if(fc && p.k!==fc) return false;
+    if(fr && p.r!==fr) return false;
+    if(!showRej && REJECTED.has(p.s)) return false;
+    if(q){ const hay=(p.m+' '+p.k+' '+p.v+' '+p.o+' '+p.ka).toLowerCase(); if(!hay.includes(q)) return false; }
+    return true;
+  });
+  $('#count').textContent = list.length+' von '+PARTNERS.length;
+  if(!list.length){ $('#grid').innerHTML='<div class="empty">Keine Treffer.</div>'; return; }
+  $('#grid').innerHTML = list.map(p=>{
+    const rej=REJECTED.has(p.s);
+    const loc=[p.o,p.ka].filter(Boolean).join(' · ')|| (REGNAME[p.r]||'');
+    const url = p.d ? (p.d.startsWith('http')?p.d:'https://'+p.d) : '';
+    return `<div class="card${rej?' rejected':''}" data-s="${esc(p.s)}">
+      <span class="rejtag">Abgelehnt</span>
+      <div class="top1"><div class="marke">${esc(p.m)}</div><span class="fit">Fit ${Math.round((p.f||0)/100)}</span></div>
+      <span class="chip">${esc(p.k)}</span>
+      ${p.v?`<div class="verk">${esc(p.v)}</div>`:''}
+      ${loc?`<div class="loc">${esc(loc)}</div>`:''}
+      <div class="row">
+        ${url?`<a class="web" href="${esc(url)}" target="_blank" rel="noopener">Website ↗</a>`:'<span class="web" style="opacity:.4">keine Website</span>'}
+        <button class="rej" onclick="toggleReject('${esc(p.s)}',this)">${rej?'Wieder aufnehmen':'✕ Ablehnen'}</button>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+async function toggleReject(slug, btn){
+  const rej = REJECTED.has(slug);
+  const action = rej?'remove':'add';
+  if(action==='add') REJECTED.add(slug); else REJECTED.delete(slug);
+  renderStats(); render();
+  toast(action==='add'?'Abgelehnt — wird übernommen.':'Wieder aufgenommen.');
+  try{
+    const r=await fetch('/api/reject?t='+encodeURIComponent(TOKEN),{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({slug,action})});
+    if(!r.ok) throw 0;
+  }catch(e){
+    // rückgängig bei Fehler
+    if(action==='add') REJECTED.delete(slug); else REJECTED.add(slug);
+    renderStats(); render(); toast('Konnte nicht speichern — bitte erneut.');
+  }
+}
+window.toggleReject = toggleReject;
+load();
+</script>
+</body></html>
